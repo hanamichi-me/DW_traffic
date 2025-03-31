@@ -1,0 +1,103 @@
+road_id,road_type,speed_limit,speed_limit_group
+1,Arterial Road,100,81–100
+2,Local Road,80,51–80
+3,Local Road,50,≤50
+4,National or State Highway,100,81–100
+5,Undetermined,,
+6,Sub-arterial Road,100,81–100
+7,Undetermined,90,81–100
+8,Local Road,60,51–80
+9,National or State Highway,70,51–80
+10,National or State Highway,110,100+
+11,Local Road,100,81–100
+12,Collector Road,80,51–80
+13,Local Road,,
+14,National or State Highway,60,51–80
+15,Collector Road,60,51–80
+16,Undetermined,110,100+
+17,Collector Road,40,≤50
+18,Undetermined,60,51–80
+19,Undetermined,80,51–80
+20,National or State Highway,50,≤50
+21,Sub-arterial Road,70,51–80
+22,National or State Highway,80,51–80
+23,Undetermined,70,51–80
+24,Collector Road,50,≤50
+25,Undetermined,20,≤50
+26,Sub-arterial Road,90,81–100
+27,Arterial Road,60,51–80
+28,Sub-arterial Road,60,51–80
+29,Collector Road,100,81–100
+30,Arterial Road,80,51–80
+31,National or State Highway,90,81–100
+32,Undetermined,100,81–100
+33,Sub-arterial Road,80,51–80
+34,Arterial Road,70,51–80
+35,Pedestrian Thoroughfare,10,≤50
+36,Undetermined,50,≤50
+37,Sub-arterial Road,40,≤50
+38,Local Road,70,51–80
+39,Arterial Road,50,≤50
+40,Sub-arterial Road,50,≤50
+41,Collector Road,110,100+
+42,Access road,60,51–80
+43,Access road,,
+44,Local Road,90,81–100
+45,Arterial Road,110,100+
+46,Collector Road,70,51–80
+47,Collector Road,5,≤50
+48,Local Road,40,≤50
+49,Access road,50,≤50
+50,Access road,100,81–100
+51,Pedestrian Thoroughfare,80,51–80
+52,Arterial Road,40,≤50
+53,Sub-arterial Road,110,100+
+54,Undetermined,130,100+
+55,National or State Highway,130,100+
+56,Access road,80,51–80
+57,Local Road,30,≤50
+58,National or State Highway,,
+59,Access road,40,≤50
+60,Local Road,10,≤50
+61,Undetermined,30,≤50
+62,Busway,80,51–80
+63,Access road,70,51–80
+64,National or State Highway,40,≤50
+65,Arterial Road,90,81–100
+66,Collector Road,25,≤50
+67,Local Road,110,100+
+68,Pedestrian Thoroughfare,20,≤50
+69,Arterial Road,130,100+
+70,Pedestrian Thoroughfare,70,51–80
+71,National or State Highway,20,≤50
+72,Arterial Road,20,≤50
+73,Arterial Road,30,≤50
+74,Access road,20,≤50
+75,Sub-arterial Road,,
+76,Collector Road,10,≤50
+77,Arterial Road,,
+78,Pedestrian Thoroughfare,50,≤50
+79,Undetermined,40,≤50
+80,Access road,130,100+
+81,Busway,50,≤50
+82,Access road,110,100+
+83,Local Road,20,≤50
+84,Pedestrian Thoroughfare,30,≤50
+85,Busway,100,81–100
+86,Collector Road,90,81–100
+87,National or State Highway,30,≤50
+88,Pedestrian Thoroughfare,60,51–80
+89,National or State Highway,10,≤50
+90,Pedestrian Thoroughfare,40,≤50
+91,Arterial Road,25,≤50
+92,Undetermined,10,≤50
+93,Collector Road,,
+94,Local Road,15,≤50
+95,Sub-arterial Road,25,≤50
+96,Sub-arterial Road,30,≤50
+97,Arterial Road,10,≤50
+98,Local Road,5,≤50
+99,Collector Road,75,51–80
+100,Pedestrian Thoroughfare,100,81–100
+101,Undetermined,5,≤50
+102,Undetermined,75,51–80
