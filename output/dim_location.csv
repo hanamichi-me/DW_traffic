@@ -3,534 +3,534 @@ location_id,state,lga_name,sa4_name,remoteness_area,population_2023_lga,populati
 2,NSW,Hawkesbury,Sydney - Baulkham Hills and Hawkesbury,Inner Regional Australia,68156,4683975,25523.0
 3,Tas,Northern Midlands,Launceston and North East,Inner Regional Australia,14279,4683975,6444.0
 4,NSW,Armidale Regional,New England and North West,Outer Regional Australia,,2119123,12955.0
-5,Vic,Unknown,Unknown,Unknown,,,
-6,Qld,Lockyer Valley,Toowoomba,Inner Regional Australia,43847,4683975,16162.0
-7,SA,Wakefield,Barossa - Yorke - Mid North,Outer Regional Australia,6958,2119123,3348.0
-8,WA,Unknown,Unknown,Unknown,,,
-9,Qld,Southern Downs,Darling Downs - Maranoa,Inner Regional Australia,37444,4683975,17447.0
-10,Tas,Brighton,Hobart,Inner Regional Australia,19998,4683975,7530.0
-11,Tas,West Tamar,Launceston and North East,Outer Regional Australia,26039,2119123,11308.0
-12,SA,Mid Murray,South Australia - South East,Outer Regional Australia,9496,2119123,7413.0
-13,NSW,Blue Mountains,Sydney - Outer West and Blue Mountains,Major Cities of Australia,78446,19343743,35239.0
-14,NSW,Upper Lachlan,Capital Region,Inner Regional Australia,8706,4683975,
-15,SA,Wattle Range,South Australia - South East,Outer Regional Australia,12257,2119123,6114.0
-16,Qld,Cairns,Cairns,Outer Regional Australia,175398,2119123,72620.0
-17,ACT,Unincorporated ACT,Australian Capital Territory,Major Cities of Australia,466566,19343743,187156.0
-18,NSW,Wollongong,Illawarra,Major Cities of Australia,219141,19343743,89476.0
-19,NSW,Penrith,Sydney - Outer West and Blue Mountains,Major Cities of Australia,224483,19343743,81250.0
-20,NSW,Upper Hunter,Hunter Valley exc Newcastle,Outer Regional Australia,14338,2119123,
-21,Qld,South Burnett,Wide Bay,Outer Regional Australia,34290,2119123,16096.0
-22,NSW,Mid-Western Regional,Central West,Outer Regional Australia,,2119123,12262.0
-23,NSW,Canterbury-Bankstown,Sydney - Inner South West,Major Cities of Australia,379829,19343743,133438.0
-24,NT,Unknown,Unknown,Unknown,,,
-25,Vic,Mitchell,Hume,Inner Regional Australia,53723,4683975,19590.0
-26,NSW,Greater Hume,Murray,Outer Regional Australia,11445,2119123,
-27,Qld,Southern Downs,Darling Downs - Maranoa,Outer Regional Australia,37444,2119123,17447.0
-28,SA,Barossa,Barossa - Yorke - Mid North,Inner Regional Australia,26268,4683975,11044.0
-29,NSW,Port Macquarie-Hastings,Mid North Coast,Inner Regional Australia,89596,4683975,40066.0
-30,Qld,Douglas,Cairns,Outer Regional Australia,12828,2119123,6981.0
-31,Qld,Mackay,Mackay - Isaac - Whitsunday,Outer Regional Australia,126907,2119123,52308.0
-32,SA,Yankalilla,South Australia - South East,Inner Regional Australia,6100,4683975,4403.0
-33,Qld,Logan,Logan - Beaudesert,Major Cities of Australia,377773,19343743,125977.0
-34,Tas,Dorset,Launceston and North East,Outer Regional Australia,7001,2119123,3948.0
-35,NSW,Armidale Regional,New England and North West,Inner Regional Australia,,4683975,12955.0
-36,NSW,Nambucca Valley,Mid North Coast,Inner Regional Australia,20774,4683975,10016.0
-37,NSW,Narromine,Far West and Orana,Outer Regional Australia,6443,2119123,2851.0
-38,Qld,Fraser Coast,Wide Bay,Inner Regional Australia,117940,4683975,52621.0
-39,SA,Unincorporated SA,South Australia - Outback,Very Remote Australia,3015,198024,2910.0
-40,NSW,Shellharbour,Illawarra,Major Cities of Australia,79738,19343743,29884.0
-41,NSW,Narrabri,New England and North West,Outer Regional Australia,12754,2119123,5997.0
-42,Qld,Logan,Logan - Beaudesert,Inner Regional Australia,377773,4683975,125977.0
-43,Qld,Cook,Queensland - Outback,Remote Australia,4761,304013,3163.0
-44,NSW,Tenterfield,New England and North West,Outer Regional Australia,6973,2119123,3968.0
-45,Vic,Greater Bendigo,Bendigo,Inner Regional Australia,124174,4683975,53173.0
-46,NSW,Central Coast,Central Coast,Major Cities of Australia,,19343743,
-47,NSW,Tamworth Regional,New England and North West,Outer Regional Australia,,2119123,27725.0
-48,Vic,Whittlesea,Melbourne - North East,Major Cities of Australia,245029,19343743,82993.0
-49,NSW,Hilltops,Capital Region,Inner Regional Australia,19255,4683975,9220.0
-50,NSW,Forbes,Central West,Outer Regional Australia,9300,2119123,4373.0
-51,Qld,Toowoomba,Toowoomba,Inner Regional Australia,181821,4683975,74054.0
-52,NSW,Lake Macquarie,Newcastle and Lake Macquarie,Major Cities of Australia,219249,19343743,88908.0
-53,Qld,Livingstone,Central Queensland,Remote Australia,41906,304013,17841.0
-54,Tas,Northern Midlands,Launceston and North East,Outer Regional Australia,14279,2119123,6444.0
-55,NSW,Blacktown,Sydney - Blacktown,Major Cities of Australia,426202,19343743,133984.0
-56,NSW,Dubbo Regional,Far West and Orana,Inner Regional Australia,,4683975,22823.0
-57,NSW,Balranald,Murray,Outer Regional Australia,2202,2119123,1091.0
-58,Qld,Lockhart River,Queensland - Outback,Very Remote Australia,673,198024,228.0
-59,Vic,Golden Plains,Ballarat,Inner Regional Australia,25818,4683975,9408.0
-60,SA,Light,Barossa - Yorke - Mid North,Inner Regional Australia,16616,4683975,6046.0
-61,Qld,Ipswich,Ipswich,Major Cities of Australia,251148,19343743,87352.0
-62,Qld,Cassowary Coast,Cairns,Outer Regional Australia,29972,2119123,15123.0
-63,SA,Tumby Bay,South Australia - Outback,Remote Australia,2906,304013,1681.0
-64,NSW,Liverpool,Sydney - South West,Major Cities of Australia,247672,19343743,77895.0
-65,NSW,Cumberland,Sydney - Parramatta,Major Cities of Australia,245323,19343743,83189.0
-66,NSW,Muswellbrook,Hunter Valley exc Newcastle,Inner Regional Australia,16778,4683975,7333.0
-67,Qld,Moreton Bay,Moreton Bay - North,Inner Regional Australia,510104,4683975,188327.0
-68,NSW,Ballina,Richmond - Tweed,Inner Regional Australia,47279,4683975,20889.0
-69,NSW,Kyogle,Richmond - Tweed,Inner Regional Australia,9468,4683975,4688.0
-70,Qld,Bundaberg,Wide Bay,Inner Regional Australia,104166,4683975,46081.0
-71,Vic,Melbourne,Melbourne - Inner,Major Cities of Australia,177396,19343743,103368.0
-72,Qld,Brisbane,Brisbane - South,Major Cities of Australia,1323162,19343743,519431.0
-73,NSW,Snowy Valleys,Riverina,Outer Regional Australia,14935,2119123,7075.0
-74,Qld,Whitsunday,Mackay - Isaac - Whitsunday,Outer Regional Australia,39712,2119123,18043.0
-75,NSW,Fairfield,Sydney - South West,Major Cities of Australia,209742,19343743,67658.0
-76,NSW,Yass Valley,Capital Region,Inner Regional Australia,17477,4683975,6823.0
-77,Qld,Central Highlands (Qld),Central Queensland,Remote Australia,28973,304013,14180.0
-78,NSW,The Hills,Sydney - Baulkham Hills and Hawkesbury,Major Cities of Australia,207959,19343743,
-79,SA,Salisbury,Adelaide - North,Major Cities of Australia,149214,19343743,57117.0
-80,NSW,Port Stephens,Hunter Valley exc Newcastle,Inner Regional Australia,77748,4683975,35699.0
-81,Vic,Macedon Ranges,Melbourne - North West,Inner Regional Australia,52920,4683975,20630.0
-82,Vic,Moyne,Warrnambool and South West,Inner Regional Australia,17610,4683975,8550.0
-83,Vic,Cardinia,Melbourne - South East,Major Cities of Australia,126960,19343743,43533.0
-84,Vic,East Gippsland,Latrobe - Gippsland,Outer Regional Australia,49179,2119123,26078.0
-85,NSW,Hornsby,Sydney - Baulkham Hills and Hawkesbury,Major Cities of Australia,154072,19343743,55952.0
-86,Qld,Mareeba,Queensland - Outback,Very Remote Australia,23702,198024,10199.0
-87,Qld,Rockhampton,Central Queensland,Inner Regional Australia,84517,4683975,35813.0
-88,NSW,Mid-Coast,Mid North Coast,Inner Regional Australia,97909,4683975,50474.0
-89,Qld,Ipswich,Ipswich,Inner Regional Australia,251148,4683975,87352.0
-90,Vic,Glenelg,Warrnambool and South West,Outer Regional Australia,20022,2119123,10173.0
-91,Qld,Western Downs,Darling Downs - Maranoa,Outer Regional Australia,34991,2119123,16165.0
-92,SA,Port Adelaide Enfield,Adelaide - West,Major Cities of Australia,138585,19343743,56716.0
-93,NSW,Cabonne,Central West,Outer Regional Australia,13880,2119123,5895.0
-94,Qld,Gold Coast,Gold Coast,Major Cities of Australia,666087,19343743,270761.0
-95,Vic,Frankston,Mornington Peninsula,Major Cities of Australia,142826,19343743,58890.0
-96,NSW,Moree Plains,New England and North West,Outer Regional Australia,12873,2119123,6230.0
-97,NSW,Parramatta,Sydney - Parramatta,Major Cities of Australia,269145,19343743,106654.0
-98,Tas,Meander Valley,Launceston and North East,Outer Regional Australia,21449,2119123,9276.0
-99,NSW,Queanbeyan-Palerang Regional,Capital Region,Major Cities of Australia,,19343743,26549.0
-100,NSW,Snowy Monaro Regional,Capital Region,Outer Regional Australia,,2119123,12251.0
-101,NSW,Federation,Murray,Outer Regional Australia,12939,2119123,6546.0
-102,ACT,Unknown,Unknown,Unknown,,,
-103,Qld,Brisbane,Brisbane Inner City,Major Cities of Australia,1323162,19343743,519431.0
-104,NSW,Cowra,Central West,Inner Regional Australia,12659,4683975,6267.0
-105,NSW,Goulburn Mulwaree,Capital Region,Inner Regional Australia,32710,4683975,14739.0
-106,Qld,Gympie,Wide Bay,Inner Regional Australia,56166,4683975,24767.0
-107,Qld,Moreton Bay,Moreton Bay - South,Major Cities of Australia,510104,19343743,188327.0
-108,NSW,Willoughby,Sydney - North Sydney and Hornsby,Major Cities of Australia,77874,19343743,31175.0
-109,NSW,Shoalhaven,Capital Region,Inner Regional Australia,109895,4683975,58799.0
-110,NSW,Queanbeyan-Palerang Regional,Capital Region,Inner Regional Australia,,4683975,26549.0
-111,Vic,Nillumbik,Melbourne - North East,Inner Regional Australia,63264,4683975,22406.0
-112,NSW,Wollongong,Illawarra,Inner Regional Australia,219141,4683975,89476.0
-113,Qld,South Burnett,Wide Bay,Inner Regional Australia,34290,4683975,16096.0
-114,SA,Tatiara,South Australia - South East,Remote Australia,7066,304013,3194.0
-115,NSW,Tweed,Richmond - Tweed,Inner Regional Australia,98967,4683975,44661.0
-116,NSW,Mid-Coast,Mid North Coast,Outer Regional Australia,97909,2119123,50474.0
-117,Vic,Ararat,North West,Inner Regional Australia,11683,4683975,5509.0
-118,Vic,Colac Otway,Warrnambool and South West,Inner Regional Australia,22273,4683975,12460.0
-119,Qld,McKinlay,Queensland - Outback,Very Remote Australia,849,198024,497.0
-120,NSW,Singleton,Hunter Valley exc Newcastle,Inner Regional Australia,25332,4683975,9838.0
-121,Qld,Gladstone,Central Queensland,Outer Regional Australia,66835,2119123,29868.0
-122,NSW,Lithgow,Central West,Inner Regional Australia,20724,4683975,10236.0
-123,NSW,Campbelltown,Sydney - Outer South West,Major Cities of Australia,,19343743,
-124,Qld,Sunshine Coast,Sunshine Coast,Major Cities of Australia,365942,19343743,149005.0
-125,NSW,Warrumbungle,Far West and Orana,Outer Regional Australia,9228,2119123,
-126,Qld,Noosa,Sunshine Coast,Major Cities of Australia,58367,19343743,28715.0
-127,NSW,Port Stephens,Newcastle and Lake Macquarie,Major Cities of Australia,77748,19343743,35699.0
-128,Qld,Moreton Bay,Moreton Bay - North,Major Cities of Australia,510104,19343743,188327.0
-129,SA,Gawler,Adelaide - North,Major Cities of Australia,26789,19343743,11126.0
-130,Vic,Alpine,Hume,Inner Regional Australia,13182,4683975,7271.0
-131,NSW,Cabonne,Central West,Inner Regional Australia,13880,4683975,5895.0
-132,Qld,Brisbane,Ipswich,Major Cities of Australia,1323162,19343743,519431.0
-133,Vic,Baw Baw,Latrobe - Gippsland,Inner Regional Australia,60644,4683975,24522.0
-134,Qld,Isaac,Mackay - Isaac - Whitsunday,Remote Australia,23024,304013,11014.0
-135,Qld,Maranoa,Darling Downs - Maranoa,Remote Australia,13255,304013,6510.0
-136,Vic,Southern Grampians,Warrnambool and South West,Outer Regional Australia,16470,2119123,8292.0
-137,NSW,Cessnock,Hunter Valley exc Newcastle,Inner Regional Australia,67591,4683975,25812.0
-138,Qld,Scenic Rim,Logan - Beaudesert,Inner Regional Australia,45248,4683975,18468.0
-139,Qld,Somerset,Ipswich,Inner Regional Australia,26251,4683975,11020.0
-140,Qld,Hinchinbrook,Townsville,Remote Australia,11118,304013,6030.0
-141,Qld,Mackay,Mackay - Isaac - Whitsunday,Inner Regional Australia,126907,4683975,52308.0
-142,Vic,Stonnington,Melbourne - Inner South,Major Cities of Australia,111335,19343743,59609.0
-143,SA,Playford,Adelaide - North,Major Cities of Australia,107069,19343743,39505.0
-144,NSW,Cobar,Far West and Orana,Very Remote Australia,4078,198024,2320.0
-145,Vic,Ararat,North West,Outer Regional Australia,11683,2119123,5509.0
-146,SA,Adelaide Hills,Adelaide - Central and Hills,Inner Regional Australia,41842,4683975,16270.0
-147,NSW,Bega Valley,Capital Region,Outer Regional Australia,36279,2119123,18867.0
-148,SA,Tea Tree Gully,Adelaide - North,Major Cities of Australia,103685,19343743,41034.0
-149,NSW,Kiama,Illawarra,Inner Regional Australia,23002,4683975,10785.0
-150,Vic,Moyne,Warrnambool and South West,Outer Regional Australia,17610,2119123,8550.0
-151,NSW,Wollondilly,Sydney - Outer South West,Inner Regional Australia,57616,4683975,18918.0
-152,Qld,Scenic Rim,Ipswich,Inner Regional Australia,45248,4683975,18468.0
-153,Vic,Casey,Melbourne - South East,Major Cities of Australia,392110,19343743,122674.0
-154,SA,Northern Areas,Barossa - Yorke - Mid North,Outer Regional Australia,4667,2119123,2424.0
-155,Qld,Tablelands,Cairns,Outer Regional Australia,27259,2119123,13184.0
-156,NSW,Sydney,Sydney - City and Inner South,Major Cities of Australia,231086,19343743,124114.0
-157,Vic,Murrindindi,Hume,Inner Regional Australia,15482,4683975,8349.0
-158,NSW,Albury,Murray,Inner Regional Australia,57517,4683975,25430.0
-159,Vic,Boroondara,Melbourne - Inner East,Major Cities of Australia,174537,19343743,72924.0
-160,Qld,Redland,Brisbane - East,Major Cities of Australia,166809,19343743,65216.0
-161,SA,Playford,Adelaide - North,Inner Regional Australia,107069,4683975,39505.0
-162,Vic,South Gippsland,Latrobe - Gippsland,Inner Regional Australia,30823,4683975,17145.0
-163,Qld,Hinchinbrook,Townsville,Outer Regional Australia,11118,2119123,6030.0
-164,Vic,Yarra Ranges,Melbourne - Outer East,Inner Regional Australia,158694,4683975,61574.0
-165,Vic,Surf Coast,Geelong,Inner Regional Australia,39292,4683975,20678.0
-166,SA,Mount Barker,Adelaide - Central and Hills,Inner Regional Australia,42297,4683975,16054.0
-167,Qld,Brisbane,Brisbane - East,Major Cities of Australia,1323162,19343743,519431.0
-168,NSW,Cessnock,Hunter Valley exc Newcastle,Major Cities of Australia,67591,19343743,25812.0
-169,NSW,Maitland,Hunter Valley exc Newcastle,Inner Regional Australia,95957,4683975,35456.0
-170,Tas,Hobart,Hobart,Inner Regional Australia,55964,4683975,24864.0
-171,SA,Mitcham,Adelaide - South,Major Cities of Australia,69542,19343743,27169.0
-172,NSW,Clarence Valley,Coffs Harbour - Grafton,Inner Regional Australia,55323,4683975,26143.0
-173,SA,Adelaide,Adelaide - Central and Hills,Major Cities of Australia,27901,19343743,14766.0
-174,Tas,Clarence,Unknown,Inner Regional Australia,63663,4683975,25894.0
-175,NSW,Lismore,Richmond - Tweed,Inner Regional Australia,43907,4683975,19781.0
-176,Vic,Greater Shepparton,Shepparton,Inner Regional Australia,69135,4683975,28885.0
-177,Vic,Moreland,Melbourne - North West,Major Cities of Australia,,19343743,78310.0
-178,NSW,Narrandera,Riverina,Outer Regional Australia,5692,2119123,2694.0
-179,Tas,Huon Valley,South East,Outer Regional Australia,19454,2119123,8767.0
-180,Qld,Townsville,Townsville,Outer Regional Australia,201433,2119123,83412.0
-181,NSW,Griffith,Riverina,Outer Regional Australia,27132,2119123,10833.0
-182,Vic,Wodonga,Hume,Inner Regional Australia,44276,4683975,18214.0
-183,NSW,Mid-Coast,Hunter Valley exc Newcastle,Inner Regional Australia,97909,4683975,50474.0
-184,Vic,Darebin,Melbourne - Inner,Major Cities of Australia,155683,19343743,68366.0
-185,Vic,Ballarat,Ballarat,Inner Regional Australia,118137,4683975,50347.0
-186,NSW,Wingecarribee,Southern Highlands and Shoalhaven,Inner Regional Australia,53109,4683975,23623.0
-187,Vic,Cardinia,Melbourne - South East,Inner Regional Australia,126960,4683975,43533.0
-188,Vic,Maroondah,Melbourne - Outer East,Major Cities of Australia,117434,19343743,46937.0
-189,NSW,Tweed,Richmond - Tweed,Major Cities of Australia,98967,19343743,44661.0
-190,Qld,North Burnett,Wide Bay,Outer Regional Australia,10352,2119123,5494.0
-191,NSW,Moree Plains,New England and North West,Remote Australia,12873,304013,6230.0
-192,Vic,Mornington Peninsula,Mornington Peninsula,Major Cities of Australia,170243,19343743,93602.0
-193,SA,Unley,Adelaide - Central and Hills,Major Cities of Australia,39929,19343743,17360.0
-194,SA,Alexandrina,South Australia - South East,Inner Regional Australia,30323,4683975,16760.0
-195,Qld,Gympie,Wide Bay,Outer Regional Australia,56166,2119123,24767.0
-196,Vic,Melton,Melbourne - West,Major Cities of Australia,206070,19343743,60363.0
-197,Qld,Burdekin,Townsville,Outer Regional Australia,17020,2119123,8259.0
-198,Vic,Knox,Melbourne - Outer East,Major Cities of Australia,161766,19343743,62012.0
-199,Vic,Whittlesea,Melbourne - North East,Inner Regional Australia,245029,4683975,82993.0
-200,Vic,Monash,Melbourne - South East,Major Cities of Australia,203560,19343743,76463.0
-201,NSW,Unincorporated,Far West and Orana,Very Remote Australia,,198024,
-202,Qld,Barcaldine,Queensland - Outback,Very Remote Australia,2894,198024,1896.0
-203,Vic,Wyndham,Melbourne - West,Major Cities of Australia,324087,19343743,100363.0
-204,NSW,Glen Innes Severn,New England and North West,Outer Regional Australia,8989,2119123,4610.0
-205,Qld,Brisbane,Brisbane - West,Major Cities of Australia,1323162,19343743,519431.0
-206,NSW,Northern Beaches,Sydney - Northern Beaches,Major Cities of Australia,267921,19343743,105115.0
-207,Qld,Livingstone,Central Queensland,Outer Regional Australia,41906,2119123,17841.0
-208,Vic,Yarra Ranges,Melbourne - Outer East,Major Cities of Australia,158694,19343743,61574.0
-209,Qld,Cook,Queensland - Outback,Very Remote Australia,4761,198024,3163.0
-210,Tas,Clarence,Hobart,Inner Regional Australia,63663,4683975,25894.0
-211,NSW,Georges River,Sydney - Inner South West,Major Cities of Australia,158051,19343743,58429.0
-212,NSW,Maitland,Hunter Valley exc Newcastle,Major Cities of Australia,95957,19343743,35456.0
-213,NSW,Greater Hume,Murray,Inner Regional Australia,11445,4683975,
-214,Vic,Kingston (Vic.),Melbourne - South East,Major Cities of Australia,163724,19343743,67622.0
-215,Vic,Manningham,Melbourne - Inner East,Major Cities of Australia,129514,19343743,49918.0
-216,NSW,Bathurst Regional,Central West,Inner Regional Australia,,4683975,18458.0
-217,SA,Wudinna,South Australia - Outback,Remote Australia,1161,304013,616.0
-218,NSW,Inverell,New England and North West,Outer Regional Australia,18059,2119123,8137.0
-219,Vic,Brimbank,Melbourne - West,Major Cities of Australia,196046,19343743,71871.0
-220,Vic,Darebin,Melbourne - North East,Major Cities of Australia,155683,19343743,68366.0
-221,SA,Charles Sturt,Adelaide - West,Major Cities of Australia,127440,19343743,54847.0
-222,Tas,Flinders (Tas.),Launceston and North East,Very Remote Australia,933,198024,689.0
-223,Tas,Burnie,West and North West,Outer Regional Australia,20463,2119123,9274.0
-224,Vic,Greater Geelong,Geelong,Major Cities of Australia,282809,19343743,120823.0
-225,SA,Adelaide Hills,Adelaide - Central and Hills,Major Cities of Australia,41842,19343743,16270.0
-226,SA,Onkaparinga,Adelaide - South,Inner Regional Australia,180865,4683975,75493.0
-227,Tas,Launceston,Launceston and North East,Outer Regional Australia,71788,2119123,31369.0
-228,Vic,Indigo,Hume,Inner Regional Australia,17662,4683975,7750.0
-229,Vic,Yarra,Melbourne - Inner,Major Cities of Australia,97448,19343743,50059.0
-230,Vic,Port Phillip,Melbourne - Inner,Major Cities of Australia,109515,19343743,63301.0
-231,Tas,Waratah-Wynyard,West and North West,Outer Regional Australia,14767,2119123,6909.0
-232,Vic,Campaspe,Shepparton,Inner Regional Australia,38299,4683975,17840.0
-233,NT,Barkly,Northern Territory - Outback,Very Remote Australia,7239,198024,2932.0
-234,NSW,Blacktown,Sydney - Parramatta,Major Cities of Australia,426202,19343743,133984.0
-235,NSW,Blayney,Central West,Inner Regional Australia,7644,4683975,3246.0
-236,SA,Campbelltown (SA),Adelaide - Central and Hills,Major Cities of Australia,57160,19343743,23247.0
-237,Vic,Latrobe (Vic.),Latrobe - Gippsland,Inner Regional Australia,78154,4683975,35685.0
-238,NT,Palmerston,Darwin,Outer Regional Australia,41113,2119123,14542.0
-239,NSW,Gunnedah,New England and North West,Outer Regional Australia,13280,2119123,5842.0
-240,Tas,Break O'Day,Launceston and North East,Outer Regional Australia,,2119123,4850.0
-241,Vic,Buloke,North West,Outer Regional Australia,6040,2119123,3397.0
-242,Vic,West Wimmera,North West,Outer Regional Australia,3933,2119123,2255.0
-243,NSW,Ku-ring-gai,Sydney - North Sydney and Hornsby,Major Cities of Australia,126983,19343743,45894.0
-244,Vic,Casey,Melbourne - South East,Inner Regional Australia,392110,4683975,122674.0
-245,NSW,Shoalhaven,Southern Highlands and Shoalhaven,Inner Regional Australia,109895,4683975,58799.0
-246,Vic,Warrnambool,Warrnambool and South West,Inner Regional Australia,35907,4683975,16025.0
-247,NSW,Berrigan,Murray,Inner Regional Australia,8643,4683975,4265.0
-248,NSW,Warren,Far West and Orana,Remote Australia,2583,304013,1228.0
-249,NT,Victoria Daly,Northern Territory - Outback,Very Remote Australia,3295,198024,1232.0
-250,Vic,Moira,Shepparton,Inner Regional Australia,30775,4683975,14948.0
-251,Qld,Brisbane,Brisbane - North,Major Cities of Australia,1323162,19343743,519431.0
-252,SA,Berri Barmera,South Australia - South East,Outer Regional Australia,10730,2119123,5257.0
-253,Vic,Moonee Valley,Melbourne - Inner,Major Cities of Australia,126486,19343743,55115.0
-254,NT,Litchfield,Darwin,Outer Regional Australia,23415,2119123,8883.0
-255,Vic,Greater Dandenong,Melbourne - South East,Major Cities of Australia,163792,19343743,58198.0
-256,Vic,Golden Plains,Geelong,Inner Regional Australia,25818,4683975,9408.0
-257,Qld,Toowoomba,Darling Downs - Maranoa,Outer Regional Australia,181821,2119123,74054.0
-258,Vic,Moonee Valley,Melbourne - North West,Major Cities of Australia,126486,19343743,55115.0
-259,SA,Onkaparinga,Adelaide - South,Major Cities of Australia,180865,19343743,75493.0
-260,NSW,Inner West,Sydney - Inner West,Major Cities of Australia,188325,19343743,85462.0
-261,SA,Whyalla,South Australia - Outback,Outer Regional Australia,21902,2119123,11247.0
-262,Qld,Rockhampton,Central Queensland,Outer Regional Australia,84517,2119123,35813.0
-263,SA,Unincorporated SA,South Australia - Outback,Remote Australia,3015,304013,2910.0
-264,Qld,Gladstone,Central Queensland,Inner Regional Australia,66835,4683975,29868.0
-265,Qld,Noosa,Sunshine Coast,Inner Regional Australia,58367,4683975,28715.0
-266,Qld,Mount Isa,Queensland - Outback,Remote Australia,18945,304013,9053.0
-267,Vic,Kingston (Vic.),Melbourne - Inner South,Major Cities of Australia,163724,19343743,67622.0
-268,Qld,Toowoomba,Darling Downs - Maranoa,Inner Regional Australia,181821,4683975,74054.0
-269,Vic,Maribyrnong,Melbourne - West,Major Cities of Australia,91762,19343743,40501.0
-270,SA,Marion,Adelaide - South,Major Cities of Australia,98493,19343743,41654.0
-271,Qld,Gold Coast,Gold Coast,Inner Regional Australia,666087,4683975,270761.0
-272,Vic,Mildura,North West,Outer Regional Australia,57554,2119123,25371.0
-273,NSW,Hornsby,Sydney - North Sydney and Hornsby,Inner Regional Australia,154072,4683975,55952.0
-274,Vic,Mansfield,Hume,Outer Regional Australia,10546,2119123,6619.0
-275,Qld,Charters Towers,Townsville,Very Remote Australia,12013,198024,5974.0
-276,NSW,Richmond Valley,Richmond - Tweed,Inner Regional Australia,23705,4683975,10692.0
-277,NSW,Sutherland,Sydney - Sutherland,Inner Regional Australia,235029,4683975,
-278,NSW,Mid-Western Regional,Central West,Inner Regional Australia,,4683975,12262.0
-279,Vic,Hume,Melbourne - North West,Major Cities of Australia,262764,19343743,83980.0
-280,NSW,Newcastle,Newcastle and Lake Macquarie,Major Cities of Australia,174294,19343743,74585.0
-281,Tas,West Tamar,Launceston and North East,Inner Regional Australia,26039,4683975,11308.0
-282,Vic,Glen Eira,Melbourne - Inner South,Major Cities of Australia,156837,19343743,66235.0
-283,Qld,Sunshine Coast,Sunshine Coast,Inner Regional Australia,365942,4683975,149005.0
-284,Vic,Nillumbik,Melbourne - North East,Major Cities of Australia,63264,19343743,22406.0
-285,Vic,Yarriambiack,North West,Remote Australia,6389,304013,3598.0
-286,Vic,Pyrenees,Ballarat,Inner Regional Australia,7786,4683975,3939.0
-287,NSW,Unincorporated,Far West and Orana,Remote Australia,,304013,
-288,NSW,Strathfield,Sydney - Inner South West,Major Cities of Australia,47824,19343743,18287.0
-289,NSW,Bayside,Sydney - Inner South West,Major Cities of Australia,,19343743,
-290,NSW,Coffs Harbour,Coffs Harbour - Grafton,Inner Regional Australia,80489,4683975,34696.0
-291,NSW,Lake Macquarie,Newcastle and Lake Macquarie,Inner Regional Australia,219249,4683975,88908.0
-292,Qld,Bundaberg,Wide Bay,Outer Regional Australia,104166,2119123,46081.0
-293,SA,Mid Murray,South Australia - South East,Inner Regional Australia,9496,4683975,7413.0
-294,SA,Murray Bridge,South Australia - South East,Inner Regional Australia,22901,4683975,10164.0
-295,NSW,Murray River,Murray,Outer Regional Australia,13326,2119123,6268.0
-296,NSW,Camden,Sydney - Outer South West,Major Cities of Australia,134811,19343743,39601.0
-297,Tas,Glenorchy,Hobart,Inner Regional Australia,50808,4683975,21879.0
-298,NSW,Hornsby,Sydney - North Sydney and Hornsby,Major Cities of Australia,154072,19343743,55952.0
-299,NSW,Randwick,Sydney - Eastern Suburbs,Major Cities of Australia,141840,19343743,59965.0
-300,NSW,Strathfield,Sydney - Inner West,Major Cities of Australia,47824,19343743,18287.0
-301,NSW,Hunters Hill,Sydney - Ryde,Major Cities of Australia,14036,19343743,5323.0
-302,Vic,Wangaratta,Hume,Inner Regional Australia,30002,4683975,13677.0
-303,NSW,Parkes,Central West,Outer Regional Australia,14256,2119123,6697.0
-304,NSW,Dubbo Regional,Far West and Orana,Outer Regional Australia,,2119123,22823.0
-305,NSW,Byron,Richmond - Tweed,Inner Regional Australia,37126,4683975,16996.0
-306,NSW,Cabonne,Far West and Orana,Outer Regional Australia,13880,2119123,5895.0
-307,ACT,Unincorporated ACT,Australian Capital Territory,Inner Regional Australia,466566,4683975,187156.0
-308,Vic,Moorabool,Ballarat,Inner Regional Australia,39092,4683975,15473.0
-309,Qld,Isaac,Mackay - Isaac - Whitsunday,Outer Regional Australia,23024,2119123,11014.0
-310,Vic,Benalla,Hume,Inner Regional Australia,14529,4683975,7211.0
-311,NSW,Bellingen,Coffs Harbour - Grafton,Inner Regional Australia,13231,4683975,6390.0
-312,Vic,Wellington,Latrobe - Gippsland,Inner Regional Australia,46124,4683975,23554.0
-313,NSW,Central Coast,Central Coast,Inner Regional Australia,,4683975,
-314,NSW,Edward River,Murray,Outer Regional Australia,8430,2119123,4252.0
-315,SA,Coorong,South Australia - South East,Outer Regional Australia,5612,2119123,3106.0
-316,Tas,George Town,Launceston and North East,Outer Regional Australia,7330,2119123,3685.0
-317,NSW,Ryde,Sydney - Ryde,Major Cities of Australia,135716,19343743,55742.0
-318,Vic,Bass Coast,Latrobe - Gippsland,Inner Regional Australia,42729,4683975,28981.0
-319,Qld,Richmond,Queensland - Outback,Very Remote Australia,781,198024,438.0
-320,Vic,Strathbogie,Hume,Inner Regional Australia,11578,4683975,6164.0
-321,NSW,Hay,Murray,Remote Australia,2830,304013,1552.0
-322,NSW,Weddin,Central West,Outer Regional Australia,3616,2119123,1869.0
-323,Vic,Moorabool,Melbourne - West,Inner Regional Australia,39092,4683975,15473.0
-324,Vic,Moira,Shepparton,Outer Regional Australia,30775,2119123,14948.0
-325,NSW,Lachlan,Central West,Outer Regional Australia,6147,2119123,3014.0
-326,NSW,Waverley,Sydney - Eastern Suburbs,Major Cities of Australia,71414,19343743,32850.0
-327,Vic,Northern Grampians,North West,Outer Regional Australia,11879,2119123,6253.0
-328,Qld,Charters Towers,Townsville,Outer Regional Australia,12013,2119123,5974.0
-329,Qld,Mareeba,Cairns,Outer Regional Australia,23702,2119123,10199.0
-330,Vic,Horsham,North West,Outer Regional Australia,20315,2119123,9638.0
-331,SA,Adelaide Plains,Adelaide - North,Inner Regional Australia,10932,4683975,4006.0
-332,Vic,Stonnington,Melbourne - Inner,Major Cities of Australia,111335,19343743,59609.0
-333,SA,Mount Remarkable,Barossa - Yorke - Mid North,Outer Regional Australia,2897,2119123,1866.0
-334,NSW,Gilgandra,Far West and Orana,Outer Regional Australia,4309,2119123,2137.0
-335,SA,Adelaide Plains,Barossa - Yorke - Mid North,Inner Regional Australia,10932,4683975,4006.0
-336,Qld,Goondiwindi,Darling Downs - Maranoa,Outer Regional Australia,10452,2119123,4857.0
-337,Vic,Mitchell,Melbourne - North East,Inner Regional Australia,53723,4683975,19590.0
-338,Qld,Cassowary Coast,Cairns,Remote Australia,29972,304013,15123.0
-339,SA,Clare and Gilbert Valleys,Barossa - Yorke - Mid North,Outer Regional Australia,9405,2119123,4678.0
-340,Qld,Moreton Bay,Moreton Bay - South,Inner Regional Australia,510104,4683975,188327.0
-341,SA,West Torrens,Adelaide - West,Major Cities of Australia,64519,19343743,27977.0
-342,Vic,Yarriambiack,North West,Outer Regional Australia,6389,2119123,3598.0
-343,Vic,Alpine,Hume,Outer Regional Australia,13182,2119123,7271.0
-344,NSW,Snowy Valleys,Riverina,Inner Regional Australia,14935,4683975,7075.0
-345,Vic,Whitehorse,Melbourne - Outer East,Major Cities of Australia,178639,19343743,71712.0
-346,Qld,Cloncurry,Queensland - Outback,Very Remote Australia,3851,198024,2123.0
-347,NSW,Hawkesbury,Sydney - Baulkham Hills and Hawkesbury,Outer Regional Australia,68156,2119123,25523.0
-348,Qld,Western Downs,Darling Downs - Maranoa,Remote Australia,34991,304013,16165.0
-349,NSW,Penrith,Sydney - South West,Major Cities of Australia,224483,19343743,81250.0
-350,Qld,Redland,Brisbane - East,Outer Regional Australia,166809,2119123,65216.0
-351,NSW,Hawkesbury,Sydney - Baulkham Hills and Hawkesbury,Major Cities of Australia,68156,19343743,25523.0
-352,Tas,Sorell,Hobart,Inner Regional Australia,17635,4683975,8134.0
-353,Vic,Towong,Hume,Outer Regional Australia,6243,2119123,3125.0
-354,SA,Grant,South Australia - South East,Outer Regional Australia,9044,2119123,3745.0
-355,Vic,Hepburn,Ballarat,Inner Regional Australia,16670,4683975,9511.0
-356,Qld,Central Highlands (Qld),Central Queensland,Outer Regional Australia,28973,2119123,14180.0
-357,Qld,Charters Towers,Townsville,Remote Australia,12013,304013,5974.0
-358,NSW,Blayney,Central West,Outer Regional Australia,7644,2119123,3246.0
-359,NSW,Hilltops,Capital Region,Outer Regional Australia,19255,2119123,9220.0
-360,Qld,Lockyer Valley,Ipswich,Inner Regional Australia,43847,4683975,16162.0
-361,WA,Unknown,Unknown,Major Cities of Australia,,19343743,
-362,Tas,Circular Head,West and North West,Remote Australia,8352,304013,4064.0
-363,Vic,Swan Hill,North West,Outer Regional Australia,21212,2119123,9554.0
-364,NSW,Murrumbidgee,Riverina,Outer Regional Australia,3607,2119123,1647.0
-365,WA,Unknown,Unknown,Inner Regional Australia,,4683975,
-366,WA,Unknown,Unknown,Outer Regional Australia,,2119123,
-367,NSW,Upper Lachlan,Capital Region,Outer Regional Australia,8706,2119123,
-368,NSW,Orange,Central West,Inner Regional Australia,44244,4683975,18706.0
-369,Tas,Launceston,Launceston and North East,Inner Regional Australia,71788,4683975,31369.0
-370,NSW,Cowra,Central West,Outer Regional Australia,12659,2119123,6267.0
-371,SA,Walkerville,Adelaide - Central and Hills,Major Cities of Australia,8420,19343743,3663.0
-372,NSW,Bayside,Sydney - City and Inner South,Major Cities of Australia,,19343743,
-373,NSW,Sutherland,Illawarra,Inner Regional Australia,235029,4683975,
-374,Vic,Whitehorse,Melbourne - Inner East,Major Cities of Australia,178639,19343743,71712.0
-375,WA,Unknown,Unknown,Remote Australia,,304013,
-376,NSW,Wentworth,Murray,Remote Australia,7688,304013,3457.0
-377,Tas,Tasman,South East,Outer Regional Australia,2686,2119123,2644.0
-378,Tas,Latrobe (Tas.),West and North West,Outer Regional Australia,13062,2119123,5816.0
-379,SA,Port Augusta,South Australia - Outback,Outer Regional Australia,14420,2119123,7015.0
-380,Vic,Benalla,Hume,Outer Regional Australia,14529,2119123,7211.0
-381,NSW,Liverpool Plains,New England and North West,Outer Regional Australia,7667,2119123,3694.0
-382,Vic,Mornington Peninsula,Mornington Peninsula,Inner Regional Australia,170243,4683975,93602.0
-383,Qld,Banana,Central Queensland,Outer Regional Australia,14919,2119123,7247.0
-384,WA,Unknown,Unknown,Very Remote Australia,,198024,
-385,SA,Mount Barker,Adelaide - Central and Hills,Major Cities of Australia,42297,19343743,16054.0
-386,NSW,Inner West,Sydney - City and Inner South,Major Cities of Australia,188325,19343743,85462.0
-387,Vic,Loddon,Bendigo,Outer Regional Australia,7747,2119123,4323.0
-388,NSW,Eurobodalla,Capital Region,Inner Regional Australia,40912,4683975,24600.0
-389,NSW,Sutherland,Sydney - Sutherland,Major Cities of Australia,235029,19343743,
-390,NT,Roper Gulf,Northern Territory - Outback,Very Remote Australia,7491,198024,2923.0
-391,SA,Barunga West,Barossa - Yorke - Mid North,Outer Regional Australia,2680,2119123,1928.0
-392,NSW,Tamworth Regional,New England and North West,Inner Regional Australia,,4683975,27725.0
-393,Tas,West Coast,West and North West,Remote Australia,4359,304013,3123.0
-394,SA,Tatiara,South Australia - South East,Outer Regional Australia,7066,2119123,3194.0
-395,NSW,Snowy Monaro Regional,Capital Region,Inner Regional Australia,,4683975,12251.0
-396,Qld,Etheridge,Queensland - Outback,Very Remote Australia,726,198024,750.0
-397,NSW,Bland,Central West,Outer Regional Australia,5464,2119123,3107.0
-398,NSW,Oberon,Central West,Outer Regional Australia,5600,2119123,2828.0
-399,Qld,Maranoa,Darling Downs - Maranoa,Outer Regional Australia,13255,2119123,6510.0
-400,Vic,East Gippsland,Latrobe - Gippsland,Remote Australia,49179,304013,26078.0
-401,Vic,Corangamite,Warrnambool and South West,Inner Regional Australia,15948,4683975,7897.0
-402,SA,Yorke Peninsula,Barossa - Yorke - Mid North,Outer Regional Australia,12040,2119123,10310.0
-403,Tas,Derwent Valley,Hobart,Inner Regional Australia,11341,4683975,4749.0
-404,NSW,Hornsby,Sydney - Ryde,Major Cities of Australia,154072,19343743,55952.0
-405,SA,Port Pirie,Barossa - Yorke - Mid North,Outer Regional Australia,17602,2119123,8589.0
-406,NSW,Muswellbrook,Hunter Valley exc Newcastle,Outer Regional Australia,16778,2119123,7333.0
-407,Tas,Circular Head,West and North West,Outer Regional Australia,8352,2119123,4064.0
-408,Tas,Devonport,West and North West,Outer Regional Australia,26977,2119123,12071.0
-409,Qld,Flinders (Qld),Queensland - Outback,Very Remote Australia,1544,198024,992.0
-410,NSW,Burwood,Sydney - Inner West,Major Cities of Australia,42498,19343743,16201.0
-411,NT,Alice Springs,Northern Territory - Outback,Remote Australia,29213,304013,11681.0
-412,NSW,Nambucca Valley,Mid North Coast,Outer Regional Australia,20774,2119123,10016.0
-413,Qld,Somerset,Moreton Bay - North,Outer Regional Australia,26251,2119123,11020.0
-414,NSW,Lachlan,Central West,Remote Australia,6147,304013,3014.0
-415,NSW,Gwydir,New England and North West,Outer Regional Australia,4940,2119123,2443.0
-416,SA,Port Adelaide Enfield,Adelaide - North,Major Cities of Australia,138585,19343743,56716.0
-417,Vic,Macedon Ranges,Bendigo,Inner Regional Australia,52920,4683975,20630.0
-418,Vic,Banyule,Melbourne - North East,Major Cities of Australia,129602,19343743,53031.0
-419,NSW,Lithgow,Central West,Outer Regional Australia,20724,2119123,10236.0
-420,NSW,Federation,Murray,Inner Regional Australia,12939,4683975,6546.0
-421,NSW,Wagga Wagga,Riverina,Outer Regional Australia,68716,2119123,28244.0
-422,NSW,Coonamble,Far West and Orana,Remote Australia,3861,304013,1825.0
-423,NSW,Kempsey,Mid North Coast,Inner Regional Australia,31453,4683975,14292.0
-424,NSW,Carrathool,Riverina,Outer Regional Australia,2765,2119123,1312.0
-425,Qld,Barcoo,Queensland - Outback,Very Remote Australia,317,198024,267.0
-426,Qld,Mareeba,Queensland - Outback,Outer Regional Australia,23702,2119123,10199.0
-427,Vic,Hobsons Bay,Melbourne - West,Major Cities of Australia,93738,19343743,39336.0
-428,NSW,Temora,Riverina,Outer Regional Australia,6029,2119123,2926.0
-429,SA,Karoonda East Murray,South Australia - South East,Outer Regional Australia,1016,2119123,610.0
-430,Qld,Livingstone,Central Queensland,Inner Regional Australia,41906,4683975,17841.0
-431,Vic,Unincorporated Vic,Latrobe - Gippsland,Outer Regional Australia,953,2119123,1054.0
-432,Vic,Gannawarra,North West,Outer Regional Australia,10420,2119123,5326.0
-433,NSW,Blue Mountains,Sydney - Outer West and Blue Mountains,Inner Regional Australia,78446,4683975,35239.0
-434,SA,Ceduna,South Australia - Outback,Very Remote Australia,3717,198024,1909.0
-435,NSW,Parramatta,Sydney - Ryde,Major Cities of Australia,269145,19343743,106654.0
-436,Qld,Whitsunday,Mackay - Isaac - Whitsunday,Remote Australia,39712,304013,18043.0
-437,NSW,Shellharbour,Illawarra,Inner Regional Australia,79738,4683975,29884.0
-438,NT,Darwin,Darwin,Outer Regional Australia,85465,2119123,34806.0
-439,Vic,Baw Baw,Latrobe - Gippsland,Outer Regional Australia,60644,2119123,24522.0
-440,NT,Central Desert,Northern Territory - Outback,Very Remote Australia,4126,198024,1272.0
-441,NSW,Sutherland,Sydney - Outer South West,Inner Regional Australia,235029,4683975,
-442,NSW,Kempsey,Mid North Coast,Outer Regional Australia,31453,2119123,14292.0
-443,Qld,Carpentaria,Queensland - Outback,Very Remote Australia,2212,198024,1639.0
-444,SA,Wudinna,South Australia - Outback,Very Remote Australia,1161,198024,616.0
-445,Qld,Murweh,Queensland - Outback,Very Remote Australia,3966,198024,2269.0
-446,NSW,Eurobodalla,Capital Region,Outer Regional Australia,40912,2119123,24600.0
-447,SA,Renmark Paringa,South Australia - South East,Outer Regional Australia,10107,2119123,4669.0
-448,SA,Loxton Waikerie,South Australia - South East,Outer Regional Australia,11897,2119123,5787.0
-449,Tas,Central Coast (Tas.),West and North West,Outer Regional Australia,23331,2119123,10434.0
-450,NSW,Berrigan,Murray,Outer Regional Australia,8643,2119123,4265.0
-451,SA,Norwood Payneham and St Peters,Adelaide - Central and Hills,Major Cities of Australia,39312,19343743,18126.0
-452,Tas,Sorell,Hobart,Outer Regional Australia,17635,2119123,8134.0
-453,NSW,Clarence Valley,Coffs Harbour - Grafton,Outer Regional Australia,55323,2119123,26143.0
-454,NSW,Yass Valley,Capital Region,Major Cities of Australia,17477,19343743,6823.0
-455,NT,MacDonnell,Northern Territory - Outback,Very Remote Australia,6706,198024,2243.0
-456,NSW,Leeton,Riverina,Outer Regional Australia,11431,2119123,4705.0
-457,NSW,Balranald,Murray,Remote Australia,2202,304013,1091.0
-458,Qld,Scenic Rim,Gold Coast,Inner Regional Australia,45248,4683975,18468.0
-459,NSW,Port Macquarie-Hastings,Mid North Coast,Outer Regional Australia,89596,2119123,40066.0
-460,Tas,Kingborough,South East,Outer Regional Australia,41179,2119123,17301.0
-461,Vic,Moreland,Melbourne - Inner,Major Cities of Australia,,19343743,78310.0
-462,SA,Copper Coast,Barossa - Yorke - Mid North,Outer Regional Australia,15951,2119123,9242.0
-463,NSW,Lockhart,Riverina,Inner Regional Australia,3396,4683975,1417.0
-464,SA,Naracoorte Lucindale,South Australia - South East,Outer Regional Australia,8928,2119123,4076.0
-465,SA,Southern Mallee,South Australia - South East,Remote Australia,2012,304013,1077.0
-466,NSW,Glen Innes Severn,New England and North West,Inner Regional Australia,8989,4683975,4610.0
-467,NSW,Hornsby,Sydney - Baulkham Hills and Hawkesbury,Inner Regional Australia,154072,4683975,55952.0
-468,Tas,Kentish,West and North West,Outer Regional Australia,6831,2119123,2915.0
-469,SA,Goyder,Barossa - Yorke - Mid North,Inner Regional Australia,4132,4683975,2371.0
-470,Vic,Brimbank,Melbourne - North West,Major Cities of Australia,196046,19343743,71871.0
-471,SA,Flinders Ranges,South Australia - Outback,Outer Regional Australia,1673,2119123,1084.0
-472,Vic,Greater Geelong,Geelong,Inner Regional Australia,282809,4683975,120823.0
-473,Vic,Loddon,Bendigo,Inner Regional Australia,7747,4683975,4323.0
-474,Vic,Wellington,Latrobe - Gippsland,Outer Regional Australia,46124,2119123,23554.0
-475,NSW,Junee,Riverina,Inner Regional Australia,6520,4683975,2519.0
-476,SA,Victor Harbor,South Australia - South East,Inner Regional Australia,16869,4683975,9764.0
-477,SA,Burnside,Adelaide - Central and Hills,Major Cities of Australia,47444,19343743,19630.0
-478,NT,Coomalie,Northern Territory - Outback,Remote Australia,1421,304013,1065.0
-479,Vic,Manningham,Melbourne - Outer East,Major Cities of Australia,129514,19343743,49918.0
-480,Vic,Corangamite,Warrnambool and South West,Outer Regional Australia,15948,2119123,7897.0
-481,SA,Wakefield,Barossa - Yorke - Mid North,Inner Regional Australia,6958,4683975,3348.0
-482,NSW,Mosman,Sydney - North Sydney and Hornsby,Major Cities of Australia,29071,19343743,13410.0
-483,Tas,Glamorgan-Spring Bay,South East,Outer Regional Australia,5237,2119123,4752.0
-484,NSW,Hawkesbury,Sydney - Outer West and Blue Mountains,Major Cities of Australia,68156,19343743,25523.0
-485,NSW,Penrith,Sydney - Outer West and Blue Mountains,Inner Regional Australia,224483,4683975,81250.0
-486,Vic,Murrindindi,Melbourne - North East,Inner Regional Australia,15482,4683975,8349.0
-487,Tas,Southern Midlands,South East,Outer Regional Australia,6912,2119123,2978.0
-488,Qld,Scenic Rim,Logan - Beaudesert,Outer Regional Australia,45248,2119123,18468.0
-489,Vic,Mount Alexander,Bendigo,Inner Regional Australia,20576,4683975,10141.0
-490,NSW,North Sydney,Sydney - North Sydney and Hornsby,Major Cities of Australia,72014,19343743,39034.0
-491,Qld,Western Downs,Darling Downs - Maranoa,Inner Regional Australia,34991,4683975,16165.0
-492,NSW,Woollahra,Sydney - Eastern Suburbs,Major Cities of Australia,54660,19343743,26588.0
-493,SA,Prospect,Adelaide - Central and Hills,Major Cities of Australia,23137,19343743,9474.0
-494,NT,Katherine,Northern Territory - Outback,Remote Australia,10829,304013,4436.0
-495,Qld,Mareeba,Queensland - Outback,Remote Australia,23702,304013,10199.0
-496,Vic,Mildura,North West,Remote Australia,57554,304013,25371.0
-497,Qld,Northern Peninsula Area,Queensland - Outback,Very Remote Australia,2908,198024,1100.0
-498,Vic,Mitchell,Melbourne - North East,Major Cities of Australia,53723,19343743,19590.0
-499,NSW,Wingecarribee,Sydney - Outer South West,Inner Regional Australia,53109,4683975,23623.0
-500,NSW,Kyogle,Richmond - Tweed,Outer Regional Australia,9468,2119123,4688.0
-501,NSW,Port Stephens,Hunter Valley exc Newcastle,Major Cities of Australia,77748,19343743,35699.0
-502,NT,Unincorporated NT,Darwin,Outer Regional Australia,7713,2119123,4175.0
-503,SA,Orroroo Carrieton,Barossa - Yorke - Mid North,Outer Regional Australia,889,2119123,541.0
-504,Vic,Central Goldfields,Ballarat,Inner Regional Australia,13574,4683975,7004.0
-505,NT,Unincorporated NT,Northern Territory - Outback,Remote Australia,7713,304013,4175.0
-506,NSW,Central Darling,Far West and Orana,Very Remote Australia,1757,198024,1065.0
-507,Qld,Balonne,Darling Downs - Maranoa,Remote Australia,4345,304013,2283.0
-508,Tas,Kingborough,Hobart,Inner Regional Australia,41179,4683975,17301.0
-509,Qld,Maranoa,Darling Downs - Maranoa,Very Remote Australia,13255,198024,6510.0
-510,NSW,Walgett,Far West and Orana,Remote Australia,5519,304013,2865.0
-511,NSW,Coolamon,Riverina,Outer Regional Australia,4549,2119123,1974.0
-512,Qld,Bulloo,Queensland - Outback,Very Remote Australia,346,198024,230.0
-513,NSW,Bellingen,Coffs Harbour - Grafton,Outer Regional Australia,13231,2119123,6390.0
-514,NSW,Lane Cove,Sydney - North Sydney and Hornsby,Major Cities of Australia,41549,19343743,17340.0
-515,NSW,Walcha,New England and North West,Outer Regional Australia,2968,2119123,1638.0
-516,Vic,Northern Grampians,North West,Inner Regional Australia,11879,4683975,6253.0
-517,NSW,Bogan,Far West and Orana,Very Remote Australia,2420,198024,1306.0
-518,NSW,The Hills,Sydney - Baulkham Hills and Hawkesbury,Inner Regional Australia,207959,4683975,
-519,Vic,South Gippsland,Latrobe - Gippsland,Outer Regional Australia,30823,2119123,17145.0
-520,NSW,Wollondilly,Illawarra,Inner Regional Australia,57616,4683975,18918.0
-521,SA,Cleve,South Australia - Outback,Remote Australia,1757,304013,975.0
-522,NT,West Arnhem,Northern Territory - Outback,Remote Australia,7407,304013,2225.0
-523,NSW,Wentworth,Murray,Outer Regional Australia,7688,2119123,3457.0
-524,NSW,Canterbury-Bankstown,Sydney - Parramatta,Major Cities of Australia,379829,19343743,133438.0
-525,Tas,King Island,West and North West,Very Remote Australia,1648,198024,897.0
-526,SA,Kangaroo Island,South Australia - South East,Remote Australia,5125,304013,3350.0
-527,Tas,Meander Valley,Launceston and North East,Inner Regional Australia,21449,4683975,9276.0
-528,NSW,Uralla,New England and North West,Inner Regional Australia,6047,4683975,2759.0
-529,SA,Holdfast Bay,Adelaide - South,Major Cities of Australia,38766,19343743,18707.0
-530,Qld,Douglas,Cairns,Remote Australia,12828,304013,6981.0
-531,NSW,Carrathool,Riverina,Remote Australia,2765,304013,1312.0
-532,NSW,Bogan,Far West and Orana,Remote Australia,2420,304013,1306.0
+5,Qld,Lockyer Valley,Toowoomba,Inner Regional Australia,43847,4683975,16162.0
+6,SA,Wakefield,Barossa - Yorke - Mid North,Outer Regional Australia,6958,2119123,3348.0
+7,WA,Unknown,Unknown,Unknown,,,
+8,Qld,Southern Downs,Darling Downs - Maranoa,Inner Regional Australia,37444,4683975,17447.0
+9,Tas,Brighton,Hobart,Inner Regional Australia,19998,4683975,7530.0
+10,Tas,West Tamar,Launceston and North East,Outer Regional Australia,26039,2119123,11308.0
+11,SA,Mid Murray,South Australia - South East,Outer Regional Australia,9496,2119123,7413.0
+12,NSW,Blue Mountains,Sydney - Outer West and Blue Mountains,Major Cities of Australia,78446,19343743,35239.0
+13,NSW,Upper Lachlan,Capital Region,Inner Regional Australia,8706,4683975,
+14,SA,Wattle Range,South Australia - South East,Outer Regional Australia,12257,2119123,6114.0
+15,Qld,Cairns,Cairns,Outer Regional Australia,175398,2119123,72620.0
+16,NSW,Wollongong,Illawarra,Major Cities of Australia,219141,19343743,89476.0
+17,NSW,Penrith,Sydney - Outer West and Blue Mountains,Major Cities of Australia,224483,19343743,81250.0
+18,NSW,Upper Hunter,Hunter Valley exc Newcastle,Outer Regional Australia,14338,2119123,
+19,Qld,South Burnett,Wide Bay,Outer Regional Australia,34290,2119123,16096.0
+20,NSW,Mid-Western Regional,Central West,Outer Regional Australia,,2119123,12262.0
+21,NSW,Canterbury-Bankstown,Sydney - Inner South West,Major Cities of Australia,379829,19343743,133438.0
+22,Vic,Mitchell,Hume,Inner Regional Australia,53723,4683975,19590.0
+23,NSW,Greater Hume,Murray,Outer Regional Australia,11445,2119123,
+24,Qld,Southern Downs,Darling Downs - Maranoa,Outer Regional Australia,37444,2119123,17447.0
+25,SA,Barossa,Barossa - Yorke - Mid North,Inner Regional Australia,26268,4683975,11044.0
+26,NSW,Port Macquarie-Hastings,Mid North Coast,Inner Regional Australia,89596,4683975,40066.0
+27,Qld,Douglas,Cairns,Outer Regional Australia,12828,2119123,6981.0
+28,Qld,Mackay,Mackay - Isaac - Whitsunday,Outer Regional Australia,126907,2119123,52308.0
+29,SA,Yankalilla,South Australia - South East,Inner Regional Australia,6100,4683975,4403.0
+30,Qld,Logan,Logan - Beaudesert,Major Cities of Australia,377773,19343743,125977.0
+31,Tas,Dorset,Launceston and North East,Outer Regional Australia,7001,2119123,3948.0
+32,NSW,Armidale Regional,New England and North West,Inner Regional Australia,,4683975,12955.0
+33,NSW,Nambucca Valley,Mid North Coast,Inner Regional Australia,20774,4683975,10016.0
+34,NSW,Narromine,Far West and Orana,Outer Regional Australia,6443,2119123,2851.0
+35,Qld,Fraser Coast,Wide Bay,Inner Regional Australia,117940,4683975,52621.0
+36,SA,Unincorporated SA,South Australia - Outback,Very Remote Australia,3015,198024,2910.0
+37,NSW,Shellharbour,Illawarra,Major Cities of Australia,79738,19343743,29884.0
+38,NSW,Narrabri,New England and North West,Outer Regional Australia,12754,2119123,5997.0
+39,Qld,Logan,Logan - Beaudesert,Inner Regional Australia,377773,4683975,125977.0
+40,Qld,Cook,Queensland - Outback,Remote Australia,4761,304013,3163.0
+41,NSW,Tenterfield,New England and North West,Outer Regional Australia,6973,2119123,3968.0
+42,Vic,Greater Bendigo,Bendigo,Inner Regional Australia,124174,4683975,53173.0
+43,NSW,Central Coast,Central Coast,Major Cities of Australia,,19343743,
+44,NSW,Tamworth Regional,New England and North West,Outer Regional Australia,,2119123,27725.0
+45,Vic,Whittlesea,Melbourne - North East,Major Cities of Australia,245029,19343743,82993.0
+46,NSW,Hilltops,Capital Region,Inner Regional Australia,19255,4683975,9220.0
+47,NSW,Forbes,Central West,Outer Regional Australia,9300,2119123,4373.0
+48,Qld,Toowoomba,Toowoomba,Inner Regional Australia,181821,4683975,74054.0
+49,NSW,Lake Macquarie,Newcastle and Lake Macquarie,Major Cities of Australia,219249,19343743,88908.0
+50,Qld,Livingstone,Central Queensland,Remote Australia,41906,304013,17841.0
+51,Tas,Northern Midlands,Launceston and North East,Outer Regional Australia,14279,2119123,6444.0
+52,NSW,Blacktown,Sydney - Blacktown,Major Cities of Australia,426202,19343743,133984.0
+53,NSW,Dubbo Regional,Far West and Orana,Inner Regional Australia,,4683975,22823.0
+54,NSW,Balranald,Murray,Outer Regional Australia,2202,2119123,1091.0
+55,Qld,Lockhart River,Queensland - Outback,Very Remote Australia,673,198024,228.0
+56,Vic,Golden Plains,Ballarat,Inner Regional Australia,25818,4683975,9408.0
+57,SA,Light,Barossa - Yorke - Mid North,Inner Regional Australia,16616,4683975,6046.0
+58,Qld,Ipswich,Ipswich,Major Cities of Australia,251148,19343743,87352.0
+59,Qld,Cassowary Coast,Cairns,Outer Regional Australia,29972,2119123,15123.0
+60,SA,Tumby Bay,South Australia - Outback,Remote Australia,2906,304013,1681.0
+61,NSW,Liverpool,Sydney - South West,Major Cities of Australia,247672,19343743,77895.0
+62,NSW,Cumberland,Sydney - Parramatta,Major Cities of Australia,245323,19343743,83189.0
+63,NSW,Muswellbrook,Hunter Valley exc Newcastle,Inner Regional Australia,16778,4683975,7333.0
+64,Qld,Moreton Bay,Moreton Bay - North,Inner Regional Australia,510104,4683975,188327.0
+65,NSW,Ballina,Richmond - Tweed,Inner Regional Australia,47279,4683975,20889.0
+66,Vic,Unknown,Unknown,Unknown,,,
+67,NSW,Kyogle,Richmond - Tweed,Inner Regional Australia,9468,4683975,4688.0
+68,Qld,Bundaberg,Wide Bay,Inner Regional Australia,104166,4683975,46081.0
+69,Vic,Melbourne,Melbourne - Inner,Major Cities of Australia,177396,19343743,103368.0
+70,Qld,Brisbane,Brisbane - South,Major Cities of Australia,1323162,19343743,519431.0
+71,NSW,Snowy Valleys,Riverina,Outer Regional Australia,14935,2119123,7075.0
+72,Qld,Whitsunday,Mackay - Isaac - Whitsunday,Outer Regional Australia,39712,2119123,18043.0
+73,NSW,Fairfield,Sydney - South West,Major Cities of Australia,209742,19343743,67658.0
+74,NSW,Yass Valley,Capital Region,Inner Regional Australia,17477,4683975,6823.0
+75,Qld,Central Highlands (Qld),Central Queensland,Remote Australia,28973,304013,14180.0
+76,NSW,The Hills,Sydney - Baulkham Hills and Hawkesbury,Major Cities of Australia,207959,19343743,
+77,SA,Salisbury,Adelaide - North,Major Cities of Australia,149214,19343743,57117.0
+78,NSW,Port Stephens,Hunter Valley exc Newcastle,Inner Regional Australia,77748,4683975,35699.0
+79,Vic,Macedon Ranges,Melbourne - North West,Inner Regional Australia,52920,4683975,20630.0
+80,Vic,Moyne,Warrnambool and South West,Inner Regional Australia,17610,4683975,8550.0
+81,Vic,Cardinia,Melbourne - South East,Major Cities of Australia,126960,19343743,43533.0
+82,Vic,East Gippsland,Latrobe - Gippsland,Outer Regional Australia,49179,2119123,26078.0
+83,NSW,Hornsby,Sydney - Baulkham Hills and Hawkesbury,Major Cities of Australia,154072,19343743,55952.0
+84,Qld,Mareeba,Queensland - Outback,Very Remote Australia,23702,198024,10199.0
+85,Qld,Rockhampton,Central Queensland,Inner Regional Australia,84517,4683975,35813.0
+86,NSW,Mid-Coast,Mid North Coast,Inner Regional Australia,97909,4683975,50474.0
+87,Qld,Ipswich,Ipswich,Inner Regional Australia,251148,4683975,87352.0
+88,Vic,Glenelg,Warrnambool and South West,Outer Regional Australia,20022,2119123,10173.0
+89,Qld,Western Downs,Darling Downs - Maranoa,Outer Regional Australia,34991,2119123,16165.0
+90,SA,Port Adelaide Enfield,Adelaide - West,Major Cities of Australia,138585,19343743,56716.0
+91,NSW,Cabonne,Central West,Outer Regional Australia,13880,2119123,5895.0
+92,Qld,Gold Coast,Gold Coast,Major Cities of Australia,666087,19343743,270761.0
+93,ACT,Unincorporated ACT,Australian Capital Territory,Major Cities of Australia,466566,19343743,187156.0
+94,Vic,Frankston,Mornington Peninsula,Major Cities of Australia,142826,19343743,58890.0
+95,NSW,Moree Plains,New England and North West,Outer Regional Australia,12873,2119123,6230.0
+96,NSW,Parramatta,Sydney - Parramatta,Major Cities of Australia,269145,19343743,106654.0
+97,Tas,Meander Valley,Launceston and North East,Outer Regional Australia,21449,2119123,9276.0
+98,NSW,Queanbeyan-Palerang Regional,Capital Region,Major Cities of Australia,,19343743,26549.0
+99,NSW,Snowy Monaro Regional,Capital Region,Outer Regional Australia,,2119123,12251.0
+100,NSW,Federation,Murray,Outer Regional Australia,12939,2119123,6546.0
+101,Qld,Brisbane,Brisbane Inner City,Major Cities of Australia,1323162,19343743,519431.0
+102,NSW,Cowra,Central West,Inner Regional Australia,12659,4683975,6267.0
+103,NSW,Goulburn Mulwaree,Capital Region,Inner Regional Australia,32710,4683975,14739.0
+104,Qld,Gympie,Wide Bay,Inner Regional Australia,56166,4683975,24767.0
+105,Qld,Moreton Bay,Moreton Bay - South,Major Cities of Australia,510104,19343743,188327.0
+106,NSW,Willoughby,Sydney - North Sydney and Hornsby,Major Cities of Australia,77874,19343743,31175.0
+107,NSW,Shoalhaven,Capital Region,Inner Regional Australia,109895,4683975,58799.0
+108,NSW,Queanbeyan-Palerang Regional,Capital Region,Inner Regional Australia,,4683975,26549.0
+109,Vic,Nillumbik,Melbourne - North East,Inner Regional Australia,63264,4683975,22406.0
+110,NSW,Wollongong,Illawarra,Inner Regional Australia,219141,4683975,89476.0
+111,Qld,South Burnett,Wide Bay,Inner Regional Australia,34290,4683975,16096.0
+112,SA,Tatiara,South Australia - South East,Remote Australia,7066,304013,3194.0
+113,NSW,Tweed,Richmond - Tweed,Inner Regional Australia,98967,4683975,44661.0
+114,NSW,Mid-Coast,Mid North Coast,Outer Regional Australia,97909,2119123,50474.0
+115,Vic,Ararat,North West,Inner Regional Australia,11683,4683975,5509.0
+116,Vic,Colac Otway,Warrnambool and South West,Inner Regional Australia,22273,4683975,12460.0
+117,Qld,McKinlay,Queensland - Outback,Very Remote Australia,849,198024,497.0
+118,NSW,Singleton,Hunter Valley exc Newcastle,Inner Regional Australia,25332,4683975,9838.0
+119,Qld,Gladstone,Central Queensland,Outer Regional Australia,66835,2119123,29868.0
+120,NSW,Lithgow,Central West,Inner Regional Australia,20724,4683975,10236.0
+121,NSW,Campbelltown,Sydney - Outer South West,Major Cities of Australia,,19343743,
+122,Qld,Sunshine Coast,Sunshine Coast,Major Cities of Australia,365942,19343743,149005.0
+123,NSW,Warrumbungle,Far West and Orana,Outer Regional Australia,9228,2119123,
+124,Qld,Noosa,Sunshine Coast,Major Cities of Australia,58367,19343743,28715.0
+125,NSW,Port Stephens,Newcastle and Lake Macquarie,Major Cities of Australia,77748,19343743,35699.0
+126,Qld,Moreton Bay,Moreton Bay - North,Major Cities of Australia,510104,19343743,188327.0
+127,SA,Gawler,Adelaide - North,Major Cities of Australia,26789,19343743,11126.0
+128,Vic,Alpine,Hume,Inner Regional Australia,13182,4683975,7271.0
+129,NSW,Cabonne,Central West,Inner Regional Australia,13880,4683975,5895.0
+130,Qld,Brisbane,Ipswich,Major Cities of Australia,1323162,19343743,519431.0
+131,Vic,Baw Baw,Latrobe - Gippsland,Inner Regional Australia,60644,4683975,24522.0
+132,Qld,Isaac,Mackay - Isaac - Whitsunday,Remote Australia,23024,304013,11014.0
+133,Qld,Maranoa,Darling Downs - Maranoa,Remote Australia,13255,304013,6510.0
+134,Vic,Southern Grampians,Warrnambool and South West,Outer Regional Australia,16470,2119123,8292.0
+135,NSW,Cessnock,Hunter Valley exc Newcastle,Inner Regional Australia,67591,4683975,25812.0
+136,Qld,Scenic Rim,Logan - Beaudesert,Inner Regional Australia,45248,4683975,18468.0
+137,Qld,Somerset,Ipswich,Inner Regional Australia,26251,4683975,11020.0
+138,Qld,Hinchinbrook,Townsville,Remote Australia,11118,304013,6030.0
+139,Qld,Mackay,Mackay - Isaac - Whitsunday,Inner Regional Australia,126907,4683975,52308.0
+140,SA,Playford,Adelaide - North,Major Cities of Australia,107069,19343743,39505.0
+141,NSW,Cobar,Far West and Orana,Very Remote Australia,4078,198024,2320.0
+142,Vic,Ararat,North West,Outer Regional Australia,11683,2119123,5509.0
+143,SA,Adelaide Hills,Adelaide - Central and Hills,Inner Regional Australia,41842,4683975,16270.0
+144,NSW,Bega Valley,Capital Region,Outer Regional Australia,36279,2119123,18867.0
+145,SA,Tea Tree Gully,Adelaide - North,Major Cities of Australia,103685,19343743,41034.0
+146,NSW,Kiama,Illawarra,Inner Regional Australia,23002,4683975,10785.0
+147,Vic,Moyne,Warrnambool and South West,Outer Regional Australia,17610,2119123,8550.0
+148,NSW,Wollondilly,Sydney - Outer South West,Inner Regional Australia,57616,4683975,18918.0
+149,Qld,Scenic Rim,Ipswich,Inner Regional Australia,45248,4683975,18468.0
+150,Vic,Casey,Melbourne - South East,Major Cities of Australia,392110,19343743,122674.0
+151,SA,Northern Areas,Barossa - Yorke - Mid North,Outer Regional Australia,4667,2119123,2424.0
+152,Qld,Tablelands,Cairns,Outer Regional Australia,27259,2119123,13184.0
+153,NSW,Sydney,Sydney - City and Inner South,Major Cities of Australia,231086,19343743,124114.0
+154,Vic,Murrindindi,Hume,Inner Regional Australia,15482,4683975,8349.0
+155,NSW,Albury,Murray,Inner Regional Australia,57517,4683975,25430.0
+156,Vic,Boroondara,Melbourne - Inner East,Major Cities of Australia,174537,19343743,72924.0
+157,Qld,Redland,Brisbane - East,Major Cities of Australia,166809,19343743,65216.0
+158,SA,Playford,Adelaide - North,Inner Regional Australia,107069,4683975,39505.0
+159,Vic,South Gippsland,Latrobe - Gippsland,Inner Regional Australia,30823,4683975,17145.0
+160,Qld,Hinchinbrook,Townsville,Outer Regional Australia,11118,2119123,6030.0
+161,Vic,Yarra Ranges,Melbourne - Outer East,Inner Regional Australia,158694,4683975,61574.0
+162,Vic,Surf Coast,Geelong,Inner Regional Australia,39292,4683975,20678.0
+163,SA,Mount Barker,Adelaide - Central and Hills,Inner Regional Australia,42297,4683975,16054.0
+164,Qld,Brisbane,Brisbane - East,Major Cities of Australia,1323162,19343743,519431.0
+165,NSW,Cessnock,Hunter Valley exc Newcastle,Major Cities of Australia,67591,19343743,25812.0
+166,NSW,Maitland,Hunter Valley exc Newcastle,Inner Regional Australia,95957,4683975,35456.0
+167,Tas,Hobart,Hobart,Inner Regional Australia,55964,4683975,24864.0
+168,SA,Mitcham,Adelaide - South,Major Cities of Australia,69542,19343743,27169.0
+169,NSW,Clarence Valley,Coffs Harbour - Grafton,Inner Regional Australia,55323,4683975,26143.0
+170,SA,Adelaide,Adelaide - Central and Hills,Major Cities of Australia,27901,19343743,14766.0
+171,Tas,Clarence,Unknown,Inner Regional Australia,63663,4683975,25894.0
+172,NSW,Lismore,Richmond - Tweed,Inner Regional Australia,43907,4683975,19781.0
+173,Vic,Greater Shepparton,Shepparton,Inner Regional Australia,69135,4683975,28885.0
+174,Vic,Moreland,Melbourne - North West,Major Cities of Australia,,19343743,78310.0
+175,NSW,Narrandera,Riverina,Outer Regional Australia,5692,2119123,2694.0
+176,Tas,Huon Valley,South East,Outer Regional Australia,19454,2119123,8767.0
+177,Qld,Townsville,Townsville,Outer Regional Australia,201433,2119123,83412.0
+178,NSW,Griffith,Riverina,Outer Regional Australia,27132,2119123,10833.0
+179,Vic,Wodonga,Hume,Inner Regional Australia,44276,4683975,18214.0
+180,NSW,Mid-Coast,Hunter Valley exc Newcastle,Inner Regional Australia,97909,4683975,50474.0
+181,Vic,Darebin,Melbourne - Inner,Major Cities of Australia,155683,19343743,68366.0
+182,Vic,Ballarat,Ballarat,Inner Regional Australia,118137,4683975,50347.0
+183,NSW,Wingecarribee,Southern Highlands and Shoalhaven,Inner Regional Australia,53109,4683975,23623.0
+184,Vic,Cardinia,Melbourne - South East,Inner Regional Australia,126960,4683975,43533.0
+185,Vic,Maroondah,Melbourne - Outer East,Major Cities of Australia,117434,19343743,46937.0
+186,NSW,Tweed,Richmond - Tweed,Major Cities of Australia,98967,19343743,44661.0
+187,Qld,North Burnett,Wide Bay,Outer Regional Australia,10352,2119123,5494.0
+188,NSW,Moree Plains,New England and North West,Remote Australia,12873,304013,6230.0
+189,Vic,Mornington Peninsula,Mornington Peninsula,Major Cities of Australia,170243,19343743,93602.0
+190,SA,Unley,Adelaide - Central and Hills,Major Cities of Australia,39929,19343743,17360.0
+191,SA,Alexandrina,South Australia - South East,Inner Regional Australia,30323,4683975,16760.0
+192,Qld,Gympie,Wide Bay,Outer Regional Australia,56166,2119123,24767.0
+193,Vic,Melton,Melbourne - West,Major Cities of Australia,206070,19343743,60363.0
+194,Qld,Burdekin,Townsville,Outer Regional Australia,17020,2119123,8259.0
+195,Vic,Knox,Melbourne - Outer East,Major Cities of Australia,161766,19343743,62012.0
+196,Vic,Whittlesea,Melbourne - North East,Inner Regional Australia,245029,4683975,82993.0
+197,Vic,Monash,Melbourne - South East,Major Cities of Australia,203560,19343743,76463.0
+198,NSW,Unincorporated,Far West and Orana,Very Remote Australia,,198024,
+199,Qld,Barcaldine,Queensland - Outback,Very Remote Australia,2894,198024,1896.0
+200,Vic,Wyndham,Melbourne - West,Major Cities of Australia,324087,19343743,100363.0
+201,NSW,Glen Innes Severn,New England and North West,Outer Regional Australia,8989,2119123,4610.0
+202,Qld,Brisbane,Brisbane - West,Major Cities of Australia,1323162,19343743,519431.0
+203,NSW,Northern Beaches,Sydney - Northern Beaches,Major Cities of Australia,267921,19343743,105115.0
+204,Qld,Livingstone,Central Queensland,Outer Regional Australia,41906,2119123,17841.0
+205,Vic,Yarra Ranges,Melbourne - Outer East,Major Cities of Australia,158694,19343743,61574.0
+206,Qld,Cook,Queensland - Outback,Very Remote Australia,4761,198024,3163.0
+207,Tas,Clarence,Hobart,Inner Regional Australia,63663,4683975,25894.0
+208,NSW,Georges River,Sydney - Inner South West,Major Cities of Australia,158051,19343743,58429.0
+209,NSW,Maitland,Hunter Valley exc Newcastle,Major Cities of Australia,95957,19343743,35456.0
+210,NSW,Greater Hume,Murray,Inner Regional Australia,11445,4683975,
+211,Vic,Kingston (Vic.),Melbourne - South East,Major Cities of Australia,163724,19343743,67622.0
+212,Vic,Manningham,Melbourne - Inner East,Major Cities of Australia,129514,19343743,49918.0
+213,NSW,Bathurst Regional,Central West,Inner Regional Australia,,4683975,18458.0
+214,SA,Wudinna,South Australia - Outback,Remote Australia,1161,304013,616.0
+215,NSW,Inverell,New England and North West,Outer Regional Australia,18059,2119123,8137.0
+216,Vic,Brimbank,Melbourne - West,Major Cities of Australia,196046,19343743,71871.0
+217,Vic,Darebin,Melbourne - North East,Major Cities of Australia,155683,19343743,68366.0
+218,SA,Charles Sturt,Adelaide - West,Major Cities of Australia,127440,19343743,54847.0
+219,Tas,Flinders (Tas.),Launceston and North East,Very Remote Australia,933,198024,689.0
+220,Tas,Burnie,West and North West,Outer Regional Australia,20463,2119123,9274.0
+221,Vic,Greater Geelong,Geelong,Major Cities of Australia,282809,19343743,120823.0
+222,SA,Adelaide Hills,Adelaide - Central and Hills,Major Cities of Australia,41842,19343743,16270.0
+223,SA,Onkaparinga,Adelaide - South,Inner Regional Australia,180865,4683975,75493.0
+224,Vic,Stonnington,Melbourne - Inner South,Major Cities of Australia,111335,19343743,59609.0
+225,Tas,Launceston,Launceston and North East,Outer Regional Australia,71788,2119123,31369.0
+226,Vic,Indigo,Hume,Inner Regional Australia,17662,4683975,7750.0
+227,Vic,Yarra,Melbourne - Inner,Major Cities of Australia,97448,19343743,50059.0
+228,Vic,Port Phillip,Melbourne - Inner,Major Cities of Australia,109515,19343743,63301.0
+229,NT,Unknown,Unknown,Unknown,,,
+230,Tas,Waratah-Wynyard,West and North West,Outer Regional Australia,14767,2119123,6909.0
+231,Vic,Campaspe,Shepparton,Inner Regional Australia,38299,4683975,17840.0
+232,NT,Barkly,Northern Territory - Outback,Very Remote Australia,7239,198024,2932.0
+233,NSW,Blacktown,Sydney - Parramatta,Major Cities of Australia,426202,19343743,133984.0
+234,NSW,Blayney,Central West,Inner Regional Australia,7644,4683975,3246.0
+235,SA,Campbelltown (SA),Adelaide - Central and Hills,Major Cities of Australia,57160,19343743,23247.0
+236,Vic,Latrobe (Vic.),Latrobe - Gippsland,Inner Regional Australia,78154,4683975,35685.0
+237,NT,Palmerston,Darwin,Outer Regional Australia,41113,2119123,14542.0
+238,NSW,Gunnedah,New England and North West,Outer Regional Australia,13280,2119123,5842.0
+239,Tas,Break O'Day,Launceston and North East,Outer Regional Australia,,2119123,4850.0
+240,Vic,Buloke,North West,Outer Regional Australia,6040,2119123,3397.0
+241,Vic,West Wimmera,North West,Outer Regional Australia,3933,2119123,2255.0
+242,NSW,Ku-ring-gai,Sydney - North Sydney and Hornsby,Major Cities of Australia,126983,19343743,45894.0
+243,Vic,Casey,Melbourne - South East,Inner Regional Australia,392110,4683975,122674.0
+244,NSW,Shoalhaven,Southern Highlands and Shoalhaven,Inner Regional Australia,109895,4683975,58799.0
+245,Vic,Warrnambool,Warrnambool and South West,Inner Regional Australia,35907,4683975,16025.0
+246,NSW,Berrigan,Murray,Inner Regional Australia,8643,4683975,4265.0
+247,NSW,Warren,Far West and Orana,Remote Australia,2583,304013,1228.0
+248,NT,Victoria Daly,Northern Territory - Outback,Very Remote Australia,3295,198024,1232.0
+249,Vic,Moira,Shepparton,Inner Regional Australia,30775,4683975,14948.0
+250,Qld,Brisbane,Brisbane - North,Major Cities of Australia,1323162,19343743,519431.0
+251,SA,Berri Barmera,South Australia - South East,Outer Regional Australia,10730,2119123,5257.0
+252,Vic,Moonee Valley,Melbourne - Inner,Major Cities of Australia,126486,19343743,55115.0
+253,NT,Litchfield,Darwin,Outer Regional Australia,23415,2119123,8883.0
+254,Vic,Greater Dandenong,Melbourne - South East,Major Cities of Australia,163792,19343743,58198.0
+255,Vic,Golden Plains,Geelong,Inner Regional Australia,25818,4683975,9408.0
+256,Qld,Toowoomba,Darling Downs - Maranoa,Outer Regional Australia,181821,2119123,74054.0
+257,Vic,Moonee Valley,Melbourne - North West,Major Cities of Australia,126486,19343743,55115.0
+258,SA,Onkaparinga,Adelaide - South,Major Cities of Australia,180865,19343743,75493.0
+259,NSW,Inner West,Sydney - Inner West,Major Cities of Australia,188325,19343743,85462.0
+260,SA,Whyalla,South Australia - Outback,Outer Regional Australia,21902,2119123,11247.0
+261,Qld,Rockhampton,Central Queensland,Outer Regional Australia,84517,2119123,35813.0
+262,SA,Unincorporated SA,South Australia - Outback,Remote Australia,3015,304013,2910.0
+263,Qld,Gladstone,Central Queensland,Inner Regional Australia,66835,4683975,29868.0
+264,Qld,Noosa,Sunshine Coast,Inner Regional Australia,58367,4683975,28715.0
+265,Qld,Mount Isa,Queensland - Outback,Remote Australia,18945,304013,9053.0
+266,Vic,Kingston (Vic.),Melbourne - Inner South,Major Cities of Australia,163724,19343743,67622.0
+267,Qld,Toowoomba,Darling Downs - Maranoa,Inner Regional Australia,181821,4683975,74054.0
+268,Vic,Maribyrnong,Melbourne - West,Major Cities of Australia,91762,19343743,40501.0
+269,SA,Marion,Adelaide - South,Major Cities of Australia,98493,19343743,41654.0
+270,Qld,Gold Coast,Gold Coast,Inner Regional Australia,666087,4683975,270761.0
+271,Vic,Mildura,North West,Outer Regional Australia,57554,2119123,25371.0
+272,NSW,Hornsby,Sydney - North Sydney and Hornsby,Inner Regional Australia,154072,4683975,55952.0
+273,Vic,Mansfield,Hume,Outer Regional Australia,10546,2119123,6619.0
+274,Qld,Charters Towers,Townsville,Very Remote Australia,12013,198024,5974.0
+275,NSW,Richmond Valley,Richmond - Tweed,Inner Regional Australia,23705,4683975,10692.0
+276,NSW,Sutherland,Sydney - Sutherland,Inner Regional Australia,235029,4683975,
+277,NSW,Mid-Western Regional,Central West,Inner Regional Australia,,4683975,12262.0
+278,Vic,Hume,Melbourne - North West,Major Cities of Australia,262764,19343743,83980.0
+279,NSW,Newcastle,Newcastle and Lake Macquarie,Major Cities of Australia,174294,19343743,74585.0
+280,Tas,West Tamar,Launceston and North East,Inner Regional Australia,26039,4683975,11308.0
+281,Vic,Glen Eira,Melbourne - Inner South,Major Cities of Australia,156837,19343743,66235.0
+282,Qld,Sunshine Coast,Sunshine Coast,Inner Regional Australia,365942,4683975,149005.0
+283,Vic,Nillumbik,Melbourne - North East,Major Cities of Australia,63264,19343743,22406.0
+284,Vic,Yarriambiack,North West,Remote Australia,6389,304013,3598.0
+285,Vic,Pyrenees,Ballarat,Inner Regional Australia,7786,4683975,3939.0
+286,NSW,Unincorporated,Far West and Orana,Remote Australia,,304013,
+287,NSW,Strathfield,Sydney - Inner South West,Major Cities of Australia,47824,19343743,18287.0
+288,NSW,Bayside,Sydney - Inner South West,Major Cities of Australia,,19343743,
+289,NSW,Coffs Harbour,Coffs Harbour - Grafton,Inner Regional Australia,80489,4683975,34696.0
+290,NSW,Lake Macquarie,Newcastle and Lake Macquarie,Inner Regional Australia,219249,4683975,88908.0
+291,Qld,Bundaberg,Wide Bay,Outer Regional Australia,104166,2119123,46081.0
+292,SA,Mid Murray,South Australia - South East,Inner Regional Australia,9496,4683975,7413.0
+293,SA,Murray Bridge,South Australia - South East,Inner Regional Australia,22901,4683975,10164.0
+294,NSW,Murray River,Murray,Outer Regional Australia,13326,2119123,6268.0
+295,NSW,Camden,Sydney - Outer South West,Major Cities of Australia,134811,19343743,39601.0
+296,Tas,Glenorchy,Hobart,Inner Regional Australia,50808,4683975,21879.0
+297,NSW,Hornsby,Sydney - North Sydney and Hornsby,Major Cities of Australia,154072,19343743,55952.0
+298,NSW,Randwick,Sydney - Eastern Suburbs,Major Cities of Australia,141840,19343743,59965.0
+299,NSW,Strathfield,Sydney - Inner West,Major Cities of Australia,47824,19343743,18287.0
+300,NSW,Hunters Hill,Sydney - Ryde,Major Cities of Australia,14036,19343743,5323.0
+301,Vic,Wangaratta,Hume,Inner Regional Australia,30002,4683975,13677.0
+302,NSW,Parkes,Central West,Outer Regional Australia,14256,2119123,6697.0
+303,NSW,Dubbo Regional,Far West and Orana,Outer Regional Australia,,2119123,22823.0
+304,NSW,Byron,Richmond - Tweed,Inner Regional Australia,37126,4683975,16996.0
+305,NSW,Cabonne,Far West and Orana,Outer Regional Australia,13880,2119123,5895.0
+306,ACT,Unincorporated ACT,Australian Capital Territory,Inner Regional Australia,466566,4683975,187156.0
+307,Vic,Moorabool,Ballarat,Inner Regional Australia,39092,4683975,15473.0
+308,Qld,Isaac,Mackay - Isaac - Whitsunday,Outer Regional Australia,23024,2119123,11014.0
+309,Vic,Benalla,Hume,Inner Regional Australia,14529,4683975,7211.0
+310,NSW,Bellingen,Coffs Harbour - Grafton,Inner Regional Australia,13231,4683975,6390.0
+311,Vic,Wellington,Latrobe - Gippsland,Inner Regional Australia,46124,4683975,23554.0
+312,NSW,Central Coast,Central Coast,Inner Regional Australia,,4683975,
+313,NSW,Edward River,Murray,Outer Regional Australia,8430,2119123,4252.0
+314,SA,Coorong,South Australia - South East,Outer Regional Australia,5612,2119123,3106.0
+315,Tas,George Town,Launceston and North East,Outer Regional Australia,7330,2119123,3685.0
+316,NSW,Ryde,Sydney - Ryde,Major Cities of Australia,135716,19343743,55742.0
+317,Vic,Bass Coast,Latrobe - Gippsland,Inner Regional Australia,42729,4683975,28981.0
+318,Qld,Richmond,Queensland - Outback,Very Remote Australia,781,198024,438.0
+319,Vic,Strathbogie,Hume,Inner Regional Australia,11578,4683975,6164.0
+320,NSW,Hay,Murray,Remote Australia,2830,304013,1552.0
+321,NSW,Weddin,Central West,Outer Regional Australia,3616,2119123,1869.0
+322,Vic,Moorabool,Melbourne - West,Inner Regional Australia,39092,4683975,15473.0
+323,Vic,Moira,Shepparton,Outer Regional Australia,30775,2119123,14948.0
+324,NSW,Lachlan,Central West,Outer Regional Australia,6147,2119123,3014.0
+325,NSW,Waverley,Sydney - Eastern Suburbs,Major Cities of Australia,71414,19343743,32850.0
+326,Vic,Northern Grampians,North West,Outer Regional Australia,11879,2119123,6253.0
+327,Qld,Charters Towers,Townsville,Outer Regional Australia,12013,2119123,5974.0
+328,Qld,Mareeba,Cairns,Outer Regional Australia,23702,2119123,10199.0
+329,Vic,Horsham,North West,Outer Regional Australia,20315,2119123,9638.0
+330,SA,Adelaide Plains,Adelaide - North,Inner Regional Australia,10932,4683975,4006.0
+331,Vic,Stonnington,Melbourne - Inner,Major Cities of Australia,111335,19343743,59609.0
+332,SA,Mount Remarkable,Barossa - Yorke - Mid North,Outer Regional Australia,2897,2119123,1866.0
+333,NSW,Gilgandra,Far West and Orana,Outer Regional Australia,4309,2119123,2137.0
+334,SA,Adelaide Plains,Barossa - Yorke - Mid North,Inner Regional Australia,10932,4683975,4006.0
+335,Qld,Goondiwindi,Darling Downs - Maranoa,Outer Regional Australia,10452,2119123,4857.0
+336,Vic,Mitchell,Melbourne - North East,Inner Regional Australia,53723,4683975,19590.0
+337,Qld,Cassowary Coast,Cairns,Remote Australia,29972,304013,15123.0
+338,SA,Clare and Gilbert Valleys,Barossa - Yorke - Mid North,Outer Regional Australia,9405,2119123,4678.0
+339,Qld,Moreton Bay,Moreton Bay - South,Inner Regional Australia,510104,4683975,188327.0
+340,SA,West Torrens,Adelaide - West,Major Cities of Australia,64519,19343743,27977.0
+341,Vic,Yarriambiack,North West,Outer Regional Australia,6389,2119123,3598.0
+342,NSW,Snowy Valleys,Riverina,Inner Regional Australia,14935,4683975,7075.0
+343,Vic,Whitehorse,Melbourne - Outer East,Major Cities of Australia,178639,19343743,71712.0
+344,Qld,Cloncurry,Queensland - Outback,Very Remote Australia,3851,198024,2123.0
+345,NSW,Hawkesbury,Sydney - Baulkham Hills and Hawkesbury,Outer Regional Australia,68156,2119123,25523.0
+346,Qld,Western Downs,Darling Downs - Maranoa,Remote Australia,34991,304013,16165.0
+347,NSW,Penrith,Sydney - South West,Major Cities of Australia,224483,19343743,81250.0
+348,Qld,Redland,Brisbane - East,Outer Regional Australia,166809,2119123,65216.0
+349,NSW,Hawkesbury,Sydney - Baulkham Hills and Hawkesbury,Major Cities of Australia,68156,19343743,25523.0
+350,Tas,Sorell,Hobart,Inner Regional Australia,17635,4683975,8134.0
+351,Vic,Towong,Hume,Outer Regional Australia,6243,2119123,3125.0
+352,SA,Grant,South Australia - South East,Outer Regional Australia,9044,2119123,3745.0
+353,Vic,Hepburn,Ballarat,Inner Regional Australia,16670,4683975,9511.0
+354,Qld,Central Highlands (Qld),Central Queensland,Outer Regional Australia,28973,2119123,14180.0
+355,Qld,Charters Towers,Townsville,Remote Australia,12013,304013,5974.0
+356,NSW,Blayney,Central West,Outer Regional Australia,7644,2119123,3246.0
+357,NSW,Hilltops,Capital Region,Outer Regional Australia,19255,2119123,9220.0
+358,Qld,Lockyer Valley,Ipswich,Inner Regional Australia,43847,4683975,16162.0
+359,WA,Unknown,Unknown,Major Cities of Australia,,19343743,
+360,Tas,Circular Head,West and North West,Remote Australia,8352,304013,4064.0
+361,Vic,Swan Hill,North West,Outer Regional Australia,21212,2119123,9554.0
+362,NSW,Murrumbidgee,Riverina,Outer Regional Australia,3607,2119123,1647.0
+363,WA,Unknown,Unknown,Inner Regional Australia,,4683975,
+364,WA,Unknown,Unknown,Outer Regional Australia,,2119123,
+365,NSW,Upper Lachlan,Capital Region,Outer Regional Australia,8706,2119123,
+366,NSW,Orange,Central West,Inner Regional Australia,44244,4683975,18706.0
+367,Tas,Launceston,Launceston and North East,Inner Regional Australia,71788,4683975,31369.0
+368,NSW,Cowra,Central West,Outer Regional Australia,12659,2119123,6267.0
+369,SA,Walkerville,Adelaide - Central and Hills,Major Cities of Australia,8420,19343743,3663.0
+370,NSW,Bayside,Sydney - City and Inner South,Major Cities of Australia,,19343743,
+371,NSW,Sutherland,Illawarra,Inner Regional Australia,235029,4683975,
+372,Vic,Whitehorse,Melbourne - Inner East,Major Cities of Australia,178639,19343743,71712.0
+373,WA,Unknown,Unknown,Remote Australia,,304013,
+374,NSW,Wentworth,Murray,Remote Australia,7688,304013,3457.0
+375,Tas,Tasman,South East,Outer Regional Australia,2686,2119123,2644.0
+376,Tas,Latrobe (Tas.),West and North West,Outer Regional Australia,13062,2119123,5816.0
+377,SA,Port Augusta,South Australia - Outback,Outer Regional Australia,14420,2119123,7015.0
+378,Vic,Benalla,Hume,Outer Regional Australia,14529,2119123,7211.0
+379,NSW,Liverpool Plains,New England and North West,Outer Regional Australia,7667,2119123,3694.0
+380,Vic,Mornington Peninsula,Mornington Peninsula,Inner Regional Australia,170243,4683975,93602.0
+381,Qld,Banana,Central Queensland,Outer Regional Australia,14919,2119123,7247.0
+382,WA,Unknown,Unknown,Very Remote Australia,,198024,
+383,SA,Mount Barker,Adelaide - Central and Hills,Major Cities of Australia,42297,19343743,16054.0
+384,NSW,Inner West,Sydney - City and Inner South,Major Cities of Australia,188325,19343743,85462.0
+385,Vic,Loddon,Bendigo,Outer Regional Australia,7747,2119123,4323.0
+386,NSW,Eurobodalla,Capital Region,Inner Regional Australia,40912,4683975,24600.0
+387,NSW,Sutherland,Sydney - Sutherland,Major Cities of Australia,235029,19343743,
+388,SA,Barunga West,Barossa - Yorke - Mid North,Outer Regional Australia,2680,2119123,1928.0
+389,NSW,Tamworth Regional,New England and North West,Inner Regional Australia,,4683975,27725.0
+390,Tas,West Coast,West and North West,Remote Australia,4359,304013,3123.0
+391,SA,Tatiara,South Australia - South East,Outer Regional Australia,7066,2119123,3194.0
+392,NSW,Snowy Monaro Regional,Capital Region,Inner Regional Australia,,4683975,12251.0
+393,Qld,Etheridge,Queensland - Outback,Very Remote Australia,726,198024,750.0
+394,NSW,Bland,Central West,Outer Regional Australia,5464,2119123,3107.0
+395,NSW,Oberon,Central West,Outer Regional Australia,5600,2119123,2828.0
+396,Qld,Maranoa,Darling Downs - Maranoa,Outer Regional Australia,13255,2119123,6510.0
+397,Vic,East Gippsland,Latrobe - Gippsland,Remote Australia,49179,304013,26078.0
+398,Vic,Corangamite,Warrnambool and South West,Inner Regional Australia,15948,4683975,7897.0
+399,SA,Yorke Peninsula,Barossa - Yorke - Mid North,Outer Regional Australia,12040,2119123,10310.0
+400,Tas,Derwent Valley,Hobart,Inner Regional Australia,11341,4683975,4749.0
+401,NSW,Hornsby,Sydney - Ryde,Major Cities of Australia,154072,19343743,55952.0
+402,SA,Port Pirie,Barossa - Yorke - Mid North,Outer Regional Australia,17602,2119123,8589.0
+403,NSW,Muswellbrook,Hunter Valley exc Newcastle,Outer Regional Australia,16778,2119123,7333.0
+404,Tas,Circular Head,West and North West,Outer Regional Australia,8352,2119123,4064.0
+405,Tas,Devonport,West and North West,Outer Regional Australia,26977,2119123,12071.0
+406,Qld,Flinders (Qld),Queensland - Outback,Very Remote Australia,1544,198024,992.0
+407,NSW,Burwood,Sydney - Inner West,Major Cities of Australia,42498,19343743,16201.0
+408,NT,Alice Springs,Northern Territory - Outback,Remote Australia,29213,304013,11681.0
+409,NSW,Nambucca Valley,Mid North Coast,Outer Regional Australia,20774,2119123,10016.0
+410,Qld,Somerset,Moreton Bay - North,Outer Regional Australia,26251,2119123,11020.0
+411,NSW,Lachlan,Central West,Remote Australia,6147,304013,3014.0
+412,NSW,Gwydir,New England and North West,Outer Regional Australia,4940,2119123,2443.0
+413,SA,Port Adelaide Enfield,Adelaide - North,Major Cities of Australia,138585,19343743,56716.0
+414,Vic,Macedon Ranges,Bendigo,Inner Regional Australia,52920,4683975,20630.0
+415,Vic,Banyule,Melbourne - North East,Major Cities of Australia,129602,19343743,53031.0
+416,NSW,Lithgow,Central West,Outer Regional Australia,20724,2119123,10236.0
+417,NSW,Federation,Murray,Inner Regional Australia,12939,4683975,6546.0
+418,NSW,Wagga Wagga,Riverina,Outer Regional Australia,68716,2119123,28244.0
+419,NSW,Coonamble,Far West and Orana,Remote Australia,3861,304013,1825.0
+420,NSW,Kempsey,Mid North Coast,Inner Regional Australia,31453,4683975,14292.0
+421,NSW,Carrathool,Riverina,Outer Regional Australia,2765,2119123,1312.0
+422,Qld,Barcoo,Queensland - Outback,Very Remote Australia,317,198024,267.0
+423,Qld,Mareeba,Queensland - Outback,Outer Regional Australia,23702,2119123,10199.0
+424,Vic,Hobsons Bay,Melbourne - West,Major Cities of Australia,93738,19343743,39336.0
+425,NSW,Temora,Riverina,Outer Regional Australia,6029,2119123,2926.0
+426,SA,Karoonda East Murray,South Australia - South East,Outer Regional Australia,1016,2119123,610.0
+427,Qld,Livingstone,Central Queensland,Inner Regional Australia,41906,4683975,17841.0
+428,Vic,Unincorporated Vic,Latrobe - Gippsland,Outer Regional Australia,953,2119123,1054.0
+429,Vic,Gannawarra,North West,Outer Regional Australia,10420,2119123,5326.0
+430,NSW,Blue Mountains,Sydney - Outer West and Blue Mountains,Inner Regional Australia,78446,4683975,35239.0
+431,SA,Ceduna,South Australia - Outback,Very Remote Australia,3717,198024,1909.0
+432,NSW,Parramatta,Sydney - Ryde,Major Cities of Australia,269145,19343743,106654.0
+433,Qld,Whitsunday,Mackay - Isaac - Whitsunday,Remote Australia,39712,304013,18043.0
+434,NSW,Shellharbour,Illawarra,Inner Regional Australia,79738,4683975,29884.0
+435,NT,Darwin,Darwin,Outer Regional Australia,85465,2119123,34806.0
+436,Vic,Baw Baw,Latrobe - Gippsland,Outer Regional Australia,60644,2119123,24522.0
+437,NT,Central Desert,Northern Territory - Outback,Very Remote Australia,4126,198024,1272.0
+438,NSW,Sutherland,Sydney - Outer South West,Inner Regional Australia,235029,4683975,
+439,NSW,Kempsey,Mid North Coast,Outer Regional Australia,31453,2119123,14292.0
+440,Qld,Carpentaria,Queensland - Outback,Very Remote Australia,2212,198024,1639.0
+441,SA,Wudinna,South Australia - Outback,Very Remote Australia,1161,198024,616.0
+442,Qld,Murweh,Queensland - Outback,Very Remote Australia,3966,198024,2269.0
+443,NSW,Eurobodalla,Capital Region,Outer Regional Australia,40912,2119123,24600.0
+444,SA,Renmark Paringa,South Australia - South East,Outer Regional Australia,10107,2119123,4669.0
+445,SA,Loxton Waikerie,South Australia - South East,Outer Regional Australia,11897,2119123,5787.0
+446,Tas,Central Coast (Tas.),West and North West,Outer Regional Australia,23331,2119123,10434.0
+447,NSW,Berrigan,Murray,Outer Regional Australia,8643,2119123,4265.0
+448,SA,Norwood Payneham and St Peters,Adelaide - Central and Hills,Major Cities of Australia,39312,19343743,18126.0
+449,Tas,Sorell,Hobart,Outer Regional Australia,17635,2119123,8134.0
+450,NSW,Clarence Valley,Coffs Harbour - Grafton,Outer Regional Australia,55323,2119123,26143.0
+451,NSW,Yass Valley,Capital Region,Major Cities of Australia,17477,19343743,6823.0
+452,NT,MacDonnell,Northern Territory - Outback,Very Remote Australia,6706,198024,2243.0
+453,NSW,Leeton,Riverina,Outer Regional Australia,11431,2119123,4705.0
+454,NSW,Balranald,Murray,Remote Australia,2202,304013,1091.0
+455,Qld,Scenic Rim,Gold Coast,Inner Regional Australia,45248,4683975,18468.0
+456,NSW,Port Macquarie-Hastings,Mid North Coast,Outer Regional Australia,89596,2119123,40066.0
+457,Tas,Kingborough,South East,Outer Regional Australia,41179,2119123,17301.0
+458,Vic,Moreland,Melbourne - Inner,Major Cities of Australia,,19343743,78310.0
+459,SA,Copper Coast,Barossa - Yorke - Mid North,Outer Regional Australia,15951,2119123,9242.0
+460,NSW,Lockhart,Riverina,Inner Regional Australia,3396,4683975,1417.0
+461,SA,Naracoorte Lucindale,South Australia - South East,Outer Regional Australia,8928,2119123,4076.0
+462,SA,Southern Mallee,South Australia - South East,Remote Australia,2012,304013,1077.0
+463,NSW,Glen Innes Severn,New England and North West,Inner Regional Australia,8989,4683975,4610.0
+464,NSW,Hornsby,Sydney - Baulkham Hills and Hawkesbury,Inner Regional Australia,154072,4683975,55952.0
+465,Tas,Kentish,West and North West,Outer Regional Australia,6831,2119123,2915.0
+466,SA,Goyder,Barossa - Yorke - Mid North,Inner Regional Australia,4132,4683975,2371.0
+467,Vic,Brimbank,Melbourne - North West,Major Cities of Australia,196046,19343743,71871.0
+468,SA,Flinders Ranges,South Australia - Outback,Outer Regional Australia,1673,2119123,1084.0
+469,ACT,Unknown,Unknown,Unknown,,,
+470,Vic,Greater Geelong,Geelong,Inner Regional Australia,282809,4683975,120823.0
+471,Vic,Loddon,Bendigo,Inner Regional Australia,7747,4683975,4323.0
+472,NSW,Junee,Riverina,Inner Regional Australia,6520,4683975,2519.0
+473,SA,Victor Harbor,South Australia - South East,Inner Regional Australia,16869,4683975,9764.0
+474,SA,Burnside,Adelaide - Central and Hills,Major Cities of Australia,47444,19343743,19630.0
+475,NT,Coomalie,Northern Territory - Outback,Remote Australia,1421,304013,1065.0
+476,Vic,Manningham,Melbourne - Outer East,Major Cities of Australia,129514,19343743,49918.0
+477,Vic,Corangamite,Warrnambool and South West,Outer Regional Australia,15948,2119123,7897.0
+478,SA,Wakefield,Barossa - Yorke - Mid North,Inner Regional Australia,6958,4683975,3348.0
+479,NSW,Mosman,Sydney - North Sydney and Hornsby,Major Cities of Australia,29071,19343743,13410.0
+480,Tas,Glamorgan-Spring Bay,South East,Outer Regional Australia,5237,2119123,4752.0
+481,NSW,Hawkesbury,Sydney - Outer West and Blue Mountains,Major Cities of Australia,68156,19343743,25523.0
+482,NSW,Penrith,Sydney - Outer West and Blue Mountains,Inner Regional Australia,224483,4683975,81250.0
+483,Tas,Southern Midlands,South East,Outer Regional Australia,6912,2119123,2978.0
+484,Qld,Scenic Rim,Logan - Beaudesert,Outer Regional Australia,45248,2119123,18468.0
+485,Vic,Mount Alexander,Bendigo,Inner Regional Australia,20576,4683975,10141.0
+486,NSW,North Sydney,Sydney - North Sydney and Hornsby,Major Cities of Australia,72014,19343743,39034.0
+487,NT,Roper Gulf,Northern Territory - Outback,Very Remote Australia,7491,198024,2923.0
+488,Qld,Western Downs,Darling Downs - Maranoa,Inner Regional Australia,34991,4683975,16165.0
+489,NSW,Woollahra,Sydney - Eastern Suburbs,Major Cities of Australia,54660,19343743,26588.0
+490,SA,Prospect,Adelaide - Central and Hills,Major Cities of Australia,23137,19343743,9474.0
+491,NT,Katherine,Northern Territory - Outback,Remote Australia,10829,304013,4436.0
+492,Qld,Mareeba,Queensland - Outback,Remote Australia,23702,304013,10199.0
+493,Vic,Mildura,North West,Remote Australia,57554,304013,25371.0
+494,Vic,Wellington,Latrobe - Gippsland,Outer Regional Australia,46124,2119123,23554.0
+495,Qld,Northern Peninsula Area,Queensland - Outback,Very Remote Australia,2908,198024,1100.0
+496,Vic,Mitchell,Melbourne - North East,Major Cities of Australia,53723,19343743,19590.0
+497,NSW,Wingecarribee,Sydney - Outer South West,Inner Regional Australia,53109,4683975,23623.0
+498,NSW,Kyogle,Richmond - Tweed,Outer Regional Australia,9468,2119123,4688.0
+499,NSW,Port Stephens,Hunter Valley exc Newcastle,Major Cities of Australia,77748,19343743,35699.0
+500,NT,Unincorporated NT,Darwin,Outer Regional Australia,7713,2119123,4175.0
+501,SA,Orroroo Carrieton,Barossa - Yorke - Mid North,Outer Regional Australia,889,2119123,541.0
+502,Vic,Central Goldfields,Ballarat,Inner Regional Australia,13574,4683975,7004.0
+503,NT,Unincorporated NT,Northern Territory - Outback,Remote Australia,7713,304013,4175.0
+504,NSW,Central Darling,Far West and Orana,Very Remote Australia,1757,198024,1065.0
+505,Qld,Balonne,Darling Downs - Maranoa,Remote Australia,4345,304013,2283.0
+506,Tas,Kingborough,Hobart,Inner Regional Australia,41179,4683975,17301.0
+507,Qld,Maranoa,Darling Downs - Maranoa,Very Remote Australia,13255,198024,6510.0
+508,NSW,Walgett,Far West and Orana,Remote Australia,5519,304013,2865.0
+509,NSW,Coolamon,Riverina,Outer Regional Australia,4549,2119123,1974.0
+510,Qld,Bulloo,Queensland - Outback,Very Remote Australia,346,198024,230.0
+511,NSW,Bellingen,Coffs Harbour - Grafton,Outer Regional Australia,13231,2119123,6390.0
+512,NSW,Lane Cove,Sydney - North Sydney and Hornsby,Major Cities of Australia,41549,19343743,17340.0
+513,NSW,Walcha,New England and North West,Outer Regional Australia,2968,2119123,1638.0
+514,Vic,Northern Grampians,North West,Inner Regional Australia,11879,4683975,6253.0
+515,NSW,Bogan,Far West and Orana,Very Remote Australia,2420,198024,1306.0
+516,NSW,The Hills,Sydney - Baulkham Hills and Hawkesbury,Inner Regional Australia,207959,4683975,
+517,Vic,South Gippsland,Latrobe - Gippsland,Outer Regional Australia,30823,2119123,17145.0
+518,NSW,Wollondilly,Illawarra,Inner Regional Australia,57616,4683975,18918.0
+519,SA,Cleve,South Australia - Outback,Remote Australia,1757,304013,975.0
+520,NT,West Arnhem,Northern Territory - Outback,Remote Australia,7407,304013,2225.0
+521,NSW,Wentworth,Murray,Outer Regional Australia,7688,2119123,3457.0
+522,NSW,Canterbury-Bankstown,Sydney - Parramatta,Major Cities of Australia,379829,19343743,133438.0
+523,Tas,King Island,West and North West,Very Remote Australia,1648,198024,897.0
+524,SA,Kangaroo Island,South Australia - South East,Remote Australia,5125,304013,3350.0
+525,Tas,Meander Valley,Launceston and North East,Inner Regional Australia,21449,4683975,9276.0
+526,NSW,Uralla,New England and North West,Inner Regional Australia,6047,4683975,2759.0
+527,SA,Holdfast Bay,Adelaide - South,Major Cities of Australia,38766,19343743,18707.0
+528,Qld,Douglas,Cairns,Remote Australia,12828,304013,6981.0
+529,NSW,Carrathool,Riverina,Remote Australia,2765,304013,1312.0
+530,Vic,Murrindindi,Melbourne - North East,Inner Regional Australia,15482,4683975,8349.0
+531,NSW,Bogan,Far West and Orana,Remote Australia,2420,304013,1306.0
+532,Vic,Alpine,Hume,Outer Regional Australia,13182,2119123,7271.0
 533,NSW,Brewarrina,Far West and Orana,Very Remote Australia,1411,198024,740.0
 534,NSW,Wollondilly,Sydney - Outer West and Blue Mountains,Inner Regional Australia,57616,4683975,18918.0
 535,NT,East Arnhem,Northern Territory - Outback,Very Remote Australia,10011,198024,1968.0
@@ -596,98 +596,98 @@ location_id,state,lga_name,sa4_name,remoteness_area,population_2023_lga,populati
 595,WA,Victoria Park,Perth - South East,Major Cities of Australia,40782,19343743,18019.0
 596,WA,Armadale,Perth - South East,Major Cities of Australia,105094,19343743,36306.0
 597,WA,Bunbury,Bunbury,Inner Regional Australia,34768,4683975,15960.0
-598,WA,Kalamunda,Perth - South East,Major Cities of Australia,62670,19343743,23347.0
-599,WA,Gingin,Western Australia - Wheat Belt,Inner Regional Australia,6064,4683975,4107.0
-600,WA,Moora,Western Australia - Wheat Belt,Remote Australia,2392,304013,1156.0
-601,WA,Perth,Perth - Inner,Major Cities of Australia,32856,19343743,17636.0
-602,WA,Busselton,Bunbury,Inner Regional Australia,43969,4683975,21315.0
-603,WA,Williams,Western Australia - Wheat Belt,Outer Regional Australia,1060,2119123,507.0
-604,WA,Augusta Margaret River,Bunbury,Inner Regional Australia,18620,4683975,8918.0
-605,Tas,Derwent Valley,South East,Outer Regional Australia,11341,2119123,4749.0
-606,Qld,Quilpie,Queensland - Outback,Very Remote Australia,709,198024,507.0
-607,WA,Kojonup,Western Australia - Wheat Belt,Outer Regional Australia,1967,2119123,1037.0
-608,WA,Mount Marshall,Western Australia - Wheat Belt,Remote Australia,461,304013,315.0
-609,SA,Kingston (SA),South Australia - South East,Outer Regional Australia,2393,2119123,1733.0
-610,WA,Karratha,Western Australia - Outback (North),Remote Australia,24237,304013,10056.0
-611,SA,Elliston,South Australia - Outback,Very Remote Australia,1041,198024,849.0
-612,WA,Coolgardie,Western Australia - Outback (South),Very Remote Australia,3686,198024,1798.0
-613,WA,Port Hedland,Western Australia - Outback (North),Very Remote Australia,17247,198024,7942.0
-614,Qld,Tablelands,Cairns,Remote Australia,27259,304013,13184.0
-615,Vic,Monash,Melbourne - Inner South,Major Cities of Australia,203560,19343743,76463.0
-616,WA,Derby-West Kimberley,Western Australia - Outback (North),Very Remote Australia,8433,198024,3604.0
-617,WA,Mundaring,Perth - North East,Inner Regional Australia,41421,4683975,14962.0
-618,SA,Light,Adelaide - North,Major Cities of Australia,16616,19343743,6046.0
-619,WA,Belmont,Perth - South East,Major Cities of Australia,45976,19343743,20355.0
-620,WA,Nungarin,Western Australia - Wheat Belt,Remote Australia,256,304013,135.0
-621,Vic,Bayside (Vic.),Melbourne - Inner South,Major Cities of Australia,104272,19343743,43102.0
-622,WA,Northam,Western Australia - Wheat Belt,Inner Regional Australia,12193,4683975,5237.0
-623,WA,Melville,Perth - South West,Major Cities of Australia,110426,19343743,42920.0
-624,WA,Bassendean,Perth - North East,Major Cities of Australia,16914,19343743,7187.0
-625,WA,Yilgarn,Western Australia - Wheat Belt,Remote Australia,1198,304013,715.0
-626,WA,Broome,Western Australia - Outback (North),Very Remote Australia,18611,198024,9419.0
-627,WA,Chapman Valley,Western Australia - Outback (South),Remote Australia,1663,304013,694.0
-628,NSW,Uralla,New England and North West,Outer Regional Australia,6047,2119123,2759.0
-629,WA,Broomehill-Tambellup,Western Australia - Wheat Belt,Outer Regional Australia,1095,2119123,577.0
-630,WA,Meekatharra,Western Australia - Outback (South),Very Remote Australia,1294,198024,608.0
-631,WA,Esperance,Western Australia - Outback (South),Remote Australia,14547,304013,6844.0
-632,Qld,Sunshine Coast,Moreton Bay - North,Inner Regional Australia,365942,4683975,149005.0
-633,WA,Capel,Bunbury,Inner Regional Australia,19335,4683975,7110.0
-634,WA,Dundas,Western Australia - Outback (South),Very Remote Australia,701,198024,632.0
-635,NSW,Federation,Riverina,Outer Regional Australia,12939,2119123,6546.0
-636,Vic,Towong,Hume,Inner Regional Australia,6243,4683975,3125.0
-637,WA,Lake Grace,Western Australia - Wheat Belt,Very Remote Australia,1301,198024,751.0
-638,WA,Dardanup,Bunbury,Inner Regional Australia,15685,4683975,6053.0
-639,WA,Kondinin,Western Australia - Wheat Belt,Very Remote Australia,858,198024,471.0
-640,WA,Kent,Western Australia - Wheat Belt,Remote Australia,524,304013,266.0
-641,NSW,Canada Bay,Sydney - Inner West,Major Cities of Australia,91385,19343743,39121.0
-642,WA,Wagin,Western Australia - Wheat Belt,Outer Regional Australia,1816,2119123,888.0
-643,WA,Manjimup,Bunbury,Outer Regional Australia,9438,2119123,5035.0
-644,NSW,Fairfield,Sydney - Parramatta,Major Cities of Australia,209742,19343743,67658.0
-645,WA,Murray,Mandurah,Major Cities of Australia,19823,19343743,8192.0
-646,WA,Denmark,Western Australia - Wheat Belt,Outer Regional Australia,6618,2119123,3670.0
-647,NSW,Singleton,Hunter Valley exc Newcastle,Outer Regional Australia,25332,2119123,9838.0
-648,Qld,Banana,Central Queensland,Remote Australia,14919,304013,7247.0
-649,WA,Boddington,Western Australia - Wheat Belt,Inner Regional Australia,1786,4683975,839.0
-650,WA,Bruce Rock,Western Australia - Wheat Belt,Remote Australia,1043,304013,425.0
-651,WA,Swan,Perth - North East,Inner Regional Australia,171588,4683975,58928.0
-652,WA,Kulin,Western Australia - Wheat Belt,Remote Australia,794,304013,396.0
-653,WA,Cuballing,Western Australia - Wheat Belt,Outer Regional Australia,951,2119123,488.0
-654,NSW,Dungog,Hunter Valley exc Newcastle,Outer Regional Australia,9767,2119123,4224.0
-655,WA,Carnarvon,Western Australia - Outback (South),Very Remote Australia,5528,198024,3763.0
-656,Vic,Hindmarsh,North West,Outer Regional Australia,5559,2119123,3110.0
-657,WA,Wyndham-East Kimberley,Western Australia - Outback (North),Very Remote Australia,8209,198024,4366.0
-658,WA,Beverley,Western Australia - Wheat Belt,Outer Regional Australia,1768,2119123,971.0
-659,WA,Ravensthorpe,Western Australia - Outback (South),Very Remote Australia,2277,198024,1405.0
-660,WA,Joondalup,Perth - North West,Major Cities of Australia,169657,19343743,62177.0
-661,Qld,Mount Isa,Queensland - Outback,Very Remote Australia,18945,198024,9053.0
-662,Vic,Moorabool,Melbourne - West,Major Cities of Australia,39092,19343743,15473.0
-663,SA,Coober Pedy,South Australia - Outback,Very Remote Australia,1550,198024,1481.0
-664,Qld,Central Highlands (Qld),Central Queensland,Very Remote Australia,28973,198024,14180.0
-665,WA,Dalwallinu,Western Australia - Wheat Belt,Remote Australia,1446,304013,611.0
-666,WA,Gnowangerup,Western Australia - Wheat Belt,Remote Australia,1269,304013,671.0
-667,NSW,Junee,Riverina,Outer Regional Australia,6520,2119123,2519.0
-668,Vic,Loddon,Ballarat,Inner Regional Australia,7747,4683975,4323.0
-669,Tas,Unknown,Unknown,Unknown,,,
-670,NSW,Goulburn Mulwaree,Capital Region,Outer Regional Australia,32710,2119123,14739.0
-671,SA,Goyder,Barossa - Yorke - Mid North,Outer Regional Australia,4132,2119123,2371.0
-672,WA,Wongan-Ballidu,Western Australia - Wheat Belt,Remote Australia,1336,304013,685.0
-673,WA,Collie,Bunbury,Inner Regional Australia,9295,4683975,4121.0
-674,WA,Armadale,Perth - South East,Inner Regional Australia,105094,4683975,36306.0
-675,NSW,Cootamundra-Gundagai,Riverina,Outer Regional Australia,11424,2119123,
-676,WA,Wanneroo,Perth - North West,Inner Regional Australia,229438,4683975,78061.0
-677,WA,East Pilbara,Western Australia - Outback (North),Very Remote Australia,10401,198024,3625.0
-678,WA,Menzies,Western Australia - Outback (South),Very Remote Australia,575,198024,237.0
-679,WA,Halls Creek,Western Australia - Outback (North),Very Remote Australia,4136,198024,1674.0
-680,WA,Irwin,Western Australia - Outback (South),Outer Regional Australia,3842,2119123,2163.0
-681,NSW,Walgett,Far West and Orana,Very Remote Australia,5519,198024,2865.0
-682,Qld,Yarrabah,Cairns,Outer Regional Australia,2640,2119123,524.0
-683,WA,Pingelly,Western Australia - Wheat Belt,Outer Regional Australia,1084,2119123,553.0
-684,NSW,Narrabri,New England and North West,Remote Australia,12754,304013,5997.0
-685,WA,Broome,Western Australia - Outback (North),Remote Australia,18611,304013,9419.0
-686,WA,Kondinin,Western Australia - Wheat Belt,Remote Australia,858,304013,471.0
-687,WA,Cue,Western Australia - Outback (South),Very Remote Australia,231,198024,204.0
-688,NSW,Hay,Murray,Outer Regional Australia,2830,2119123,1552.0
-689,NSW,Wollondilly,Sydney - Outer South West,Major Cities of Australia,57616,19343743,18918.0
+598,WA,Gingin,Western Australia - Wheat Belt,Inner Regional Australia,6064,4683975,4107.0
+599,WA,Moora,Western Australia - Wheat Belt,Remote Australia,2392,304013,1156.0
+600,WA,Perth,Perth - Inner,Major Cities of Australia,32856,19343743,17636.0
+601,WA,Busselton,Bunbury,Inner Regional Australia,43969,4683975,21315.0
+602,WA,Williams,Western Australia - Wheat Belt,Outer Regional Australia,1060,2119123,507.0
+603,WA,Augusta Margaret River,Bunbury,Inner Regional Australia,18620,4683975,8918.0
+604,Tas,Derwent Valley,South East,Outer Regional Australia,11341,2119123,4749.0
+605,Qld,Quilpie,Queensland - Outback,Very Remote Australia,709,198024,507.0
+606,WA,Kojonup,Western Australia - Wheat Belt,Outer Regional Australia,1967,2119123,1037.0
+607,WA,Mount Marshall,Western Australia - Wheat Belt,Remote Australia,461,304013,315.0
+608,SA,Kingston (SA),South Australia - South East,Outer Regional Australia,2393,2119123,1733.0
+609,WA,Karratha,Western Australia - Outback (North),Remote Australia,24237,304013,10056.0
+610,SA,Elliston,South Australia - Outback,Very Remote Australia,1041,198024,849.0
+611,WA,Coolgardie,Western Australia - Outback (South),Very Remote Australia,3686,198024,1798.0
+612,Qld,Tablelands,Cairns,Remote Australia,27259,304013,13184.0
+613,Vic,Monash,Melbourne - Inner South,Major Cities of Australia,203560,19343743,76463.0
+614,WA,Derby-West Kimberley,Western Australia - Outback (North),Very Remote Australia,8433,198024,3604.0
+615,WA,Mundaring,Perth - North East,Inner Regional Australia,41421,4683975,14962.0
+616,SA,Light,Adelaide - North,Major Cities of Australia,16616,19343743,6046.0
+617,WA,Belmont,Perth - South East,Major Cities of Australia,45976,19343743,20355.0
+618,WA,Nungarin,Western Australia - Wheat Belt,Remote Australia,256,304013,135.0
+619,Vic,Bayside (Vic.),Melbourne - Inner South,Major Cities of Australia,104272,19343743,43102.0
+620,WA,Northam,Western Australia - Wheat Belt,Inner Regional Australia,12193,4683975,5237.0
+621,WA,Port Hedland,Western Australia - Outback (North),Very Remote Australia,17247,198024,7942.0
+622,WA,Melville,Perth - South West,Major Cities of Australia,110426,19343743,42920.0
+623,WA,Bassendean,Perth - North East,Major Cities of Australia,16914,19343743,7187.0
+624,WA,Yilgarn,Western Australia - Wheat Belt,Remote Australia,1198,304013,715.0
+625,WA,Broome,Western Australia - Outback (North),Very Remote Australia,18611,198024,9419.0
+626,WA,Chapman Valley,Western Australia - Outback (South),Remote Australia,1663,304013,694.0
+627,NSW,Uralla,New England and North West,Outer Regional Australia,6047,2119123,2759.0
+628,WA,Broomehill-Tambellup,Western Australia - Wheat Belt,Outer Regional Australia,1095,2119123,577.0
+629,WA,Meekatharra,Western Australia - Outback (South),Very Remote Australia,1294,198024,608.0
+630,WA,Esperance,Western Australia - Outback (South),Remote Australia,14547,304013,6844.0
+631,Qld,Sunshine Coast,Moreton Bay - North,Inner Regional Australia,365942,4683975,149005.0
+632,WA,Capel,Bunbury,Inner Regional Australia,19335,4683975,7110.0
+633,WA,Dundas,Western Australia - Outback (South),Very Remote Australia,701,198024,632.0
+634,NSW,Federation,Riverina,Outer Regional Australia,12939,2119123,6546.0
+635,Vic,Towong,Hume,Inner Regional Australia,6243,4683975,3125.0
+636,WA,Lake Grace,Western Australia - Wheat Belt,Very Remote Australia,1301,198024,751.0
+637,WA,Dardanup,Bunbury,Inner Regional Australia,15685,4683975,6053.0
+638,WA,Kondinin,Western Australia - Wheat Belt,Very Remote Australia,858,198024,471.0
+639,WA,Kent,Western Australia - Wheat Belt,Remote Australia,524,304013,266.0
+640,NSW,Canada Bay,Sydney - Inner West,Major Cities of Australia,91385,19343743,39121.0
+641,WA,Wagin,Western Australia - Wheat Belt,Outer Regional Australia,1816,2119123,888.0
+642,WA,Manjimup,Bunbury,Outer Regional Australia,9438,2119123,5035.0
+643,NSW,Fairfield,Sydney - Parramatta,Major Cities of Australia,209742,19343743,67658.0
+644,WA,Murray,Mandurah,Major Cities of Australia,19823,19343743,8192.0
+645,WA,Denmark,Western Australia - Wheat Belt,Outer Regional Australia,6618,2119123,3670.0
+646,NSW,Singleton,Hunter Valley exc Newcastle,Outer Regional Australia,25332,2119123,9838.0
+647,Qld,Banana,Central Queensland,Remote Australia,14919,304013,7247.0
+648,WA,Boddington,Western Australia - Wheat Belt,Inner Regional Australia,1786,4683975,839.0
+649,WA,Bruce Rock,Western Australia - Wheat Belt,Remote Australia,1043,304013,425.0
+650,WA,Swan,Perth - North East,Inner Regional Australia,171588,4683975,58928.0
+651,WA,Kulin,Western Australia - Wheat Belt,Remote Australia,794,304013,396.0
+652,WA,Cuballing,Western Australia - Wheat Belt,Outer Regional Australia,951,2119123,488.0
+653,NSW,Dungog,Hunter Valley exc Newcastle,Outer Regional Australia,9767,2119123,4224.0
+654,WA,Carnarvon,Western Australia - Outback (South),Very Remote Australia,5528,198024,3763.0
+655,Vic,Hindmarsh,North West,Outer Regional Australia,5559,2119123,3110.0
+656,WA,Wyndham-East Kimberley,Western Australia - Outback (North),Very Remote Australia,8209,198024,4366.0
+657,WA,Beverley,Western Australia - Wheat Belt,Outer Regional Australia,1768,2119123,971.0
+658,WA,Ravensthorpe,Western Australia - Outback (South),Very Remote Australia,2277,198024,1405.0
+659,WA,Joondalup,Perth - North West,Major Cities of Australia,169657,19343743,62177.0
+660,Qld,Mount Isa,Queensland - Outback,Very Remote Australia,18945,198024,9053.0
+661,Vic,Moorabool,Melbourne - West,Major Cities of Australia,39092,19343743,15473.0
+662,SA,Coober Pedy,South Australia - Outback,Very Remote Australia,1550,198024,1481.0
+663,Qld,Central Highlands (Qld),Central Queensland,Very Remote Australia,28973,198024,14180.0
+664,WA,Dalwallinu,Western Australia - Wheat Belt,Remote Australia,1446,304013,611.0
+665,WA,Gnowangerup,Western Australia - Wheat Belt,Remote Australia,1269,304013,671.0
+666,NSW,Junee,Riverina,Outer Regional Australia,6520,2119123,2519.0
+667,Vic,Loddon,Ballarat,Inner Regional Australia,7747,4683975,4323.0
+668,Tas,Unknown,Unknown,Unknown,,,
+669,NSW,Goulburn Mulwaree,Capital Region,Outer Regional Australia,32710,2119123,14739.0
+670,SA,Goyder,Barossa - Yorke - Mid North,Outer Regional Australia,4132,2119123,2371.0
+671,WA,Wongan-Ballidu,Western Australia - Wheat Belt,Remote Australia,1336,304013,685.0
+672,WA,Collie,Bunbury,Inner Regional Australia,9295,4683975,4121.0
+673,WA,Armadale,Perth - South East,Inner Regional Australia,105094,4683975,36306.0
+674,NSW,Cootamundra-Gundagai,Riverina,Outer Regional Australia,11424,2119123,
+675,WA,Wanneroo,Perth - North West,Inner Regional Australia,229438,4683975,78061.0
+676,WA,East Pilbara,Western Australia - Outback (North),Very Remote Australia,10401,198024,3625.0
+677,WA,Menzies,Western Australia - Outback (South),Very Remote Australia,575,198024,237.0
+678,WA,Halls Creek,Western Australia - Outback (North),Very Remote Australia,4136,198024,1674.0
+679,WA,Irwin,Western Australia - Outback (South),Outer Regional Australia,3842,2119123,2163.0
+680,NSW,Walgett,Far West and Orana,Very Remote Australia,5519,198024,2865.0
+681,Qld,Yarrabah,Cairns,Outer Regional Australia,2640,2119123,524.0
+682,WA,Pingelly,Western Australia - Wheat Belt,Outer Regional Australia,1084,2119123,553.0
+683,NSW,Narrabri,New England and North West,Remote Australia,12754,304013,5997.0
+684,WA,Broome,Western Australia - Outback (North),Remote Australia,18611,304013,9419.0
+685,WA,Kondinin,Western Australia - Wheat Belt,Remote Australia,858,304013,471.0
+686,WA,Cue,Western Australia - Outback (South),Very Remote Australia,231,198024,204.0
+687,NSW,Hay,Murray,Outer Regional Australia,2830,2119123,1552.0
+688,NSW,Wollondilly,Sydney - Outer South West,Major Cities of Australia,57616,19343743,18918.0
+689,WA,Kalamunda,Perth - South East,Major Cities of Australia,62670,19343743,23347.0
 690,Qld,Fraser Coast,Wide Bay,Remote Australia,117940,304013,52621.0
 691,WA,Quairading,Western Australia - Wheat Belt,Outer Regional Australia,973,2119123,499.0
 692,NSW,Randwick,Sydney - City and Inner South,Major Cities of Australia,141840,19343743,59965.0
@@ -754,30 +754,30 @@ location_id,state,lga_name,sa4_name,remoteness_area,population_2023_lga,populati
 753,WA,Wongan-Ballidu,Western Australia - Wheat Belt,Outer Regional Australia,1336,2119123,685.0
 754,WA,Karratha,Western Australia - Outback (North),Very Remote Australia,24237,198024,10056.0
 755,NSW,Bourke,Far West and Orana,Very Remote Australia,2365,198024,1317.0
-756,WA,Murray,Western Australia - Wheat Belt,Inner Regional Australia,19823,4683975,8192.0
-757,NSW,Bathurst Regional,Central West,Outer Regional Australia,,2119123,18458.0
-758,Qld,Redland,Brisbane - East,Remote Australia,166809,304013,65216.0
-759,WA,Moora,Western Australia - Wheat Belt,Outer Regional Australia,2392,2119123,1156.0
-760,NSW,Richmond Valley,Coffs Harbour - Grafton,Outer Regional Australia,23705,2119123,10692.0
-761,NSW,Upper Hunter,Hunter Valley exc Newcastle,Inner Regional Australia,14338,4683975,
-762,Vic,Unincorporated Vic,Hume,Outer Regional Australia,953,2119123,1054.0
-763,Vic,Melton,Melbourne - West,Inner Regional Australia,206070,4683975,60363.0
-764,Vic,Greater Shepparton,Hume,Inner Regional Australia,69135,4683975,28885.0
-765,NSW,Dungog,Hunter Valley exc Newcastle,Inner Regional Australia,9767,4683975,4224.0
-766,WA,Chittering,Western Australia - Wheat Belt,Outer Regional Australia,6516,2119123,2410.0
-767,Qld,Palm Island,Townsville,Remote Australia,2214,304013,562.0
-768,NT,West Daly,Northern Territory - Outback,Very Remote Australia,3426,198024,709.0
-769,WA,Mosman Park,Perth - Inner,Major Cities of Australia,10032,19343743,4122.0
-770,WA,Narrogin,Western Australia - Wheat Belt,Outer Regional Australia,4983,2119123,2409.0
-771,WA,Merredin,Western Australia - Wheat Belt,Remote Australia,3268,304013,1636.0
-772,NT,Unincorporated NT,Northern Territory - Outback,Very Remote Australia,7713,198024,4175.0
-773,WA,Westonia,Western Australia - Wheat Belt,Remote Australia,244,304013,147.0
-774,WA,Morawa,Western Australia - Outback (South),Remote Australia,679,304013,320.0
-775,WA,Claremont,Perth - Inner,Major Cities of Australia,12178,19343743,5251.0
-776,WA,Mingenew,Western Australia - Outback (South),Outer Regional Australia,417,2119123,274.0
-777,WA,Merredin,Western Australia - Wheat Belt,Outer Regional Australia,3268,2119123,1636.0
-778,Qld,Fraser Coast,Wide Bay,Outer Regional Australia,117940,2119123,52621.0
-779,Qld,Unknown,Unknown,Unknown,,,
+756,NSW,Bathurst Regional,Central West,Outer Regional Australia,,2119123,18458.0
+757,Qld,Redland,Brisbane - East,Remote Australia,166809,304013,65216.0
+758,WA,Moora,Western Australia - Wheat Belt,Outer Regional Australia,2392,2119123,1156.0
+759,NSW,Richmond Valley,Coffs Harbour - Grafton,Outer Regional Australia,23705,2119123,10692.0
+760,NSW,Upper Hunter,Hunter Valley exc Newcastle,Inner Regional Australia,14338,4683975,
+761,Vic,Unincorporated Vic,Hume,Outer Regional Australia,953,2119123,1054.0
+762,Vic,Melton,Melbourne - West,Inner Regional Australia,206070,4683975,60363.0
+763,Vic,Greater Shepparton,Hume,Inner Regional Australia,69135,4683975,28885.0
+764,NSW,Dungog,Hunter Valley exc Newcastle,Inner Regional Australia,9767,4683975,4224.0
+765,WA,Chittering,Western Australia - Wheat Belt,Outer Regional Australia,6516,2119123,2410.0
+766,Qld,Palm Island,Townsville,Remote Australia,2214,304013,562.0
+767,NT,West Daly,Northern Territory - Outback,Very Remote Australia,3426,198024,709.0
+768,WA,Mosman Park,Perth - Inner,Major Cities of Australia,10032,19343743,4122.0
+769,WA,Narrogin,Western Australia - Wheat Belt,Outer Regional Australia,4983,2119123,2409.0
+770,WA,Merredin,Western Australia - Wheat Belt,Remote Australia,3268,304013,1636.0
+771,NT,Unincorporated NT,Northern Territory - Outback,Very Remote Australia,7713,198024,4175.0
+772,WA,Westonia,Western Australia - Wheat Belt,Remote Australia,244,304013,147.0
+773,WA,Morawa,Western Australia - Outback (South),Remote Australia,679,304013,320.0
+774,WA,Claremont,Perth - Inner,Major Cities of Australia,12178,19343743,5251.0
+775,WA,Mingenew,Western Australia - Outback (South),Outer Regional Australia,417,2119123,274.0
+776,WA,Merredin,Western Australia - Wheat Belt,Outer Regional Australia,3268,2119123,1636.0
+777,Qld,Fraser Coast,Wide Bay,Outer Regional Australia,117940,2119123,52621.0
+778,Qld,Unknown,Unknown,Unknown,,,
+779,WA,Murray,Western Australia - Wheat Belt,Inner Regional Australia,19823,4683975,8192.0
 780,NSW,The Hills,Sydney - Parramatta,Major Cities of Australia,207959,19343743,
 781,NSW,Liverpool,Sydney - South West,Inner Regional Australia,247672,4683975,77895.0
 782,WA,Boddington,Western Australia - Wheat Belt,Outer Regional Australia,1786,2119123,839.0

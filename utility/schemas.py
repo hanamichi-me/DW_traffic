@@ -1,4 +1,18 @@
 # schemas.py
+# ✅ 加入导入顺序（用于 CSV 导入 & 表创建等）
+TABLE_IMPORT_ORDER = [
+    "dim_speed_zone",
+    "dim_location",
+    "dim_crash_type",
+    "dim_date",
+    "dim_person",
+    "dim_time",
+    "dim_vehicle",
+    "dim_road",
+    "fact_fatal_crash",
+    "fact_person_fatality"
+]
+
 TABLE_SCHEMAS = {
     "dim_location": """
         location_id SERIAL PRIMARY KEY,
@@ -11,10 +25,8 @@ TABLE_SCHEMAS = {
         dwelling_records INTEGER
     """,
 
-    "dim_road": """
-        road_id SERIAL PRIMARY KEY,
-        road_type VARCHAR(50),
-        speed_limit INTEGER,
+    "dim_speed_zone": """
+        speed_zone_id SERIAL PRIMARY KEY,
         speed_limit_group VARCHAR(10)
     """,
 
@@ -52,6 +64,15 @@ TABLE_SCHEMAS = {
     "dim_time": """
         time_of_day_id SERIAL PRIMARY KEY,
         time_of_day VARCHAR(20)
+    """,
+
+    "dim_road": """
+        road_id SERIAL PRIMARY KEY,
+        road_type VARCHAR(50),
+        speed_limit INTEGER,
+        speed_limit_group VARCHAR(10),
+        speed_zone_id INTEGER,
+        FOREIGN KEY (speed_zone_id) REFERENCES dim_speed_zone(speed_zone_id)
     """,
 
     "fact_fatal_crash": """

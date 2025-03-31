@@ -91,16 +91,6 @@ def common_clean_steps(df):
             df['road_user'] = df['road_user'].replace('Other/-9', pd.NA)
             print(f"[Missing Data Handling] Replaced {special_missing_count} 'Other/-9' values with missing values in column `road_user`.")
 
-    # 特殊处理：speed_limit 为 '<40' → 替换为 40
-    if 'speed_limit' in df.columns:
-        special_case = df['speed_limit'] == '<40'
-        if special_case.sum() > 0:
-            df.loc[special_case, 'speed_limit'] = 40
-            print(f"[Value Correction] Replaced {special_case.sum()} '<40' entries in `speed_limit` with 40.")
-        
-        # 尝试将 speed_limit 转为整数（失败的会保留为 NA）
-        df['speed_limit'] = pd.to_numeric(df['speed_limit'], errors='coerce')
-
     for col in df.columns:
         # 统计待替换的值数量
         replace_mask = df[col].isin(["Unknown", "nan","-9", -9])
@@ -108,6 +98,20 @@ def common_clean_steps(df):
         if replace_count > 0 :
             df[col] = df[col].replace(["Unknown", "nan","-9", -9], pd.NA)
             print(f"[Missing Data Handling] Replaced {replace_count} values ('Unknown', 'nan','-9', -9) with missing values in column `{col}`.")
+
+    if 'speed_limit' in df.columns:
+        special_case = df['speed_limit'] == '<40'
+        if special_case.sum() > 0:
+            df.loc[special_case, 'speed_limit'] = 40
+            print(f"[Value Correction] Replaced {special_case.sum()} '<40' entries in `speed_limit` with 40.")
+
+        df['speed_limit'] = pd.to_numeric(df['speed_limit'], errors='coerce')
+
+        before = len(df)
+        df = df[df['speed_limit'].notna()]
+        removed = before - len(df)
+        if removed > 0:
+            print(f"[Clean Step] Removed {removed} rows with missing `speed_limit`.")
 
     # 通用字段缺失行删除逻辑
     for col in ['age', 'time_of_day']:
@@ -201,39 +205,75 @@ def generate_dim_date(fatal_crash_df):
 
     return dim_date
 
+def categorize_speed_limit(val):
+    try:
+        val = int(val)
+        if val <= 50:
+            return '≤50'
+        elif 50 < val <= 80:
+            return '51–80'
+        elif 80 < val <= 100:
+            return '81–100'
+        else:
+            return '100+'
+    except:
+        return pd.NA
 
-def generate_dim_road(fatal_crash_df: pd.DataFrame) -> pd.DataFrame:
-    # 1. 提取相关字段
+
+# def generate_dim_road(fatal_crash_df: pd.DataFrame) -> pd.DataFrame:
+#     # 1. 提取相关字段
+#     dim_road = fatal_crash_df[['national_road_type', 'speed_limit']].drop_duplicates().copy()
+
+    
+#     # 2. 清洗列名
+#     dim_road.columns = ['road_type', 'speed_limit']
+    
+#     # 3. 创建 speed limit 分组字段
+#     def categorize_speed_limit(val):
+#         try:
+#             val = int(val)
+#             if val <= 50:
+#                 return '≤50'
+#             elif 50 < val <= 80:
+#                 return '51–80'
+#             elif 80 < val <= 100:
+#                 return '81–100'
+#             else:
+#                 return '100+'
+#         except:
+#             return pd.NA
+
+#     dim_road['speed_limit_group'] = dim_road['speed_limit'].apply(categorize_speed_limit)
+
+#     # 4. 添加主键
+#     dim_road['road_id'] = range(1, len(dim_road) + 1)
+
+#     # 5. 排序列
+#     dim_road = dim_road[['road_id', 'road_type', 'speed_limit', 'speed_limit_group']]
+    
+#     return dim_road
+
+def generate_dim_road(fatal_crash_df: pd.DataFrame, dim_speed_zone: pd.DataFrame) -> pd.DataFrame:
     dim_road = fatal_crash_df[['national_road_type', 'speed_limit']].drop_duplicates().copy()
-
-    
-    # 2. 清洗列名
     dim_road.columns = ['road_type', 'speed_limit']
-    
-    # 3. 创建 speed limit 分组字段
-    def categorize_speed_limit(val):
-        try:
-            val = int(val)
-            if val <= 50:
-                return '≤50'
-            elif 50 < val <= 80:
-                return '51–80'
-            elif 80 < val <= 100:
-                return '81–100'
-            else:
-                return '100+'
-        except:
-            return pd.NA
-
     dim_road['speed_limit_group'] = dim_road['speed_limit'].apply(categorize_speed_limit)
 
-    # 4. 添加主键
-    dim_road['road_id'] = range(1, len(dim_road) + 1)
+    # 关联 speed_zone_id
+    dim_road = dim_road.merge(dim_speed_zone, on='speed_limit_group', how='left')
 
-    # 5. 排序列
-    dim_road = dim_road[['road_id', 'road_type', 'speed_limit', 'speed_limit_group']]
-    
+    dim_road['road_id'] = range(1, len(dim_road) + 1)
+    dim_road = dim_road[['road_id', 'road_type', 'speed_limit', 'speed_limit_group', 'speed_zone_id']]
+
     return dim_road
+
+
+def generate_dim_speed_zone(fatal_crash_df: pd.DataFrame) -> pd.DataFrame:
+    df = fatal_crash_df[['speed_limit']].copy()
+    df['speed_limit_group'] = df['speed_limit'].apply(categorize_speed_limit)
+    df = df[['speed_limit_group']].dropna().drop_duplicates().reset_index(drop=True)
+    df['speed_zone_id'] = range(1, len(df) + 1)
+    df = df[['speed_zone_id', 'speed_limit_group']]
+    return df
 
 
 def generate_dim_vehicle(fatal_crash_df):
@@ -322,6 +362,8 @@ def generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df,
     ]]
 
     return dim_location
+
+
 
 
 # ========== FACT TABLES ==========
@@ -502,7 +544,10 @@ def main():
     dim_location = generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df, dwelling_df)
     save_table(dim_location, "dim_location")
 
-    dim_road = generate_dim_road(fatal_crash_df)
+    dim_speed_zone = generate_dim_speed_zone(fatal_crash_df)
+    save_table(dim_speed_zone, "dim_speed_zone")
+
+    dim_road = generate_dim_road(fatal_crash_df, dim_speed_zone)
     save_table(dim_road, "dim_road")
 
     dim_vehicle = generate_dim_vehicle(fatal_crash_df)

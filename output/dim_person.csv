@@ -3,1070 +3,1058 @@ person_id,age,age_group,gender,road_user
 2,19,18-25,Female,Driver
 3,33,26-40,Female,Driver
 4,32,26-40,Female,Driver
-5,62,41-65,Male,Passenger
-6,61,41-65,Female,Passenger
-7,47,41-65,Male,Motorcycle rider
-8,69,65+,Male,Driver
-9,29,26-40,Female,Passenger
-10,19,18-25,Male,Motorcycle rider
-11,55,41-65,Female,Driver
-12,45,41-65,Female,Driver
-13,50,41-65,Male,Pedestrian
-14,45,41-65,Male,Driver
-15,61,41-65,Male,Driver
-16,29,26-40,Male,Driver
-17,33,26-40,Male,Driver
-18,74,65+,Male,Pedestrian
-19,75,65+,Female,Driver
-20,25,26-40,Male,Driver
-21,4,0-17,Male,Pedestrian
-22,27,26-40,Male,Driver
-23,66,65+,Male,Driver
-24,26,26-40,Female,Driver
-25,65,65+,Female,Pedestrian
-26,60,41-65,Female,Pedestrian
-27,18,18-25,Male,Motorcycle rider
-28,33,26-40,Male,Pedestrian
-29,41,41-65,Female,Driver
-30,42,41-65,Male,Driver
-31,32,26-40,Male,Driver
-32,22,18-25,Male,Driver
-33,21,18-25,Male,Passenger
-34,38,26-40,Male,Driver
-35,69,65+,Male,Motorcycle rider
-36,59,41-65,Female,Driver
-37,68,65+,Female,Passenger
-38,51,41-65,Female,Driver
-39,76,65+,Male,Driver
-40,35,26-40,Male,Motorcycle rider
-41,55,41-65,Male,Motorcycle rider
-42,63,41-65,Male,Motorcycle rider
-43,64,41-65,Male,Motorcycle rider
-44,66,65+,Female,Passenger
-45,61,41-65,Male,Pedal cyclist
-46,30,26-40,Female,Driver
-47,45,41-65,Male,Motorcycle rider
-48,60,41-65,Male,Motorcycle rider
-49,34,26-40,Male,Driver
-50,27,26-40,Male,Motorcycle rider
-51,26,26-40,Male,Driver
-52,46,41-65,Male,Motorcycle rider
-53,50,41-65,Female,Pedestrian
-54,85,65+,Female,Pedestrian
-55,92,65+,Female,Driver
-56,89,65+,Female,Pedestrian
-57,21,18-25,Male,Motorcycle rider
-58,74,65+,Female,Driver
-59,26,26-40,Male,Motorcycle rider
-60,60,41-65,Female,Driver
-61,59,41-65,Female,Passenger
-62,77,65+,Male,Motorcycle rider
-63,63,41-65,Female,Driver
-64,90,65+,Female,Driver
-65,31,26-40,Male,Passenger
-66,24,18-25,Male,Driver
-67,49,41-65,Male,Driver
-68,27,26-40,Female,Pedestrian
-69,21,18-25,Male,Driver
-70,16,0-17,Male,Driver
-71,22,18-25,Female,Passenger
-72,24,18-25,Male,Motorcycle rider
-73,21,18-25,Female,Driver
-74,43,41-65,Male,Motorcycle rider
-75,51,41-65,Male,Driver
-76,23,18-25,Male,Passenger
-77,74,65+,,Motorcycle rider
-78,80,65+,Female,Passenger
-79,76,65+,Male,Pedestrian
-80,67,65+,Female,Pedestrian
-81,64,41-65,Female,Pedestrian
-82,17,18-25,Female,Driver
-83,35,26-40,Male,Driver
-84,71,65+,Male,Motorcycle rider
-85,41,41-65,Male,Driver
-86,24,18-25,Female,Driver
-87,54,41-65,Male,Driver
-88,27,26-40,Male,Pedestrian
-89,97,65+,Female,Passenger
-90,46,41-65,Male,Driver
-91,83,65+,Male,Driver
-92,36,26-40,Male,Driver
-93,70,65+,Male,Driver
-94,29,26-40,Female,Driver
-95,39,26-40,Male,Motorcycle rider
-96,39,26-40,Male,Driver
-97,43,41-65,Male,Driver
-98,25,26-40,Male,Motorcycle rider
-99,61,41-65,Male,Motorcycle rider
-100,52,41-65,Male,Driver
-101,22,18-25,Male,Motorcycle rider
-102,53,41-65,Male,Driver
-103,44,41-65,Male,Motorcycle rider
-104,57,41-65,Female,Passenger
-105,69,65+,Male,
-106,18,18-25,Male,Driver
-107,47,41-65,Male,Driver
-108,18,18-25,Male,Passenger
-109,44,41-65,Female,Passenger
-110,64,41-65,Female,Passenger
-111,17,18-25,Male,Driver
-112,43,41-65,Female,Pedestrian
-113,83,65+,Female,Driver
-114,71,65+,Male,Pedal cyclist
-115,87,65+,Male,Passenger
-116,58,41-65,Female,Pedestrian
-117,15,0-17,Male,Driver
-118,81,65+,Female,Passenger
-119,63,41-65,Male,Pedestrian
-120,38,26-40,Male,Motorcycle rider
-121,36,26-40,Male,Pedal cyclist
-122,18,18-25,Female,Driver
-123,76,65+,Female,Pedestrian
-124,40,41-65,Female,Pedestrian
-125,77,65+,Female,Driver
-126,56,41-65,Male,Driver
-127,78,65+,Female,Driver
-128,76,65+,Female,Driver
-129,28,26-40,Male,Passenger
+5,61,41-65,Female,Passenger
+6,47,41-65,Male,Motorcycle rider
+7,69,65+,Male,Driver
+8,29,26-40,Female,Passenger
+9,19,18-25,Male,Motorcycle rider
+10,55,41-65,Female,Driver
+11,45,41-65,Female,Driver
+12,50,41-65,Male,Pedestrian
+13,45,41-65,Male,Driver
+14,61,41-65,Male,Driver
+15,74,65+,Male,Pedestrian
+16,25,26-40,Male,Driver
+17,4,0-17,Male,Pedestrian
+18,27,26-40,Male,Driver
+19,66,65+,Male,Driver
+20,26,26-40,Female,Driver
+21,65,65+,Female,Pedestrian
+22,33,26-40,Male,Pedestrian
+23,41,41-65,Female,Driver
+24,42,41-65,Male,Driver
+25,32,26-40,Male,Driver
+26,21,18-25,Male,Passenger
+27,38,26-40,Male,Driver
+28,69,65+,Male,Motorcycle rider
+29,59,41-65,Female,Driver
+30,68,65+,Female,Passenger
+31,51,41-65,Female,Driver
+32,76,65+,Male,Driver
+33,35,26-40,Male,Motorcycle rider
+34,55,41-65,Male,Motorcycle rider
+35,63,41-65,Male,Motorcycle rider
+36,64,41-65,Male,Motorcycle rider
+37,66,65+,Female,Passenger
+38,61,41-65,Male,Pedal cyclist
+39,30,26-40,Female,Driver
+40,45,41-65,Male,Motorcycle rider
+41,60,41-65,Male,Motorcycle rider
+42,34,26-40,Male,Driver
+43,27,26-40,Male,Motorcycle rider
+44,26,26-40,Male,Driver
+45,46,41-65,Male,Motorcycle rider
+46,50,41-65,Female,Pedestrian
+47,85,65+,Female,Pedestrian
+48,92,65+,Female,Driver
+49,89,65+,Female,Pedestrian
+50,74,65+,Female,Driver
+51,26,26-40,Male,Motorcycle rider
+52,60,41-65,Female,Driver
+53,59,41-65,Female,Passenger
+54,77,65+,Male,Motorcycle rider
+55,63,41-65,Female,Driver
+56,90,65+,Female,Driver
+57,31,26-40,Male,Passenger
+58,24,18-25,Male,Driver
+59,49,41-65,Male,Driver
+60,21,18-25,Male,Driver
+61,16,0-17,Male,Driver
+62,22,18-25,Female,Passenger
+63,24,18-25,Male,Motorcycle rider
+64,21,18-25,Female,Driver
+65,51,41-65,Male,Driver
+66,23,18-25,Male,Passenger
+67,74,65+,,Motorcycle rider
+68,80,65+,Female,Passenger
+69,67,65+,Female,Pedestrian
+70,64,41-65,Female,Pedestrian
+71,17,18-25,Female,Driver
+72,35,26-40,Male,Driver
+73,71,65+,Male,Motorcycle rider
+74,41,41-65,Male,Driver
+75,24,18-25,Female,Driver
+76,54,41-65,Male,Driver
+77,18,18-25,Male,Motorcycle rider
+78,27,26-40,Male,Pedestrian
+79,97,65+,Female,Passenger
+80,46,41-65,Male,Driver
+81,83,65+,Male,Driver
+82,36,26-40,Male,Driver
+83,70,65+,Male,Driver
+84,29,26-40,Female,Driver
+85,39,26-40,Male,Motorcycle rider
+86,39,26-40,Male,Driver
+87,43,41-65,Male,Driver
+88,61,41-65,Male,Motorcycle rider
+89,52,41-65,Male,Driver
+90,22,18-25,Male,Motorcycle rider
+91,53,41-65,Male,Driver
+92,44,41-65,Male,Motorcycle rider
+93,57,41-65,Female,Passenger
+94,18,18-25,Male,Driver
+95,18,18-25,Male,Passenger
+96,25,26-40,Male,Motorcycle rider
+97,44,41-65,Female,Passenger
+98,64,41-65,Female,Passenger
+99,17,18-25,Male,Driver
+100,43,41-65,Female,Pedestrian
+101,83,65+,Female,Driver
+102,71,65+,Male,Pedal cyclist
+103,87,65+,Male,Passenger
+104,58,41-65,Female,Pedestrian
+105,43,41-65,Male,Motorcycle rider
+106,15,0-17,Male,Driver
+107,22,18-25,Male,Driver
+108,63,41-65,Male,Pedestrian
+109,38,26-40,Male,Motorcycle rider
+110,36,26-40,Male,Pedal cyclist
+111,21,18-25,Male,Motorcycle rider
+112,40,41-65,Female,Pedestrian
+113,77,65+,Female,Driver
+114,78,65+,Female,Driver
+115,76,65+,Female,Driver
+116,25,26-40,Male,Passenger
+117,29,26-40,Male,Pedestrian
+118,37,26-40,Male,Driver
+119,71,65+,Female,Pedestrian
+120,42,41-65,Female,Driver
+121,15,0-17,Female,Driver
+122,60,41-65,Female,Passenger
+123,57,41-65,Male,Driver
+124,30,26-40,Male,Driver
+125,48,41-65,Female,Pedestrian
+126,60,41-65,Female,Motorcycle rider
+127,68,65+,Male,Motorcycle rider
+128,66,65+,Male,Motorcycle rider
+129,65,65+,Male,Pedal cyclist
 130,63,41-65,Male,Driver
-131,25,26-40,Male,Passenger
-132,29,26-40,Male,Pedestrian
-133,37,26-40,Male,Driver
-134,71,65+,Female,Pedestrian
-135,42,41-65,Female,Driver
-136,15,0-17,Female,Driver
-137,60,41-65,Female,Passenger
-138,57,41-65,Male,Driver
-139,30,26-40,Male,Driver
-140,48,41-65,Female,Pedestrian
-141,54,41-65,Male,Motorcycle rider
-142,60,41-65,Female,Motorcycle rider
-143,68,65+,Male,Motorcycle rider
-144,66,65+,Male,Motorcycle rider
-145,65,65+,Male,Pedal cyclist
-146,19,18-25,Male,Passenger
-147,20,18-25,Male,Driver
-148,66,65+,Male,Pedal cyclist
-149,35,26-40,Male,Pedestrian
-150,28,26-40,Male,Pedestrian
-151,30,26-40,Male,Passenger
-152,31,26-40,Female,Pedestrian
-153,62,41-65,Male,Driver
-154,69,65+,Female,Driver
-155,83,65+,Female,Pedestrian
-156,16,0-17,Male,Passenger
-157,46,41-65,Female,Driver
-158,66,65+,Male,Passenger
-159,31,26-40,Male,Driver
-160,60,41-65,Male,Driver
-161,23,18-25,Female,Driver
-162,82,65+,Male,Passenger
-163,43,41-65,Male,Pedal cyclist
-164,21,18-25,Female,Pedestrian
-165,32,26-40,Male,Motorcycle rider
-166,31,26-40,Female,Driver
-167,40,41-65,Female,Driver
-168,96,65+,Male,Driver
-169,40,41-65,Female,Passenger
-170,13,0-17,Male,Passenger
-171,62,41-65,Female,Pedestrian
-172,47,41-65,Female,Pedestrian
-173,12,0-17,Male,
-174,37,26-40,Male,Passenger
-175,81,65+,Male,Pedestrian
-176,80,65+,Female,Pedestrian
-177,76,65+,Female,Passenger
-178,55,41-65,Female,Motorcycle rider
-179,44,41-65,Female,Driver
-180,28,26-40,Male,Motorcycle rider
-181,15,0-17,Male,
-182,91,65+,Male,Pedestrian
-183,11,0-17,Female,Passenger
-184,53,41-65,Female,Driver
-185,73,65+,Male,Driver
-186,48,41-65,Female,Driver
-187,57,41-65,Female,Driver
-188,31,26-40,Male,
-189,69,65+,Male,Pedestrian
-190,51,41-65,Male,Motorcycle rider
-191,34,26-40,Male,Passenger
-192,22,18-25,Male,Passenger
-193,73,65+,Male,Motorcycle rider
-194,78,65+,Female,Passenger
-195,74,65+,Female,Passenger
-196,20,18-25,Male,Motorcycle rider
-197,31,26-40,Female,Passenger
-198,40,41-65,Male,Driver
-199,24,18-25,Female,Pedestrian
-200,14,0-17,Male,Passenger
-201,41,41-65,Male,Motorcycle rider
-202,90,65+,Male,Pedestrian
-203,48,41-65,Male,Motorcycle rider
-204,34,26-40,Female,Motorcycle rider
-205,58,41-65,Male,Passenger
-206,5,0-17,Male,Passenger
-207,15,0-17,Female,Passenger
-208,37,26-40,Male,Motorcycle rider
-209,70,65+,Female,Pedestrian
-210,2,0-17,Female,Pedestrian
-211,59,41-65,Female,Motorcycle rider
-212,76,65+,Male,Motorcycle rider
-213,44,41-65,Male,Driver
-214,56,41-65,Male,Motorcycle rider
-215,77,65+,Male,Driver
-216,65,65+,Male,Motorcycle rider
-217,59,41-65,Male,Motorcycle rider
-218,33,26-40,Female,Motorcycle rider
-219,34,26-40,Female,
-220,11,0-17,Male,Pedestrian
-221,39,26-40,Female,Pedestrian
-222,30,26-40,Male,Motorcycle rider
-223,14,0-17,Male,Motorcycle rider
-224,24,18-25,Female,Passenger
-225,49,41-65,Female,Pedestrian
-226,78,65+,Male,Pedestrian
-227,9,0-17,Male,Pedal cyclist
-228,15,0-17,Male,Motorcycle rider
-229,37,26-40,Male,Pedestrian
-230,52,41-65,Male,Pedestrian
-231,1,0-17,Female,Pedestrian
-232,52,41-65,Female,Driver
-233,93,65+,Female,Driver
-234,87,65+,Male,Driver
-235,94,65+,Male,Driver
-236,83,65+,Male,Passenger
-237,31,26-40,Male,Motorcycle rider
-238,34,26-40,Male,Motorcycle rider
-239,23,18-25,Male,Motorcycle rider
-240,27,26-40,Female,Driver
-241,65,65+,Female,Driver
-242,72,65+,Male,Driver
-243,81,65+,Male,Driver
-244,15,0-17,Female,
-245,79,65+,Female,Pedestrian
-246,23,18-25,Male,Driver
-247,58,41-65,Male,Driver
-248,74,65+,Female,Pedestrian
-249,32,26-40,Male,Pedestrian
-250,53,41-65,Male,Pedestrian
-251,84,65+,Male,Passenger
-252,50,41-65,Male,Motorcycle rider
-253,65,65+,Male,Driver
-254,22,18-25,Female,Driver
-255,48,41-65,Male,Driver
-256,50,41-65,Male,Pedal cyclist
-257,17,18-25,Male,Passenger
-258,35,26-40,Female,Pedestrian
-259,56,41-65,Female,Driver
-260,81,65+,Male,Pedal cyclist
-261,80,65+,Female,Driver
-262,49,41-65,Male,Passenger
-263,36,26-40,Male,Pedestrian
-264,57,41-65,Male,Motorcycle rider
-265,28,26-40,Male,Driver
-266,58,41-65,Male,Motorcycle rider
-267,15,0-17,Female,Pedestrian
-268,54,41-65,Male,Passenger
-269,62,41-65,Male,Pedestrian
-270,45,41-65,Female,
-271,39,26-40,Male,Pedestrian
-272,26,26-40,Female,Passenger
-273,50,41-65,Male,Driver
-274,57,41-65,Male,Pedestrian
-275,64,41-65,Male,Driver
-276,68,65+,Male,Driver
-277,54,41-65,Female,Driver
-278,63,41-65,Female,Pedestrian
-279,13,0-17,Male,Pedestrian
-280,29,26-40,Male,Motorcycle rider
-281,56,41-65,Male,Pedestrian
-282,73,65+,Male,Pedestrian
-283,19,18-25,Male,Driver
-284,78,65+,Male,Motorcycle rider
-285,85,65+,Male,Driver
-286,70,65+,Male,Motorcycle rider
-287,42,41-65,Male,Pedal cyclist
-288,66,65+,Male,Pedestrian
-289,20,18-25,Male,Motorcycle pillion passenger
-290,49,41-65,Male,Pedestrian
-291,61,41-65,Male,Pedestrian
-292,55,41-65,Male,Driver
-293,79,65+,Male,Driver
-294,68,65+,Female,Pedestrian
-295,6,0-17,Male,Passenger
-296,0,0-17,Male,Passenger
-297,21,18-25,Female,Passenger
-298,33,26-40,Female,Passenger
-299,49,41-65,Male,Pedal cyclist
-300,35,26-40,Female,Passenger
-301,68,65+,Female,Pedal cyclist
-302,79,65+,Male,Pedestrian
-303,37,26-40,Female,Pedestrian
-304,37,26-40,Female,Driver
-305,27,26-40,Male,Pedal cyclist
-306,75,65+,Male,Driver
-307,67,65+,Male,Pedestrian
-308,36,26-40,Female,Passenger
-309,3,0-17,Female,Passenger
-310,42,41-65,Female,Pedestrian
-311,70,65+,Male,Pedestrian
-312,71,65+,Male,Driver
-313,63,41-65,Female,Passenger
-314,27,26-40,Male,Passenger
-315,96,65+,Female,Pedestrian
-316,59,41-65,Male,Driver
-317,80,65+,Male,Pedestrian
-318,20,18-25,Female,Pedestrian
-319,78,65+,Male,Driver
-320,49,41-65,Male,Motorcycle rider
-321,17,18-25,Male,Motorcycle rider
-322,32,26-40,Male,
-323,8,0-17,Male,Passenger
-324,63,41-65,Male,Pedal cyclist
-325,56,41-65,Female,Pedal cyclist
-326,20,18-25,Male,Passenger
-327,18,18-25,Female,Passenger
-328,20,18-25,Female,Passenger
-329,16,0-17,Male,Motorcycle rider
-330,67,65+,Male,Driver
-331,77,65+,,Passenger
-332,69,65+,Male,Pedal cyclist
-333,28,26-40,Female,Driver
-334,3,0-17,Male,Passenger
-335,30,26-40,Female,
-336,84,65+,Male,Driver
-337,85,65+,Female,Driver
-338,11,0-17,Male,Pedal cyclist
-339,83,65+,Male,Pedestrian
-340,60,41-65,Male,Passenger
-341,40,41-65,Male,Pedestrian
-342,78,65+,Male,Passenger
-343,2,0-17,Male,Passenger
-344,72,65+,Female,Driver
-345,17,18-25,Female,Passenger
-346,80,65+,Male,Driver
-347,26,26-40,Female,Motorcycle rider
-348,26,26-40,Male,Passenger
-349,83,65+,Female,Passenger
-350,82,65+,Female,Driver
-351,30,26-40,Male,Pedestrian
-352,29,26-40,Female,Pedestrian
-353,44,41-65,Male,Pedestrian
-354,81,65+,Female,Pedestrian
-355,36,26-40,Male,Motorcycle rider
-356,63,41-65,Male,Passenger
-357,24,18-25,Male,Passenger
-358,71,65+,Female,Passenger
-359,77,65+,Female,Pedestrian
-360,57,41-65,Male,Pedal cyclist
-361,56,41-65,Female,Passenger
-362,68,65+,Female,Driver
-363,54,41-65,Male,Pedal cyclist
-364,47,41-65,Male,Pedal cyclist
-365,43,41-65,Male,Passenger
-366,56,41-65,,Motorcycle rider
-367,43,41-65,Male,Pedestrian
-368,20,18-25,Female,Motorcycle rider
-369,82,65+,Female,Pedestrian
-370,61,41-65,Female,Pedestrian
-371,90,65+,Male,Driver
-372,40,41-65,Male,Motorcycle rider
-373,87,65+,Male,Pedestrian
-374,33,26-40,Male,Motorcycle rider
-375,40,41-65,Male,Pedal cyclist
-376,73,65+,Female,Pedestrian
-377,19,18-25,Female,Pedestrian
-378,32,26-40,Female,Pedestrian
-379,41,41-65,Male,Passenger
-380,93,65+,Male,Driver
-381,84,65+,Female,Driver
-382,18,18-25,Male,Pedestrian
-383,35,26-40,Female,Driver
-384,38,26-40,Female,Driver
-385,89,65+,Female,Driver
-386,90,65+,Male,
-387,62,41-65,Female,Driver
-388,24,18-25,Female,Motorcycle pillion passenger
-389,38,26-40,Male,Pedestrian
-390,20,18-25,Female,Driver
-391,79,65+,Male,Motorcycle rider
-392,79,65+,Female,Driver
-393,42,41-65,Male,Pedestrian
-394,9,0-17,Male,Passenger
-395,45,41-65,Male,Passenger
-396,4,0-17,Male,Passenger
-397,53,41-65,Male,Motorcycle rider
-398,32,26-40,Female,Passenger
-399,12,0-17,Male,Pedestrian
-400,16,0-17,Female,Passenger
-401,50,41-65,Female,Driver
-402,76,65+,Male,Pedal cyclist
-403,70,65+,Male,Pedal cyclist
-404,28,26-40,Female,Passenger
-405,82,65+,Female,Passenger
-406,73,65+,Female,Driver
-407,91,65+,Female,Passenger
-408,31,26-40,Male,Pedal cyclist
-409,43,41-65,Female,Passenger
-410,59,41-65,Male,Pedestrian
-411,30,26-40,Female,Pedestrian
-412,72,65+,Male,Motorcycle rider
-413,67,65+,Female,Motorcycle rider
-414,74,65+,Male,Motorcycle rider
-415,66,65+,Female,Driver
-416,53,41-65,Male,Pedal cyclist
-417,41,41-65,Female,Passenger
-418,49,41-65,Female,Driver
-419,15,0-17,Female,Motorcycle pillion passenger
-420,78,65+,Female,Pedestrian
-421,70,65+,Female,Driver
-422,26,26-40,Male,Pedestrian
-423,68,65+,Male,Passenger
-424,86,65+,Male,Driver
-425,75,65+,Female,Passenger
-426,15,0-17,Male,Passenger
-427,91,65+,Male,Driver
-428,13,0-17,Male,
-429,45,41-65,Female,Pedestrian
-430,42,41-65,Male,Motorcycle rider
-431,18,18-25,Female,Pedestrian
-432,25,26-40,Female,Motorcycle rider
-433,21,18-25,Male,Pedestrian
-434,15,0-17,Male,Pedal cyclist
-435,54,41-65,Female,Passenger
-436,39,26-40,Female,Driver
-437,72,65+,Male,Pedestrian
-438,47,41-65,Female,Driver
-439,62,41-65,Male,Pedal cyclist
-440,65,65+,Male,Pedestrian
-441,27,26-40,Male,
-442,13,0-17,Female,
-443,59,41-65,Female,Pedestrian
-444,41,41-65,Female,Motorcycle rider
-445,17,18-25,Male,Pedestrian
-446,31,26-40,Male,Pedestrian
-447,20,18-25,Male,Pedestrian
-448,36,26-40,Female,Pedal cyclist
-449,17,18-25,Male,Motorcycle pillion passenger
-450,51,41-65,Male,Pedestrian
-451,64,41-65,Male,Pedestrian
-452,23,18-25,Female,Passenger
-453,19,18-25,Female,Passenger
-454,70,65+,Male,
-455,82,65+,Male,Driver
-456,47,41-65,Female,Passenger
-457,70,65+,Female,Passenger
-458,34,26-40,Female,Passenger
-459,30,26-40,Female,Pedal cyclist
-460,42,41-65,Male,Passenger
-461,50,41-65,Male,Passenger
-462,58,41-65,Male,Pedal cyclist
-463,53,41-65,Female,Motorcycle rider
-464,27,26-40,Female,Passenger
-465,7,0-17,Female,Passenger
-466,93,65+,Female,Pedestrian
-467,55,41-65,Female,Pedestrian
-468,3,0-17,Female,Pedestrian
-469,51,41-65,Male,Pedal cyclist
-470,79,65+,Female,Passenger
-471,50,41-65,Female,Passenger
-472,16,0-17,Male,Pedestrian
-473,90,65+,Female,Passenger
-474,11,0-17,Male,Passenger
-475,23,18-25,Female,Motorcycle pillion passenger
-476,35,26-40,Male,
-477,69,65+,Female,Pedestrian
-478,52,41-65,Male,Motorcycle rider
-479,41,41-65,Male,
-480,88,65+,Male,Driver
-481,64,41-65,Male,Pedal cyclist
-482,12,0-17,Female,Passenger
-483,61,41-65,Female,Driver
-484,48,41-65,Female,Passenger
-485,28,26-40,Male,
-486,29,26-40,Male,Passenger
-487,25,26-40,Female,Driver
-488,38,26-40,Female,Passenger
-489,89,65+,Female,Passenger
-490,44,41-65,Male,
-491,92,65+,Female,Pedestrian
-492,57,41-65,Male,Passenger
-493,2,0-17,Male,Pedestrian
-494,85,65+,Male,Motorcycle rider
-495,41,41-65,Female,
-496,62,41-65,Female,Passenger
-497,25,26-40,Female,Passenger
-498,7,0-17,Male,Pedestrian
-499,85,65+,Female,Passenger
-500,67,65+,Female,Driver
-501,77,65+,Male,Pedestrian
-502,56,41-65,Female,Motorcycle rider
-503,85,65+,Male,Pedestrian
-504,65,65+,Female,Passenger
-505,65,65+,Female,Motorcycle rider
-506,22,18-25,Male,Pedestrian
-507,38,26-40,Male,Passenger
-508,22,18-25,Female,Pedestrian
-509,62,41-65,Male,Motorcycle rider
-510,82,65+,Male,Motorcycle rider
-511,37,26-40,Male,Pedal cyclist
-512,44,41-65,Female,Pedestrian
-513,9,0-17,Female,Pedestrian
-514,47,41-65,Male,Pedestrian
-515,75,65+,Male,Motorcycle rider
-516,58,41-65,Female,Driver
-517,77,65+,Female,Passenger
-518,31,26-40,Female,Motorcycle pillion passenger
-519,5,0-17,Female,Passenger
-520,88,65+,Female,Passenger
-521,82,65+,Male,Pedestrian
-522,82,65+,Male,Pedal cyclist
-523,39,26-40,Male,Passenger
-524,78,65+,Male,Pedal cyclist
-525,84,65+,Male,Pedestrian
-526,90,65+,Male,Passenger
-527,67,65+,Male,Motorcycle rider
-528,58,41-65,Male,Pedestrian
-529,72,65+,Male,Pedal cyclist
-530,61,41-65,Male,
-531,100,65+,Female,Passenger
-532,75,65+,Male,Passenger
-533,84,65+,Female,Passenger
-534,86,65+,Male,Passenger
-535,84,65+,Female,Pedestrian
-536,70,65+,Male,Passenger
-537,5,0-17,Female,
-538,4,0-17,Female,
-539,1,0-17,Female,
-540,9,0-17,Female,
-541,33,26-40,Male,Passenger
-542,37,26-40,Female,Passenger
-543,56,41-65,Male,Passenger
-544,87,65+,Female,Pedestrian
-545,55,41-65,Male,Passenger
-546,8,0-17,Female,Passenger
-547,18,18-25,Female,Motorcycle rider
-548,35,26-40,Female,Motorcycle pillion passenger
-549,88,65+,Female,Pedestrian
-550,25,26-40,Male,Pedestrian
-551,86,65+,Female,Passenger
-552,32,26-40,Male,Passenger
-553,71,65+,Male,Pedestrian
-554,10,0-17,Male,Passenger
-555,36,26-40,Male,Passenger
-556,66,65+,Female,Pedestrian
-557,69,65+,Female,Passenger
-558,73,65+,Male,Passenger
-559,73,65+,Female,Passenger
-560,49,41-65,Female,Motorcycle rider
-561,48,41-65,Male,Pedestrian
-562,86,65+,Female,Pedestrian
-563,26,26-40,Male,Pedal cyclist
-564,91,65+,Male,Passenger
-565,24,18-25,Male,Pedestrian
-566,44,41-65,Male,Passenger
-567,52,41-65,Female,Passenger
-568,41,41-65,Male,Pedal cyclist
-569,17,18-25,Female,Pedal cyclist
-570,5,0-17,Male,Pedestrian
-571,67,65+,Male,Pedal cyclist
-572,34,26-40,Female,Driver
-573,59,41-65,Male,Pedal cyclist
-574,60,41-65,Male,
-575,46,41-65,Male,Pedestrian
-576,0,0-17,Male,Pedestrian
-577,30,26-40,Female,Passenger
-578,35,26-40,Male,Passenger
-579,26,26-40,Female,Pedestrian
-580,55,41-65,Male,Pedestrian
-581,73,65+,Male,Pedal cyclist
-582,69,65+,Male,Passenger
-583,14,0-17,Female,Passenger
-584,22,18-25,Male,Pedal cyclist
-585,42,41-65,Female,Passenger
-586,92,65+,Male,Driver
-587,56,41-65,Female,Pedestrian
-588,41,41-65,Male,Pedestrian
-589,16,0-17,Female,Pedestrian
-590,23,18-25,Female,Motorcycle rider
-591,87,65+,Female,Passenger
-592,45,41-65,Male,Pedestrian
-593,86,65+,Male,Pedestrian
-594,36,26-40,Female,Driver
-595,12,0-17,Male,Passenger
-596,23,18-25,Male,Pedestrian
-597,88,65+,Female,Driver
-598,71,65+,Female,Driver
-599,0,0-17,Female,Passenger
-600,94,65+,Male,Passenger
-601,51,41-65,Female,Passenger
-602,87,65+,Female,Driver
-603,81,65+,Female,Driver
-604,86,65+,Female,Driver
-605,18,18-25,Male,Pedal cyclist
-606,89,65+,Male,Passenger
-607,83,65+,Male,Motorcycle rider
-608,93,65+,Male,Passenger
-609,99,65+,Female,Pedestrian
-610,57,41-65,Female,Motorcycle rider
-611,14,0-17,Male,Pedestrian
-612,68,65+,Male,Pedal cyclist
-613,54,41-65,Female,Motorcycle pillion passenger
-614,61,41-65,Female,Motorcycle rider
-615,43,41-65,Female,Driver
-616,51,41-65,Male,Passenger
-617,19,18-25,Female,Motorcycle rider
-618,75,65+,Female,Pedestrian
-619,45,41-65,Male,Pedal cyclist
-620,64,41-65,Female,Driver
-621,4,0-17,Female,Passenger
-622,83,65+,Male,Pedal cyclist
-623,40,41-65,Male,Passenger
-624,1,0-17,Female,Passenger
-625,47,41-65,Male,Passenger
-626,53,41-65,Male,Passenger
-627,48,41-65,Male,Passenger
-628,80,65+,Male,Passenger
-629,95,65+,Female,Pedestrian
-630,79,65+,Male,Passenger
-631,53,41-65,Female,Pedestrian
-632,25,26-40,Female,Pedestrian
-633,60,41-65,Male,Pedestrian
-634,98,65+,Female,Passenger
-635,34,26-40,Male,Pedestrian
-636,96,65+,Female,Passenger
-637,37,26-40,Female,Motorcycle pillion passenger
-638,46,41-65,Male,Passenger
-639,55,41-65,Male,Pedal cyclist
-640,29,26-40,Male,Pedal cyclist
-641,52,41-65,Female,Pedestrian
-642,100,65+,Male,Passenger
-643,72,65+,Female,Pedestrian
-644,47,41-65,Female,Motorcycle rider
-645,8,0-17,Male,Pedestrian
-646,4,0-17,Female,Pedestrian
-647,89,65+,Male,Driver
-648,37,26-40,,Motorcycle rider
-649,28,26-40,Female,
-650,33,26-40,Female,
-651,15,0-17,Male,Pedestrian
-652,86,65+,Male,Pedal cyclist
-653,75,65+,Male,Pedal cyclist
-654,61,41-65,Male,Passenger
-655,56,41-65,Male,Pedal cyclist
-656,19,18-25,Female,
-657,94,65+,Female,Driver
-658,53,41-65,Male,Motorcycle pillion passenger
-659,72,65+,Male,Passenger
-660,88,65+,Male,Passenger
-661,67,65+,Female,Passenger
-662,39,26-40,Female,Passenger
-663,22,18-25,Male,Motorcycle pillion passenger
-664,1,0-17,Male,Pedestrian
-665,52,41-65,Female,Motorcycle rider
-666,45,41-65,Female,Pedal cyclist
-667,7,0-17,Male,Passenger
-668,13,0-17,Male,Driver
-669,38,26-40,Female,Pedestrian
-670,3,0-17,Male,Pedestrian
-671,49,41-65,Female,Passenger
-672,36,26-40,Female,
-673,47,41-65,Male,
-674,52,41-65,Male,Passenger
-675,19,18-25,Male,Pedestrian
-676,47,41-65,Female,Pedal cyclist
-677,46,41-65,Male,
-678,19,18-25,Female,Motorcycle pillion passenger
-679,92,65+,Male,Pedestrian
-680,70,65+,Female,Pedal cyclist
-681,56,41-65,Male,
-682,54,41-65,Female,Pedestrian
-683,44,41-65,Male,Pedal cyclist
-684,93,65+,Female,Passenger
-685,27,26-40,Female,Motorcycle pillion passenger
-686,32,26-40,Male,Motorcycle pillion passenger
-687,90,65+,Female,Pedestrian
-688,12,0-17,Female,Pedestrian
-689,80,65+,Male,Pedal cyclist
-690,51,41-65,Female,Pedestrian
-691,98,65+,Female,Driver
-692,72,65+,Female,Passenger
-693,80,65+,Male,Motorcycle rider
-694,39,26-40,Male,Motorcycle pillion passenger
-695,23,18-25,Female,Pedestrian
-696,74,65+,Male,Pedal cyclist
-697,2,0-17,Female,Passenger
-698,20,18-25,Male,Pedal cyclist
-699,89,65+,Male,Pedal cyclist
-700,81,65+,Male,Motorcycle rider
-701,89,65+,Male,Pedestrian
-702,79,65+,Male,Pedal cyclist
-703,84,65+,Female,Motorcycle rider
-704,88,65+,Male,
-705,57,41-65,Female,Pedestrian
-706,54,41-65,Male,Pedestrian
-707,17,18-25,Female,Motorcycle pillion passenger
-708,65,65+,Male,Passenger
-709,94,65+,Female,Passenger
-710,55,41-65,Female,Passenger
-711,60,41-65,Male,Pedal cyclist
-712,68,65+,Male,Pedestrian
-713,58,41-65,Female,Passenger
-714,85,65+,Male,Passenger
-715,19,18-25,Male,
-716,28,26-40,Female,Pedestrian
-717,52,41-65,Male,Pedal cyclist
-718,63,41-65,Female,Pedal cyclist
-719,6,0-17,Female,Passenger
-720,91,65+,Female,Driver
-721,1,0-17,Male,Passenger
-722,46,41-65,Female,Passenger
-723,40,41-65,Female,Motorcycle rider
-724,67,65+,Male,Passenger
-725,79,65+,Female,Pedal cyclist
-726,84,65+,Male,Pedal cyclist
-727,88,65+,Male,Pedestrian
-728,64,41-65,Male,Passenger
-729,48,41-65,Female,
-730,54,41-65,Male,
-731,14,0-17,Female,Driver
-732,14,0-17,Female,Pedestrian
-733,10,0-17,Female,Passenger
-734,25,26-40,Male,Pedal cyclist
-735,41,41-65,Female,Pedal cyclist
-736,93,65+,Male,Pedestrian
-737,21,18-25,Male,Pedal cyclist
-738,58,41-65,Female,Motorcycle rider
-739,77,65+,Male,Passenger
-740,5,0-17,Female,Pedestrian
-741,22,18-25,Female,Motorcycle rider
-742,47,41-65,Female,Motorcycle pillion passenger
-743,91,65+,Female,Pedestrian
-744,41,41-65,Female,Motorcycle pillion passenger
-745,19,18-25,Male,Pedal cyclist
-746,34,26-40,Female,Pedestrian
-747,6,0-17,Male,Pedestrian
-748,4,0-17,Male,Pedal cyclist
-749,10,0-17,Female,Pedestrian
-750,17,18-25,Female,Motorcycle rider
-751,24,18-25,Male,
-752,16,0-17,Female,Driver
-753,10,0-17,Male,Pedestrian
-754,34,26-40,Male,
-755,53,41-65,Female,Passenger
-756,27,26-40,Female,Motorcycle rider
-757,20,18-25,Female,Pedal cyclist
-758,14,0-17,Male,Pedal cyclist
-759,55,41-65,Female,Pedal cyclist
-760,8,0-17,Female,Pedestrian
-761,21,18-25,Male,Motorcycle pillion passenger
-762,68,65+,Male,
-763,8,0-17,Male,Pedal cyclist
-764,33,26-40,Female,Pedestrian
-765,29,26-40,Female,Motorcycle pillion passenger
-766,101,65+,Male,Driver
-767,16,0-17,Male,Pedal cyclist
-768,34,26-40,Male,Pedal cyclist
-769,87,65+,Male,Motorcycle rider
-770,50,41-65,Female,Pedal cyclist
-771,13,0-17,Male,Motorcycle rider
-772,76,65+,Female,Motorcycle rider
-773,60,41-65,Female,Pedal cyclist
-774,46,41-65,Male,Pedal cyclist
-775,22,18-25,Female,Motorcycle pillion passenger
-776,75,65+,Male,Pedestrian
-777,30,26-40,Male,Pedal cyclist
-778,43,41-65,Female,Motorcycle rider
-779,72,65+,Female,Pedal cyclist
-780,44,41-65,Female,Motorcycle rider
-781,32,26-40,Male,Pedal cyclist
-782,94,65+,Female,Pedestrian
-783,22,18-25,Female,Pedal cyclist
-784,95,65+,Female,Passenger
-785,81,65+,Male,Passenger
-786,11,0-17,Female,Pedestrian
-787,59,41-65,Male,Passenger
-788,44,41-65,Female,Pedal cyclist
-789,38,26-40,Male,Pedal cyclist
-790,54,41-65,Female,Motorcycle rider
-791,36,26-40,Female,Pedestrian
-792,24,18-25,Male,Pedal cyclist
-793,9,0-17,Male,Pedestrian
-794,74,65+,Male,Passenger
-795,32,26-40,Female,Pedal cyclist
-796,97,65+,Male,Driver
-797,46,41-65,Female,Motorcycle rider
-798,65,65+,Female,Pedal cyclist
-799,5,0-17,Male,Pedal cyclist
-800,52,41-65,Female,Pedal cyclist
-801,17,18-25,Male,Pedal cyclist
-802,9,0-17,Female,Passenger
-803,28,26-40,Male,Pedal cyclist
-804,50,41-65,Female,
-805,35,26-40,Male,Pedal cyclist
-806,99,65+,Male,Pedestrian
-807,95,65+,Male,Pedestrian
-808,92,65+,Male,Passenger
-809,71,65+,Male,Passenger
-810,21,18-25,Female,Pedal cyclist
-811,69,65+,Female,Motorcycle rider
-812,23,18-25,Male,Motorcycle pillion passenger
-813,48,41-65,Male,Pedal cyclist
-814,61,41-65,Female,Motorcycle pillion passenger
-815,28,26-40,Female,Pedal cyclist
-816,13,0-17,Female,Passenger
-817,86,65+,Female,
-818,14,0-17,Female,Pedal cyclist
-819,14,0-17,Male,Driver
-820,27,26-40,Female,Pedal cyclist
-821,71,65+,Male,
-822,59,41-65,Female,
-823,65,65+,Female,
-824,0,0-17,,Passenger
-825,45,41-65,Female,Passenger
-826,41,41-65,Female,Pedestrian
-827,95,65+,Male,Passenger
-828,30,26-40,Female,Motorcycle rider
-829,76,65+,Male,Passenger
-830,77,65+,Male,Pedal cyclist
-831,0,0-17,Male,
-832,21,18-25,Female,
-833,17,18-25,Female,Pedestrian
-834,46,41-65,Female,Pedestrian
-835,39,26-40,Female,Motorcycle rider
-836,23,18-25,Male,Pedal cyclist
-837,48,41-65,Male,Motorcycle pillion passenger
-838,94,65+,Male,
-839,73,65+,Female,Motorcycle rider
-840,97,65+,Male,Pedestrian
-841,19,18-25,Female,Pedal cyclist
-842,22,18-25,Female,
-843,21,18-25,Male,
-844,76,65+,Female,Pedal cyclist
-845,42,41-65,Female,Pedal cyclist
-846,91,65+,Male,
-847,94,65+,Male,Pedestrian
-848,96,65+,Male,Passenger
-849,35,26-40,Female,Motorcycle rider
-850,6,0-17,Male,Motorcycle rider
-851,45,41-65,Female,Motorcycle rider
-852,45,41-65,Female,Motorcycle pillion passenger
-853,101,65+,Female,Passenger
-854,0,0-17,Female,
-855,48,41-65,Female,Motorcycle rider
-856,35,26-40,Female,Pedal cyclist
-857,98,65+,Female,
-858,50,41-65,Female,Motorcycle pillion passenger
-859,49,41-65,Female,Motorcycle pillion passenger
-860,14,0-17,Male,Motorcycle pillion passenger
-861,61,41-65,Female,
-862,16,0-17,Male,Motorcycle pillion passenger
-863,33,26-40,Female,Pedal cyclist
-864,36,26-40,Female,Motorcycle rider
-865,10,0-17,Female,Motorcycle pillion passenger
-866,31,26-40,Female,Motorcycle rider
-867,23,18-25,Male,
-868,66,65+,Female,Pedal cyclist
-869,51,41-65,Female,Motorcycle rider
-870,18,18-25,Male,Motorcycle pillion passenger
-871,5,0-17,Male,
-872,12,0-17,Male,Pedal cyclist
-873,96,65+,Male,Pedestrian
-874,92,65+,Female,Passenger
-875,93,65+,Male,Pedal cyclist
-876,25,26-40,Male,Motorcycle pillion passenger
-877,69,65+,Female,Pedal cyclist
-878,88,65+,Male,Pedal cyclist
-879,43,41-65,Female,Motorcycle pillion passenger
-880,31,26-40,Male,Motorcycle pillion passenger
-881,84,65+,Male,Motorcycle rider
-882,97,65+,Female,Driver
-883,92,65+,Male,Pedal cyclist
-884,42,41-65,Female,Motorcycle rider
-885,42,41-65,Female,Motorcycle pillion passenger
-886,55,41-65,Female,Motorcycle pillion passenger
-887,28,26-40,Female,Motorcycle pillion passenger
-888,37,26-40,Female,Pedal cyclist
-889,7,0-17,Male,Driver
-890,100,65+,Male,Pedestrian
-891,7,0-17,Male,Pedal cyclist
-892,22,18-25,Male,
-893,26,26-40,Male,
-894,26,26-40,Male,Motorcycle pillion passenger
-895,64,41-65,Female,Motorcycle rider
-896,58,41-65,Female,Motorcycle pillion passenger
-897,57,41-65,Female,Pedal cyclist
-898,43,41-65,Female,Pedal cyclist
-899,39,26-40,Male,Pedal cyclist
-900,29,26-40,Female,Motorcycle rider
-901,86,65+,Male,Motorcycle rider
-902,49,41-65,Female,Pedal cyclist
-903,18,18-25,Male,
-904,33,26-40,Male,Pedal cyclist
-905,48,41-65,Female,Pedal cyclist
-906,43,41-65,Male,Motorcycle pillion passenger
-907,37,26-40,Female,Motorcycle rider
-908,40,41-65,Female,Pedal cyclist
-909,31,26-40,Female,Pedal cyclist
-910,99,65+,Female,Passenger
-911,81,65+,Female,Motorcycle rider
-912,38,26-40,Female,Motorcycle rider
-913,33,26-40,Female,Motorcycle pillion passenger
-914,82,65+,Male,
-915,58,41-65,Female,Pedal cyclist
-916,60,41-65,Female,
-917,50,41-65,Female,Motorcycle rider
-918,30,26-40,Male,Motorcycle pillion passenger
-919,7,0-17,Female,Pedestrian
-920,13,0-17,Female,Pedestrian
-921,34,26-40,Female,Motorcycle pillion passenger
-922,96,65+,Female,Driver
-923,87,65+,Male,Pedal cyclist
-924,26,26-40,Female,
-925,32,26-40,Female,
-926,7,0-17,Female,Motorcycle pillion passenger
-927,18,18-25,Female,
-928,39,26-40,Female,Motorcycle pillion passenger
-929,18,18-25,Female,Motorcycle pillion passenger
-930,13,0-17,Male,Pedal cyclist
-931,15,0-17,Male,Motorcycle pillion passenger
-932,52,41-65,Female,Motorcycle pillion passenger
-933,20,18-25,Female,Motorcycle pillion passenger
-934,15,0-17,Female,Motorcycle rider
-935,26,26-40,Female,Pedal cyclist
-936,13,0-17,Female,Driver
-937,64,41-65,Female,Motorcycle pillion passenger
-938,27,26-40,Male,Motorcycle pillion passenger
-939,89,65+,Male,
-940,66,65+,Female,Motorcycle rider
-941,51,41-65,Female,Motorcycle pillion passenger
-942,28,26-40,Female,Motorcycle rider
-943,85,65+,Male,Pedal cyclist
-944,10,0-17,Male,Pedal cyclist
-945,16,0-17,Female,
-946,16,0-17,Female,Motorcycle rider
-947,19,18-25,Male,Motorcycle pillion passenger
-948,40,41-65,Male,Motorcycle pillion passenger
-949,53,41-65,Female,Motorcycle pillion passenger
-950,59,41-65,Female,Pedal cyclist
-951,25,26-40,Female,Motorcycle pillion passenger
-952,32,26-40,Female,Motorcycle rider
-953,98,65+,Male,Pedestrian
-954,2,0-17,Male,Motorcycle pillion passenger
-955,26,26-40,Female,Motorcycle pillion passenger
-956,57,41-65,Female,Motorcycle pillion passenger
-957,46,41-65,Male,Motorcycle pillion passenger
-958,91,65+,Female,
-959,36,26-40,Male,Motorcycle pillion passenger
-960,12,0-17,Male,Motorcycle rider
-961,61,41-65,Female,Pedal cyclist
-962,32,26-40,Female,Motorcycle pillion passenger
-963,46,41-65,Female,Motorcycle pillion passenger
-964,98,65+,Male,Driver
-965,6,0-17,Male,Pedal cyclist
-966,56,41-65,Female,Motorcycle pillion passenger
-967,20,18-25,Male,
-968,91,65+,Male,Motorcycle rider
-969,69,65+,Female,Motorcycle pillion passenger
-970,0,0-17,Female,Pedestrian
-971,38,26-40,Female,Pedal cyclist
-972,11,0-17,Male,Motorcycle rider
-973,21,18-25,Female,Motorcycle rider
-974,38,26-40,Female,Motorcycle pillion passenger
-975,16,0-17,Female,Motorcycle pillion passenger
-976,25,26-40,Female,Pedal cyclist
-977,62,41-65,Female,Motorcycle rider
-978,10,0-17,Male,Motorcycle rider
-979,0,0-17,Male,Driver
-980,0,0-17,,Driver
-981,6,0-17,Female,Pedestrian
-982,0,0-17,Male,Pedal cyclist
-983,24,18-25,Female,Motorcycle rider
-984,29,26-40,Female,Pedal cyclist
-985,3,0-17,Male,Pedal cyclist
-986,36,26-40,Female,Motorcycle pillion passenger
-987,67,65+,Female,Pedal cyclist
-988,18,18-25,Female,Pedal cyclist
-989,66,65+,Female,Motorcycle pillion passenger
-990,83,65+,Female,Pedal cyclist
-991,11,0-17,Female,Pedal cyclist
-992,89,65+,Male,Motorcycle rider
-993,49,41-65,Male,
-994,59,41-65,Female,Motorcycle pillion passenger
-995,48,41-65,Male,
-996,37,26-40,Male,
-997,21,18-25,Female,Motorcycle pillion passenger
-998,12,0-17,Female,Motorcycle pillion passenger
-999,40,41-65,Female,Motorcycle pillion passenger
-1000,40,41-65,Male,
-1001,5,0-17,Male,Motorcycle rider
-1002,51,41-65,Female,
-1003,73,65+,Female,Pedal cyclist
-1004,15,0-17,Female,Pedal cyclist
-1005,54,41-65,Female,Pedal cyclist
-1006,56,41-65,Female,
-1007,10,0-17,Female,Driver
-1008,0,0-17,Female,Driver
-1009,8,0-17,Male,Motorcycle rider
-1010,8,0-17,Male,Motorcycle pillion passenger
-1011,12,0-17,Male,Driver
-1012,33,26-40,Male,
-1013,9,0-17,Male,Motorcycle rider
-1014,10,0-17,Female,Pedal cyclist
-1015,95,65+,Male,Driver
-1016,48,41-65,Female,Motorcycle pillion passenger
-1017,44,41-65,Female,Motorcycle pillion passenger
-1018,51,41-65,Female,Pedal cyclist
-1019,68,65+,Female,Motorcycle rider
-1020,10,0-17,Male,Driver
-1021,53,41-65,Female,Pedal cyclist
-1022,12,0-17,Male,Motorcycle pillion passenger
-1023,10,0-17,Female,
-1024,75,65+,Female,Pedal cyclist
-1025,23,18-25,Female,Pedal cyclist
-1026,25,26-40,Female,
-1027,20,18-25,Female,
-1028,23,18-25,Female,
-1029,5,0-17,Female,Pedal cyclist
-1030,97,65+,Female,Pedestrian
-1031,24,18-25,Male,Motorcycle pillion passenger
-1032,28,26-40,Male,Motorcycle pillion passenger
-1033,91,65+,Male,Pedal cyclist
-1034,71,65+,Female,Pedal cyclist
-1035,11,0-17,Male,Motorcycle pillion passenger
-1036,7,0-17,Male,Motorcycle pillion passenger
-1037,42,41-65,Male,Motorcycle pillion passenger
-1038,30,26-40,Female,Motorcycle pillion passenger
-1039,3,0-17,Female,Motorcycle rider
-1040,6,0-17,Female,Pedal cyclist
-1041,13,0-17,Female,Pedal cyclist
-1042,24,18-25,Female,Pedal cyclist
-1043,37,26-40,Male,Motorcycle pillion passenger
-1044,16,0-17,Female,Pedal cyclist
-1045,11,0-17,Female,Driver
-1046,71,65+,Female,Motorcycle rider
-1047,80,65+,Male,
-1048,17,18-25,Male,
-1049,90,65+,Male,Pedal cyclist
-1050,10,0-17,Female,Motorcycle rider
-1051,13,0-17,Male,Motorcycle pillion passenger
-1052,99,65+,Male,Passenger
-1053,14,0-17,Female,Motorcycle rider
-1054,88,65+,Male,Motorcycle rider
-1055,68,65+,Female,Motorcycle pillion passenger
-1056,8,0-17,Female,Pedal cyclist
-1057,14,0-17,Male,
-1058,12,0-17,Female,Pedal cyclist
-1059,46,41-65,Female,Pedal cyclist
-1060,34,26-40,Male,Motorcycle pillion passenger
-1061,27,26-40,Female,
-1062,34,26-40,Female,Pedal cyclist
-1063,9,0-17,Female,Pedal cyclist
-1064,39,26-40,Female,Pedal cyclist
-1065,35,26-40,Male,Motorcycle pillion passenger
-1066,45,41-65,Male,Motorcycle pillion passenger
-1067,14,0-17,Female,Motorcycle pillion passenger
-1068,47,41-65,Male,Motorcycle pillion passenger
-1069,11,0-17,Male,Driver
-1070,29,26-40,Male,Motorcycle pillion passenger
-1071,7,0-17,Female,Pedal cyclist
+131,19,18-25,Male,Passenger
+132,20,18-25,Male,Driver
+133,35,26-40,Male,Pedestrian
+134,28,26-40,Male,Pedestrian
+135,30,26-40,Male,Passenger
+136,31,26-40,Female,Pedestrian
+137,62,41-65,Male,Driver
+138,69,65+,Female,Driver
+139,83,65+,Female,Pedestrian
+140,66,65+,Male,Passenger
+141,31,26-40,Male,Driver
+142,60,41-65,Male,Driver
+143,56,41-65,Male,Driver
+144,82,65+,Male,Passenger
+145,43,41-65,Male,Pedal cyclist
+146,21,18-25,Female,Pedestrian
+147,29,26-40,Male,Driver
+148,75,65+,Female,Driver
+149,32,26-40,Male,Motorcycle rider
+150,31,26-40,Female,Driver
+151,40,41-65,Female,Driver
+152,96,65+,Male,Driver
+153,40,41-65,Female,Passenger
+154,13,0-17,Male,Passenger
+155,37,26-40,Male,Passenger
+156,81,65+,Male,Pedestrian
+157,80,65+,Female,Pedestrian
+158,54,41-65,Male,Motorcycle rider
+159,76,65+,Female,Passenger
+160,55,41-65,Female,Motorcycle rider
+161,44,41-65,Female,Driver
+162,28,26-40,Male,Motorcycle rider
+163,15,0-17,Male,
+164,91,65+,Male,Pedestrian
+165,11,0-17,Female,Passenger
+166,53,41-65,Female,Driver
+167,73,65+,Male,Driver
+168,48,41-65,Female,Driver
+169,57,41-65,Female,Driver
+170,69,65+,Male,Pedestrian
+171,51,41-65,Male,Motorcycle rider
+172,34,26-40,Male,Passenger
+173,22,18-25,Male,Passenger
+174,73,65+,Male,Motorcycle rider
+175,78,65+,Female,Passenger
+176,74,65+,Female,Passenger
+177,20,18-25,Male,Motorcycle rider
+178,23,18-25,Female,Driver
+179,31,26-40,Female,Passenger
+180,40,41-65,Male,Driver
+181,14,0-17,Male,Passenger
+182,41,41-65,Male,Motorcycle rider
+183,90,65+,Male,Pedestrian
+184,48,41-65,Male,Motorcycle rider
+185,34,26-40,Female,Motorcycle rider
+186,58,41-65,Male,Passenger
+187,5,0-17,Male,Passenger
+188,15,0-17,Female,Passenger
+189,37,26-40,Male,Motorcycle rider
+190,70,65+,Female,Pedestrian
+191,2,0-17,Female,Pedestrian
+192,59,41-65,Female,Motorcycle rider
+193,76,65+,Male,Motorcycle rider
+194,76,65+,Male,Pedestrian
+195,44,41-65,Male,Driver
+196,77,65+,Male,Driver
+197,65,65+,Male,Motorcycle rider
+198,33,26-40,Female,Motorcycle rider
+199,34,26-40,Female,
+200,11,0-17,Male,Pedestrian
+201,39,26-40,Female,Pedestrian
+202,30,26-40,Male,Motorcycle rider
+203,14,0-17,Male,Motorcycle rider
+204,24,18-25,Female,Passenger
+205,78,65+,Male,Pedestrian
+206,9,0-17,Male,Pedal cyclist
+207,15,0-17,Male,Motorcycle rider
+208,37,26-40,Male,Pedestrian
+209,52,41-65,Male,Pedestrian
+210,1,0-17,Female,Pedestrian
+211,52,41-65,Female,Driver
+212,93,65+,Female,Driver
+213,87,65+,Male,Driver
+214,94,65+,Male,Driver
+215,81,65+,Female,Passenger
+216,83,65+,Male,Passenger
+217,31,26-40,Male,Motorcycle rider
+218,34,26-40,Male,Motorcycle rider
+219,23,18-25,Male,Motorcycle rider
+220,27,26-40,Female,Driver
+221,65,65+,Female,Driver
+222,72,65+,Male,Driver
+223,81,65+,Male,Driver
+224,15,0-17,Female,
+225,79,65+,Female,Pedestrian
+226,23,18-25,Male,Driver
+227,58,41-65,Male,Driver
+228,74,65+,Female,Pedestrian
+229,32,26-40,Male,Pedestrian
+230,53,41-65,Male,Pedestrian
+231,84,65+,Male,Passenger
+232,50,41-65,Male,Motorcycle rider
+233,65,65+,Male,Driver
+234,22,18-25,Female,Driver
+235,48,41-65,Male,Driver
+236,50,41-65,Male,Pedal cyclist
+237,17,18-25,Male,Passenger
+238,35,26-40,Female,Pedestrian
+239,56,41-65,Female,Driver
+240,81,65+,Male,Pedal cyclist
+241,80,65+,Female,Driver
+242,49,41-65,Male,Passenger
+243,36,26-40,Male,Pedestrian
+244,57,41-65,Male,Motorcycle rider
+245,28,26-40,Male,Driver
+246,58,41-65,Male,Motorcycle rider
+247,15,0-17,Female,Pedestrian
+248,54,41-65,Male,Passenger
+249,62,41-65,Male,Pedestrian
+250,45,41-65,Female,
+251,39,26-40,Male,Pedestrian
+252,26,26-40,Female,Passenger
+253,50,41-65,Male,Driver
+254,57,41-65,Male,Pedestrian
+255,64,41-65,Male,Driver
+256,68,65+,Male,Driver
+257,54,41-65,Female,Driver
+258,63,41-65,Female,Pedestrian
+259,13,0-17,Male,Pedestrian
+260,29,26-40,Male,Motorcycle rider
+261,56,41-65,Male,Pedestrian
+262,73,65+,Male,Pedestrian
+263,19,18-25,Male,Driver
+264,78,65+,Male,Motorcycle rider
+265,85,65+,Male,Driver
+266,70,65+,Male,Motorcycle rider
+267,42,41-65,Male,Pedal cyclist
+268,66,65+,Male,Pedestrian
+269,20,18-25,Male,Motorcycle pillion passenger
+270,49,41-65,Male,Pedestrian
+271,61,41-65,Male,Pedestrian
+272,79,65+,Male,Driver
+273,68,65+,Female,Pedestrian
+274,6,0-17,Male,Passenger
+275,0,0-17,Male,Passenger
+276,21,18-25,Female,Passenger
+277,33,26-40,Female,Passenger
+278,49,41-65,Male,Pedal cyclist
+279,35,26-40,Female,Passenger
+280,28,26-40,Male,Passenger
+281,68,65+,Female,Pedal cyclist
+282,79,65+,Male,Pedestrian
+283,37,26-40,Female,Pedestrian
+284,37,26-40,Female,Driver
+285,27,26-40,Male,Pedal cyclist
+286,75,65+,Male,Driver
+287,67,65+,Male,Pedestrian
+288,36,26-40,Female,Passenger
+289,3,0-17,Female,Passenger
+290,47,41-65,Male,Driver
+291,70,65+,Male,Pedestrian
+292,71,65+,Male,Driver
+293,63,41-65,Female,Passenger
+294,27,26-40,Male,Passenger
+295,16,0-17,Male,Passenger
+296,96,65+,Female,Pedestrian
+297,18,18-25,Female,Driver
+298,59,41-65,Male,Driver
+299,55,41-65,Male,Driver
+300,80,65+,Male,Pedestrian
+301,20,18-25,Female,Pedestrian
+302,78,65+,Male,Driver
+303,49,41-65,Male,Motorcycle rider
+304,17,18-25,Male,Motorcycle rider
+305,32,26-40,Male,
+306,8,0-17,Male,Passenger
+307,63,41-65,Male,Pedal cyclist
+308,56,41-65,Female,Pedal cyclist
+309,20,18-25,Male,Passenger
+310,18,18-25,Female,Passenger
+311,20,18-25,Female,Passenger
+312,16,0-17,Male,Motorcycle rider
+313,33,26-40,Male,Driver
+314,67,65+,Male,Driver
+315,77,65+,,Passenger
+316,69,65+,Male,Pedal cyclist
+317,28,26-40,Female,Driver
+318,3,0-17,Male,Passenger
+319,30,26-40,Female,
+320,84,65+,Male,Driver
+321,85,65+,Female,Driver
+322,11,0-17,Male,Pedal cyclist
+323,83,65+,Male,Pedestrian
+324,60,41-65,Male,Passenger
+325,40,41-65,Male,Pedestrian
+326,78,65+,Male,Passenger
+327,2,0-17,Male,Passenger
+328,72,65+,Female,Driver
+329,17,18-25,Female,Passenger
+330,80,65+,Male,Driver
+331,26,26-40,Female,Motorcycle rider
+332,26,26-40,Male,Passenger
+333,83,65+,Female,Passenger
+334,82,65+,Female,Driver
+335,30,26-40,Male,Pedestrian
+336,29,26-40,Female,Pedestrian
+337,44,41-65,Male,Pedestrian
+338,81,65+,Female,Pedestrian
+339,36,26-40,Male,Motorcycle rider
+340,63,41-65,Male,Passenger
+341,24,18-25,Male,Passenger
+342,71,65+,Female,Passenger
+343,57,41-65,Male,Pedal cyclist
+344,56,41-65,Female,Passenger
+345,68,65+,Female,Driver
+346,54,41-65,Male,Pedal cyclist
+347,47,41-65,Male,Pedal cyclist
+348,43,41-65,Male,Passenger
+349,56,41-65,,Motorcycle rider
+350,43,41-65,Male,Pedestrian
+351,20,18-25,Female,Motorcycle rider
+352,82,65+,Female,Pedestrian
+353,61,41-65,Female,Pedestrian
+354,90,65+,Male,Driver
+355,40,41-65,Male,Motorcycle rider
+356,87,65+,Male,Pedestrian
+357,59,41-65,Male,Motorcycle rider
+358,33,26-40,Male,Motorcycle rider
+359,73,65+,Female,Pedestrian
+360,19,18-25,Female,Pedestrian
+361,32,26-40,Female,Pedestrian
+362,41,41-65,Male,Passenger
+363,93,65+,Male,Driver
+364,84,65+,Female,Driver
+365,18,18-25,Male,Pedestrian
+366,76,65+,Female,Pedestrian
+367,35,26-40,Female,Driver
+368,38,26-40,Female,Driver
+369,89,65+,Female,Driver
+370,90,65+,Male,
+371,62,41-65,Female,Driver
+372,24,18-25,Female,Motorcycle pillion passenger
+373,38,26-40,Male,Pedestrian
+374,20,18-25,Female,Driver
+375,79,65+,Male,Motorcycle rider
+376,79,65+,Female,Driver
+377,56,41-65,Male,Motorcycle rider
+378,9,0-17,Male,Passenger
+379,45,41-65,Male,Passenger
+380,4,0-17,Male,Passenger
+381,53,41-65,Male,Motorcycle rider
+382,32,26-40,Female,Passenger
+383,12,0-17,Male,Pedestrian
+384,16,0-17,Female,Passenger
+385,50,41-65,Female,Driver
+386,76,65+,Male,Pedal cyclist
+387,70,65+,Male,Pedal cyclist
+388,28,26-40,Female,Passenger
+389,82,65+,Female,Passenger
+390,73,65+,Female,Driver
+391,91,65+,Female,Passenger
+392,31,26-40,Male,Pedal cyclist
+393,43,41-65,Female,Passenger
+394,59,41-65,Male,Pedestrian
+395,30,26-40,Female,Pedestrian
+396,72,65+,Male,Motorcycle rider
+397,67,65+,Female,Motorcycle rider
+398,74,65+,Male,Motorcycle rider
+399,66,65+,Female,Driver
+400,53,41-65,Male,Pedal cyclist
+401,41,41-65,Female,Passenger
+402,49,41-65,Female,Driver
+403,15,0-17,Female,Motorcycle pillion passenger
+404,78,65+,Female,Pedestrian
+405,70,65+,Female,Driver
+406,26,26-40,Male,Pedestrian
+407,68,65+,Male,Passenger
+408,86,65+,Male,Driver
+409,75,65+,Female,Passenger
+410,15,0-17,Male,Passenger
+411,91,65+,Male,Driver
+412,13,0-17,Male,
+413,45,41-65,Female,Pedestrian
+414,42,41-65,Male,Motorcycle rider
+415,18,18-25,Female,Pedestrian
+416,25,26-40,Female,Motorcycle rider
+417,21,18-25,Male,Pedestrian
+418,66,65+,Male,Pedal cyclist
+419,15,0-17,Male,Pedal cyclist
+420,54,41-65,Female,Passenger
+421,39,26-40,Female,Driver
+422,72,65+,Male,Pedestrian
+423,47,41-65,Female,Driver
+424,62,41-65,Male,Pedal cyclist
+425,42,41-65,Male,Pedestrian
+426,65,65+,Male,Pedestrian
+427,13,0-17,Female,
+428,41,41-65,Female,Motorcycle rider
+429,17,18-25,Male,Pedestrian
+430,31,26-40,Male,Pedestrian
+431,20,18-25,Male,Pedestrian
+432,36,26-40,Female,Pedal cyclist
+433,17,18-25,Male,Motorcycle pillion passenger
+434,51,41-65,Male,Pedestrian
+435,64,41-65,Male,Pedestrian
+436,23,18-25,Female,Passenger
+437,19,18-25,Female,Passenger
+438,70,65+,Male,
+439,82,65+,Male,Driver
+440,47,41-65,Female,Passenger
+441,70,65+,Female,Passenger
+442,34,26-40,Female,Passenger
+443,30,26-40,Female,Pedal cyclist
+444,42,41-65,Male,Passenger
+445,50,41-65,Male,Passenger
+446,58,41-65,Male,Pedal cyclist
+447,53,41-65,Female,Motorcycle rider
+448,27,26-40,Female,Passenger
+449,31,26-40,Male,
+450,7,0-17,Female,Passenger
+451,93,65+,Female,Pedestrian
+452,55,41-65,Female,Pedestrian
+453,3,0-17,Female,Pedestrian
+454,51,41-65,Male,Pedal cyclist
+455,79,65+,Female,Passenger
+456,50,41-65,Female,Passenger
+457,16,0-17,Male,Pedestrian
+458,27,26-40,Male,
+459,90,65+,Female,Passenger
+460,11,0-17,Male,Passenger
+461,23,18-25,Female,Motorcycle pillion passenger
+462,35,26-40,Male,
+463,69,65+,Female,Pedestrian
+464,52,41-65,Male,Motorcycle rider
+465,41,41-65,Male,
+466,88,65+,Male,Driver
+467,64,41-65,Male,Pedal cyclist
+468,12,0-17,Female,Passenger
+469,49,41-65,Female,Pedestrian
+470,61,41-65,Female,Driver
+471,48,41-65,Female,Passenger
+472,28,26-40,Male,
+473,29,26-40,Male,Passenger
+474,25,26-40,Female,Driver
+475,38,26-40,Female,Passenger
+476,89,65+,Female,Passenger
+477,44,41-65,Male,
+478,92,65+,Female,Pedestrian
+479,57,41-65,Male,Passenger
+480,2,0-17,Male,Pedestrian
+481,85,65+,Male,Motorcycle rider
+482,62,41-65,Female,Passenger
+483,25,26-40,Female,Passenger
+484,7,0-17,Male,Pedestrian
+485,85,65+,Female,Passenger
+486,67,65+,Female,Driver
+487,77,65+,Male,Pedestrian
+488,56,41-65,Female,Motorcycle rider
+489,85,65+,Male,Pedestrian
+490,65,65+,Female,Passenger
+491,65,65+,Female,Motorcycle rider
+492,22,18-25,Male,Pedestrian
+493,38,26-40,Male,Passenger
+494,22,18-25,Female,Pedestrian
+495,62,41-65,Male,Motorcycle rider
+496,82,65+,Male,Motorcycle rider
+497,37,26-40,Male,Pedal cyclist
+498,44,41-65,Female,Pedestrian
+499,9,0-17,Female,Pedestrian
+500,47,41-65,Male,Pedestrian
+501,75,65+,Male,Motorcycle rider
+502,58,41-65,Female,Driver
+503,77,65+,Female,Passenger
+504,46,41-65,Female,Driver
+505,31,26-40,Female,Motorcycle pillion passenger
+506,5,0-17,Female,Passenger
+507,88,65+,Female,Passenger
+508,82,65+,Male,Pedestrian
+509,82,65+,Male,Pedal cyclist
+510,39,26-40,Male,Passenger
+511,78,65+,Male,Pedal cyclist
+512,84,65+,Male,Pedestrian
+513,90,65+,Male,Passenger
+514,67,65+,Male,Motorcycle rider
+515,58,41-65,Male,Pedestrian
+516,72,65+,Male,Pedal cyclist
+517,61,41-65,Male,
+518,100,65+,Female,Passenger
+519,75,65+,Male,Passenger
+520,84,65+,Female,Passenger
+521,86,65+,Male,Passenger
+522,84,65+,Female,Pedestrian
+523,70,65+,Male,Passenger
+524,5,0-17,Female,
+525,4,0-17,Female,
+526,1,0-17,Female,
+527,9,0-17,Female,
+528,33,26-40,Male,Passenger
+529,37,26-40,Female,Passenger
+530,56,41-65,Male,Passenger
+531,87,65+,Female,Pedestrian
+532,55,41-65,Male,Passenger
+533,8,0-17,Female,Passenger
+534,18,18-25,Female,Motorcycle rider
+535,35,26-40,Female,Motorcycle pillion passenger
+536,88,65+,Female,Pedestrian
+537,25,26-40,Male,Pedestrian
+538,86,65+,Female,Passenger
+539,32,26-40,Male,Passenger
+540,71,65+,Male,Pedestrian
+541,10,0-17,Male,Passenger
+542,36,26-40,Male,Passenger
+543,66,65+,Female,Pedestrian
+544,69,65+,Female,Passenger
+545,73,65+,Male,Passenger
+546,73,65+,Female,Passenger
+547,49,41-65,Female,Motorcycle rider
+548,48,41-65,Male,Pedestrian
+549,86,65+,Female,Pedestrian
+550,26,26-40,Male,Pedal cyclist
+551,91,65+,Male,Passenger
+552,24,18-25,Male,Pedestrian
+553,44,41-65,Male,Passenger
+554,52,41-65,Female,Passenger
+555,41,41-65,Male,Pedal cyclist
+556,17,18-25,Female,Pedal cyclist
+557,5,0-17,Male,Pedestrian
+558,67,65+,Male,Pedal cyclist
+559,34,26-40,Female,Driver
+560,59,41-65,Male,Pedal cyclist
+561,60,41-65,Male,
+562,46,41-65,Male,Pedestrian
+563,0,0-17,Male,Pedestrian
+564,30,26-40,Female,Passenger
+565,35,26-40,Male,Passenger
+566,26,26-40,Female,Pedestrian
+567,55,41-65,Male,Pedestrian
+568,62,41-65,Female,Pedestrian
+569,73,65+,Male,Pedal cyclist
+570,69,65+,Male,Passenger
+571,14,0-17,Female,Passenger
+572,22,18-25,Male,Pedal cyclist
+573,42,41-65,Female,Pedestrian
+574,42,41-65,Female,Passenger
+575,92,65+,Male,Driver
+576,56,41-65,Female,Pedestrian
+577,41,41-65,Male,Pedestrian
+578,16,0-17,Female,Pedestrian
+579,23,18-25,Female,Motorcycle rider
+580,87,65+,Female,Passenger
+581,45,41-65,Male,Pedestrian
+582,86,65+,Male,Pedestrian
+583,36,26-40,Female,Driver
+584,12,0-17,Male,Passenger
+585,23,18-25,Male,Pedestrian
+586,88,65+,Female,Driver
+587,71,65+,Female,Driver
+588,0,0-17,Female,Passenger
+589,94,65+,Male,Passenger
+590,51,41-65,Female,Passenger
+591,87,65+,Female,Driver
+592,81,65+,Female,Driver
+593,86,65+,Female,Driver
+594,18,18-25,Male,Pedal cyclist
+595,89,65+,Male,Passenger
+596,83,65+,Male,Motorcycle rider
+597,93,65+,Male,Passenger
+598,99,65+,Female,Pedestrian
+599,57,41-65,Female,Motorcycle rider
+600,14,0-17,Male,Pedestrian
+601,68,65+,Male,Pedal cyclist
+602,54,41-65,Female,Motorcycle pillion passenger
+603,61,41-65,Female,Motorcycle rider
+604,43,41-65,Female,Driver
+605,51,41-65,Male,Passenger
+606,75,65+,Female,Pedestrian
+607,45,41-65,Male,Pedal cyclist
+608,64,41-65,Female,Driver
+609,4,0-17,Female,Passenger
+610,83,65+,Male,Pedal cyclist
+611,40,41-65,Male,Passenger
+612,1,0-17,Female,Passenger
+613,47,41-65,Male,Passenger
+614,53,41-65,Male,Passenger
+615,48,41-65,Male,Passenger
+616,80,65+,Male,Passenger
+617,95,65+,Female,Pedestrian
+618,79,65+,Male,Passenger
+619,53,41-65,Female,Pedestrian
+620,25,26-40,Female,Pedestrian
+621,60,41-65,Male,Pedestrian
+622,98,65+,Female,Passenger
+623,34,26-40,Male,Pedestrian
+624,96,65+,Female,Passenger
+625,37,26-40,Female,Motorcycle pillion passenger
+626,46,41-65,Male,Passenger
+627,27,26-40,Female,Pedestrian
+628,55,41-65,Male,Pedal cyclist
+629,29,26-40,Male,Pedal cyclist
+630,52,41-65,Female,Pedestrian
+631,77,65+,Female,Pedestrian
+632,24,18-25,Female,Pedestrian
+633,100,65+,Male,Passenger
+634,72,65+,Female,Pedestrian
+635,47,41-65,Female,Motorcycle rider
+636,8,0-17,Male,Pedestrian
+637,4,0-17,Female,Pedestrian
+638,89,65+,Male,Driver
+639,37,26-40,,Motorcycle rider
+640,28,26-40,Female,
+641,33,26-40,Female,
+642,15,0-17,Male,Pedestrian
+643,86,65+,Male,Pedal cyclist
+644,75,65+,Male,Pedal cyclist
+645,61,41-65,Male,Passenger
+646,56,41-65,Male,Pedal cyclist
+647,19,18-25,Female,
+648,94,65+,Female,Driver
+649,53,41-65,Male,Motorcycle pillion passenger
+650,72,65+,Male,Passenger
+651,88,65+,Male,Passenger
+652,67,65+,Female,Passenger
+653,39,26-40,Female,Passenger
+654,22,18-25,Male,Motorcycle pillion passenger
+655,1,0-17,Male,Pedestrian
+656,62,41-65,Male,Passenger
+657,52,41-65,Female,Motorcycle rider
+658,45,41-65,Female,Pedal cyclist
+659,7,0-17,Male,Passenger
+660,13,0-17,Male,Driver
+661,38,26-40,Female,Pedestrian
+662,3,0-17,Male,Pedestrian
+663,49,41-65,Female,Passenger
+664,36,26-40,Female,
+665,47,41-65,Male,
+666,52,41-65,Male,Passenger
+667,19,18-25,Male,Pedestrian
+668,47,41-65,Female,Pedal cyclist
+669,46,41-65,Male,
+670,19,18-25,Female,Motorcycle pillion passenger
+671,59,41-65,Female,Pedestrian
+672,92,65+,Male,Pedestrian
+673,70,65+,Female,Pedal cyclist
+674,56,41-65,Male,
+675,47,41-65,Female,Pedestrian
+676,54,41-65,Female,Pedestrian
+677,44,41-65,Male,Pedal cyclist
+678,93,65+,Female,Passenger
+679,27,26-40,Female,Motorcycle pillion passenger
+680,32,26-40,Male,Motorcycle pillion passenger
+681,90,65+,Female,Pedestrian
+682,12,0-17,Female,Pedestrian
+683,80,65+,Male,Pedal cyclist
+684,51,41-65,Female,Pedestrian
+685,98,65+,Female,Driver
+686,72,65+,Female,Passenger
+687,80,65+,Male,Motorcycle rider
+688,39,26-40,Male,Motorcycle pillion passenger
+689,23,18-25,Female,Pedestrian
+690,74,65+,Male,Pedal cyclist
+691,2,0-17,Female,Passenger
+692,20,18-25,Male,Pedal cyclist
+693,89,65+,Male,Pedal cyclist
+694,81,65+,Male,Motorcycle rider
+695,89,65+,Male,Pedestrian
+696,79,65+,Male,Pedal cyclist
+697,84,65+,Female,Motorcycle rider
+698,88,65+,Male,
+699,57,41-65,Female,Pedestrian
+700,54,41-65,Male,Pedestrian
+701,17,18-25,Female,Motorcycle pillion passenger
+702,65,65+,Male,Passenger
+703,94,65+,Female,Passenger
+704,55,41-65,Female,Passenger
+705,60,41-65,Male,Pedal cyclist
+706,68,65+,Male,Pedestrian
+707,58,41-65,Female,Passenger
+708,85,65+,Male,Passenger
+709,19,18-25,Male,
+710,28,26-40,Female,Pedestrian
+711,52,41-65,Male,Pedal cyclist
+712,63,41-65,Female,Pedal cyclist
+713,6,0-17,Female,Passenger
+714,91,65+,Female,Driver
+715,1,0-17,Male,Passenger
+716,46,41-65,Female,Passenger
+717,40,41-65,Female,Motorcycle rider
+718,67,65+,Male,Passenger
+719,79,65+,Female,Pedal cyclist
+720,84,65+,Male,Pedal cyclist
+721,88,65+,Male,Pedestrian
+722,64,41-65,Male,Passenger
+723,48,41-65,Female,
+724,54,41-65,Male,
+725,14,0-17,Female,Driver
+726,14,0-17,Female,Pedestrian
+727,10,0-17,Female,Passenger
+728,25,26-40,Male,Pedal cyclist
+729,41,41-65,Female,Pedal cyclist
+730,93,65+,Male,Pedestrian
+731,21,18-25,Male,Pedal cyclist
+732,58,41-65,Female,Motorcycle rider
+733,77,65+,Male,Passenger
+734,5,0-17,Female,Pedestrian
+735,22,18-25,Female,Motorcycle rider
+736,47,41-65,Female,Motorcycle pillion passenger
+737,41,41-65,Female,Motorcycle pillion passenger
+738,19,18-25,Male,Pedal cyclist
+739,40,41-65,Male,Pedal cyclist
+740,34,26-40,Female,Pedestrian
+741,6,0-17,Male,Pedestrian
+742,4,0-17,Male,Pedal cyclist
+743,10,0-17,Female,Pedestrian
+744,17,18-25,Female,Motorcycle rider
+745,24,18-25,Male,
+746,16,0-17,Female,Driver
+747,10,0-17,Male,Pedestrian
+748,34,26-40,Male,
+749,53,41-65,Female,Passenger
+750,27,26-40,Female,Motorcycle rider
+751,20,18-25,Female,Pedal cyclist
+752,14,0-17,Male,Pedal cyclist
+753,55,41-65,Female,Pedal cyclist
+754,8,0-17,Female,Pedestrian
+755,21,18-25,Male,Motorcycle pillion passenger
+756,68,65+,Male,
+757,8,0-17,Male,Pedal cyclist
+758,33,26-40,Female,Pedestrian
+759,29,26-40,Female,Motorcycle pillion passenger
+760,101,65+,Male,Driver
+761,16,0-17,Male,Pedal cyclist
+762,34,26-40,Male,Pedal cyclist
+763,87,65+,Male,Motorcycle rider
+764,50,41-65,Female,Pedal cyclist
+765,13,0-17,Male,Motorcycle rider
+766,76,65+,Female,Motorcycle rider
+767,60,41-65,Female,Pedal cyclist
+768,46,41-65,Male,Pedal cyclist
+769,22,18-25,Female,Motorcycle pillion passenger
+770,75,65+,Male,Pedestrian
+771,30,26-40,Male,Pedal cyclist
+772,43,41-65,Female,Motorcycle rider
+773,72,65+,Female,Pedal cyclist
+774,44,41-65,Female,Motorcycle rider
+775,32,26-40,Male,Pedal cyclist
+776,94,65+,Female,Pedestrian
+777,22,18-25,Female,Pedal cyclist
+778,95,65+,Female,Passenger
+779,81,65+,Male,Passenger
+780,11,0-17,Female,Pedestrian
+781,59,41-65,Male,Passenger
+782,44,41-65,Female,Pedal cyclist
+783,38,26-40,Male,Pedal cyclist
+784,54,41-65,Female,Motorcycle rider
+785,36,26-40,Female,Pedestrian
+786,24,18-25,Male,Pedal cyclist
+787,9,0-17,Male,Pedestrian
+788,74,65+,Male,Passenger
+789,32,26-40,Female,Pedal cyclist
+790,97,65+,Male,Driver
+791,46,41-65,Female,Motorcycle rider
+792,65,65+,Female,Pedal cyclist
+793,5,0-17,Male,Pedal cyclist
+794,52,41-65,Female,Pedal cyclist
+795,17,18-25,Male,Pedal cyclist
+796,9,0-17,Female,Passenger
+797,28,26-40,Male,Pedal cyclist
+798,50,41-65,Female,
+799,35,26-40,Male,Pedal cyclist
+800,99,65+,Male,Pedestrian
+801,95,65+,Male,Pedestrian
+802,92,65+,Male,Passenger
+803,71,65+,Male,Passenger
+804,21,18-25,Female,Pedal cyclist
+805,69,65+,Female,Motorcycle rider
+806,23,18-25,Male,Motorcycle pillion passenger
+807,48,41-65,Male,Pedal cyclist
+808,61,41-65,Female,Motorcycle pillion passenger
+809,60,41-65,Female,Pedestrian
+810,28,26-40,Female,Pedal cyclist
+811,13,0-17,Female,Passenger
+812,86,65+,Female,
+813,14,0-17,Female,Pedal cyclist
+814,14,0-17,Male,Driver
+815,27,26-40,Female,Pedal cyclist
+816,71,65+,Male,
+817,59,41-65,Female,
+818,65,65+,Female,
+819,0,0-17,,Passenger
+820,45,41-65,Female,Passenger
+821,41,41-65,Female,Pedestrian
+822,95,65+,Male,Passenger
+823,30,26-40,Female,Motorcycle rider
+824,76,65+,Male,Passenger
+825,77,65+,Male,Pedal cyclist
+826,0,0-17,Male,
+827,21,18-25,Female,
+828,17,18-25,Female,Pedestrian
+829,46,41-65,Female,Pedestrian
+830,39,26-40,Female,Motorcycle rider
+831,23,18-25,Male,Pedal cyclist
+832,48,41-65,Male,Motorcycle pillion passenger
+833,94,65+,Male,
+834,73,65+,Female,Motorcycle rider
+835,97,65+,Male,Pedestrian
+836,19,18-25,Female,Pedal cyclist
+837,22,18-25,Female,
+838,21,18-25,Male,
+839,76,65+,Female,Pedal cyclist
+840,42,41-65,Female,Pedal cyclist
+841,91,65+,Male,
+842,94,65+,Male,Pedestrian
+843,96,65+,Male,Passenger
+844,35,26-40,Female,Motorcycle rider
+845,6,0-17,Male,Motorcycle rider
+846,45,41-65,Female,Motorcycle rider
+847,91,65+,Female,Pedestrian
+848,45,41-65,Female,Motorcycle pillion passenger
+849,101,65+,Female,Passenger
+850,0,0-17,Female,
+851,48,41-65,Female,Motorcycle rider
+852,35,26-40,Female,Pedal cyclist
+853,98,65+,Female,
+854,50,41-65,Female,Motorcycle pillion passenger
+855,49,41-65,Female,Motorcycle pillion passenger
+856,14,0-17,Male,Motorcycle pillion passenger
+857,61,41-65,Female,
+858,16,0-17,Male,Motorcycle pillion passenger
+859,33,26-40,Female,Pedal cyclist
+860,36,26-40,Female,Motorcycle rider
+861,10,0-17,Female,Motorcycle pillion passenger
+862,31,26-40,Female,Motorcycle rider
+863,23,18-25,Male,
+864,66,65+,Female,Pedal cyclist
+865,51,41-65,Female,Motorcycle rider
+866,18,18-25,Male,Motorcycle pillion passenger
+867,5,0-17,Male,
+868,12,0-17,Male,Pedal cyclist
+869,96,65+,Male,Pedestrian
+870,92,65+,Female,Passenger
+871,93,65+,Male,Pedal cyclist
+872,25,26-40,Male,Motorcycle pillion passenger
+873,69,65+,Female,Pedal cyclist
+874,88,65+,Male,Pedal cyclist
+875,43,41-65,Female,Motorcycle pillion passenger
+876,31,26-40,Male,Motorcycle pillion passenger
+877,84,65+,Male,Motorcycle rider
+878,97,65+,Female,Driver
+879,92,65+,Male,Pedal cyclist
+880,42,41-65,Female,Motorcycle rider
+881,42,41-65,Female,Motorcycle pillion passenger
+882,55,41-65,Female,Motorcycle pillion passenger
+883,28,26-40,Female,Motorcycle pillion passenger
+884,37,26-40,Female,Pedal cyclist
+885,7,0-17,Male,Driver
+886,100,65+,Male,Pedestrian
+887,7,0-17,Male,Pedal cyclist
+888,22,18-25,Male,
+889,26,26-40,Male,
+890,26,26-40,Male,Motorcycle pillion passenger
+891,64,41-65,Female,Motorcycle rider
+892,58,41-65,Female,Motorcycle pillion passenger
+893,57,41-65,Female,Pedal cyclist
+894,43,41-65,Female,Pedal cyclist
+895,39,26-40,Male,Pedal cyclist
+896,29,26-40,Female,Motorcycle rider
+897,86,65+,Male,Motorcycle rider
+898,49,41-65,Female,Pedal cyclist
+899,18,18-25,Male,
+900,33,26-40,Male,Pedal cyclist
+901,48,41-65,Female,Pedal cyclist
+902,43,41-65,Male,Motorcycle pillion passenger
+903,37,26-40,Female,Motorcycle rider
+904,40,41-65,Female,Pedal cyclist
+905,31,26-40,Female,Pedal cyclist
+906,99,65+,Female,Passenger
+907,81,65+,Female,Motorcycle rider
+908,38,26-40,Female,Motorcycle rider
+909,33,26-40,Female,Motorcycle pillion passenger
+910,82,65+,Male,
+911,58,41-65,Female,Pedal cyclist
+912,60,41-65,Female,
+913,50,41-65,Female,Motorcycle rider
+914,30,26-40,Male,Motorcycle pillion passenger
+915,7,0-17,Female,Pedestrian
+916,13,0-17,Female,Pedestrian
+917,34,26-40,Female,Motorcycle pillion passenger
+918,96,65+,Female,Driver
+919,87,65+,Male,Pedal cyclist
+920,26,26-40,Female,
+921,32,26-40,Female,
+922,7,0-17,Female,Motorcycle pillion passenger
+923,18,18-25,Female,
+924,39,26-40,Female,Motorcycle pillion passenger
+925,13,0-17,Male,Pedal cyclist
+926,15,0-17,Male,Motorcycle pillion passenger
+927,52,41-65,Female,Motorcycle pillion passenger
+928,20,18-25,Female,Motorcycle pillion passenger
+929,15,0-17,Female,Motorcycle rider
+930,26,26-40,Female,Pedal cyclist
+931,13,0-17,Female,Driver
+932,64,41-65,Female,Motorcycle pillion passenger
+933,27,26-40,Male,Motorcycle pillion passenger
+934,89,65+,Male,
+935,66,65+,Female,Motorcycle rider
+936,51,41-65,Female,Motorcycle pillion passenger
+937,28,26-40,Female,Motorcycle rider
+938,85,65+,Male,Pedal cyclist
+939,10,0-17,Male,Pedal cyclist
+940,16,0-17,Female,
+941,19,18-25,Male,Motorcycle pillion passenger
+942,40,41-65,Male,Motorcycle pillion passenger
+943,53,41-65,Female,Motorcycle pillion passenger
+944,59,41-65,Female,Pedal cyclist
+945,25,26-40,Female,Motorcycle pillion passenger
+946,32,26-40,Female,Motorcycle rider
+947,98,65+,Male,Pedestrian
+948,2,0-17,Male,Motorcycle pillion passenger
+949,26,26-40,Female,Motorcycle pillion passenger
+950,57,41-65,Female,Motorcycle pillion passenger
+951,46,41-65,Male,Motorcycle pillion passenger
+952,91,65+,Female,
+953,36,26-40,Male,Motorcycle pillion passenger
+954,12,0-17,Male,Motorcycle rider
+955,18,18-25,Female,Motorcycle pillion passenger
+956,61,41-65,Female,Pedal cyclist
+957,32,26-40,Female,Motorcycle pillion passenger
+958,46,41-65,Female,Motorcycle pillion passenger
+959,98,65+,Male,Driver
+960,6,0-17,Male,Pedal cyclist
+961,56,41-65,Female,Motorcycle pillion passenger
+962,20,18-25,Male,
+963,91,65+,Male,Motorcycle rider
+964,69,65+,Female,Motorcycle pillion passenger
+965,19,18-25,Female,Motorcycle rider
+966,0,0-17,Female,Pedestrian
+967,38,26-40,Female,Pedal cyclist
+968,11,0-17,Male,Motorcycle rider
+969,21,18-25,Female,Motorcycle rider
+970,38,26-40,Female,Motorcycle pillion passenger
+971,16,0-17,Female,Motorcycle pillion passenger
+972,25,26-40,Female,Pedal cyclist
+973,62,41-65,Female,Motorcycle rider
+974,10,0-17,Male,Motorcycle rider
+975,0,0-17,Male,Driver
+976,0,0-17,,Driver
+977,6,0-17,Female,Pedestrian
+978,0,0-17,Male,Pedal cyclist
+979,24,18-25,Female,Motorcycle rider
+980,29,26-40,Female,Pedal cyclist
+981,3,0-17,Male,Pedal cyclist
+982,36,26-40,Female,Motorcycle pillion passenger
+983,18,18-25,Female,Pedal cyclist
+984,66,65+,Female,Motorcycle pillion passenger
+985,83,65+,Female,Pedal cyclist
+986,11,0-17,Female,Pedal cyclist
+987,89,65+,Male,Motorcycle rider
+988,49,41-65,Male,
+989,59,41-65,Female,Motorcycle pillion passenger
+990,21,18-25,Female,Motorcycle pillion passenger
+991,12,0-17,Female,Motorcycle pillion passenger
+992,40,41-65,Female,Motorcycle pillion passenger
+993,40,41-65,Male,
+994,5,0-17,Male,Motorcycle rider
+995,51,41-65,Female,
+996,73,65+,Female,Pedal cyclist
+997,15,0-17,Female,Pedal cyclist
+998,54,41-65,Female,Pedal cyclist
+999,56,41-65,Female,
+1000,0,0-17,Female,Driver
+1001,8,0-17,Male,Motorcycle rider
+1002,8,0-17,Male,Motorcycle pillion passenger
+1003,12,0-17,Male,Driver
+1004,9,0-17,Male,Motorcycle rider
+1005,10,0-17,Female,Pedal cyclist
+1006,95,65+,Male,Driver
+1007,48,41-65,Female,Motorcycle pillion passenger
+1008,44,41-65,Female,Motorcycle pillion passenger
+1009,51,41-65,Female,Pedal cyclist
+1010,68,65+,Female,Motorcycle rider
+1011,53,41-65,Female,Pedal cyclist
+1012,12,0-17,Male,Motorcycle pillion passenger
+1013,10,0-17,Female,
+1014,75,65+,Female,Pedal cyclist
+1015,23,18-25,Female,Pedal cyclist
+1016,5,0-17,Female,Pedal cyclist
+1017,24,18-25,Male,Motorcycle pillion passenger
+1018,28,26-40,Male,Motorcycle pillion passenger
+1019,91,65+,Male,Pedal cyclist
+1020,71,65+,Female,Pedal cyclist
+1021,11,0-17,Male,Motorcycle pillion passenger
+1022,7,0-17,Male,Motorcycle pillion passenger
+1023,42,41-65,Male,Motorcycle pillion passenger
+1024,30,26-40,Female,Motorcycle pillion passenger
+1025,3,0-17,Female,Motorcycle rider
+1026,6,0-17,Female,Pedal cyclist
+1027,13,0-17,Female,Pedal cyclist
+1028,24,18-25,Female,Pedal cyclist
+1029,37,26-40,Male,Motorcycle pillion passenger
+1030,16,0-17,Female,Pedal cyclist
+1031,11,0-17,Female,Driver
+1032,23,18-25,Female,
+1033,71,65+,Female,Motorcycle rider
+1034,80,65+,Male,
+1035,17,18-25,Male,
+1036,90,65+,Male,Pedal cyclist
+1037,10,0-17,Female,Motorcycle rider
+1038,13,0-17,Male,Motorcycle pillion passenger
+1039,99,65+,Male,Passenger
+1040,14,0-17,Female,Motorcycle rider
+1041,88,65+,Male,Motorcycle rider
+1042,68,65+,Female,Motorcycle pillion passenger
+1043,8,0-17,Female,Pedal cyclist
+1044,14,0-17,Male,
+1045,12,0-17,Female,Pedal cyclist
+1046,46,41-65,Female,Pedal cyclist
+1047,34,26-40,Male,Motorcycle pillion passenger
+1048,27,26-40,Female,
+1049,34,26-40,Female,Pedal cyclist
+1050,9,0-17,Female,Pedal cyclist
+1051,39,26-40,Female,Pedal cyclist
+1052,35,26-40,Male,Motorcycle pillion passenger
+1053,45,41-65,Male,Motorcycle pillion passenger
+1054,14,0-17,Female,Motorcycle pillion passenger
+1055,47,41-65,Male,Motorcycle pillion passenger
+1056,11,0-17,Male,Driver
+1057,29,26-40,Male,Motorcycle pillion passenger
+1058,67,65+,Female,Pedal cyclist
+1059,7,0-17,Female,Pedal cyclist

@@ -84,21 +84,3 @@ def drop_table(table_name: str):
 
 
 # ---------- 业务查询 ----------
-def run_sql_file(filename):
-    df_results = {}
-
-    with open(filename, "r", encoding="utf-8") as f:
-        sql_content = f.read()
-
-    statements = [stmt.strip() for stmt in sql_content.split(";") if stmt.strip()]
-    for i, stmt in enumerate(statements, start=1):
-        print(f"\n💡 正在执行第 {i} 条 SQL：\n{stmt}")
-        try:
-            result, columns = query_data(stmt)
-            df = pd.DataFrame(result, columns=columns)
-            df_results[f"query_{i}"] = df
-        except Exception as e:
-            print(f"❌ 执行失败：{e}")
-            df_results[f"query_{i}"] = None
-
-    return df_results

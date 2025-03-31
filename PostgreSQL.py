@@ -1,6 +1,6 @@
 # PostgreSQL.py
-from utility.pg_utils import create_table, insert_data, insert_many, query_data, drop_table, run_sql_file
-from utility.schemas import TABLE_SCHEMAS
+from utility.pg_utils import create_table, insert_data, insert_many, query_data, drop_table
+from utility.schemas import TABLE_SCHEMAS, TABLE_IMPORT_ORDER
 import pandas as pd
 from typing import List, Optional
 import os
@@ -8,14 +8,22 @@ import os
 OUTPUT_DIR = "output"
 DB_files_export = "DB_files_export"
 
+# def create_all_tables():
+#     for table, schema in TABLE_SCHEMAS.items():
+#         create_table(table, schema)
+
 def create_all_tables():
-    for table, schema in TABLE_SCHEMAS.items():
-        create_table(table, schema)
+    for table in TABLE_IMPORT_ORDER:
+        create_table(table, TABLE_SCHEMAS[table])
+
+# def drop_all_tables():
+#     # 删除顺序要注意先删除 fact 表，再删 dim 表（避免外键冲突）
+#     # reverse 排序保证先删 fact 后删 dim
+#     for table in reversed(TABLE_SCHEMAS.keys()):
+#         drop_table(table)
 
 def drop_all_tables():
-    # 删除顺序要注意先删除 fact 表，再删 dim 表（避免外键冲突）
-    # reverse 排序保证先删 fact 后删 dim
-    for table in reversed(TABLE_SCHEMAS.keys()):
+    for table in reversed(TABLE_IMPORT_ORDER):
         drop_table(table)
 
 
@@ -71,19 +79,37 @@ def preview_all_tables(limit: int = None):
 
 csv_headers = {}
 
-def import_all_csv_to_db():
-    for filename in os.listdir(OUTPUT_DIR):
-        if filename.endswith(".csv"):
-            table_name = filename.replace(".csv", "")
-            file_path = os.path.join(OUTPUT_DIR, filename)
+# def import_all_csv_to_db():
+#     for filename in os.listdir(OUTPUT_DIR):
+#         if filename.endswith(".csv"):
+#             table_name = filename.replace(".csv", "")
+#             file_path = os.path.join(OUTPUT_DIR, filename)
 
-            print(f"\n📥 正在导入 `{filename}` 到表 `{table_name}`...")
-            try:
-                df = pd.read_csv(file_path)
-                csv_headers[table_name] = df.columns.tolist()  # 🆕 缓存列名
-                insert_dataframe(table_name, df)
-            except Exception as e:
-                print(f"❌ 导入 `{table_name}` 失败: {e}")
+#             print(f"\n📥 正在导入 `{filename}` 到表 `{table_name}`...")
+#             try:
+#                 df = pd.read_csv(file_path)
+#                 csv_headers[table_name] = df.columns.tolist()  # 🆕 缓存列名
+#                 insert_dataframe(table_name, df)
+#             except Exception as e:
+#                 print(f"❌ 导入 `{table_name}` 失败: {e}")
+
+def import_all_csv_to_db():
+    for table_name in TABLE_IMPORT_ORDER:
+        filename = f"{table_name}.csv"
+        file_path = os.path.join(OUTPUT_DIR, filename)
+
+        if not os.path.exists(file_path):
+            print(f"⚠️ 找不到文件 `{filename}`，跳过。")
+            continue
+
+        print(f"\n📥 正在导入 `{filename}` 到表 `{table_name}`...")
+        try:
+            df = pd.read_csv(file_path)
+            csv_headers[table_name] = df.columns.tolist()
+            insert_dataframe(table_name, df)
+        except Exception as e:
+            print(f"❌ 导入 `{table_name}` 失败: {e}")
+
 
 def run_sql_file(filename):
     df_results = {}
@@ -109,16 +135,16 @@ def run_sql_file(filename):
 def main():
 
     # 删除表
-    # drop_all_tables()
+    drop_all_tables()
 
     # # 删除某个表，比如 fact_person_fatality
     # drop_table("fact_person_fatality")
 
 
-    # create_all_tables()
+    create_all_tables()
 
     # 👇 导入所有 CSV 到数据库
-    # import_all_csv_to_db()
+    import_all_csv_to_db()
 
     
     # 添加数据
@@ -128,16 +154,19 @@ def main():
 
 
     # 查询表
-    # preview_all_tables(None)
+    preview_all_tables(None)
+
+
+
 
     # df = query_to_dataframe(
-    #     "SELECT * FROM fact_person_fatality"
+    #     "SELECT * FROM dim_road"
     #     # columns=["person_id", "age", "gender", "road_user", "age_group"]
     # )
     # print(df.head(20))
 
     #======================
-    dfs = run_sql_file("sql/1.1.sql")
+    # dfs = run_sql_file("sql/1.1.sql")
     # 查看第一条查询结果
     # print(dfs["query_1"].head())
 

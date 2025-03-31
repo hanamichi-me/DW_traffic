@@ -1,0 +1,5 @@
+speed_zone_id,speed_limit_group
+1,81–100
+2,51–80
+3,≤50
+4,100+

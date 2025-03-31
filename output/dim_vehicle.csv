@@ -1,7 +1,7 @@
 vehicle_id,bus_involvement,heavy_rigid_truck_involvement,articulated_truck_involvement
 1,False,False,False
-2,,,
-3,False,False,True
+2,False,False,True
+3,,,
 4,True,False,True
 5,False,True,False
 6,,True,
