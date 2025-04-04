@@ -3,9 +3,7 @@
 import pandas as pd
 from mlxtend.frequent_patterns import apriori, association_rules
 from mlxtend.preprocessing import TransactionEncoder
-from mlxtend.frequent_patterns import fpgrowth
 import os
-from tqdm import tqdm
 
 
 def load_csv_files(folder_path):
@@ -18,119 +16,58 @@ def load_csv_files(folder_path):
     return csv_data
 
 
-def merge_tables_for_arm(data):
-    df = data["fact_person_fatality"].copy()
-
-    # 多维度 Join
-    df = df.merge(data["dim_person"], on="person_id", how="left")
-    df = df.merge(data["dim_road"], on="road_id", how="left")
-    df = df.merge(data["dim_vehicle"], on="vehicle_id", how="left")
-    df = df.merge(data["dim_location"], on="location_id", how="left")
-    df = df.merge(data["dim_date"], on="date_id", how="left")
-    df = df.merge(data["dim_crash_type"], on="crash_type_id", how="left")
-    df = df.merge(data["dim_time"], on="time_of_day_id", how="left")
-
-    # 选择要参与挖掘的字段
-    selected_fields = [
-        "age_group", "gender", "road_type", "speed_limit_group",
-        "bus_involvement", "heavy_rigid_truck_involvement", "articulated_truck_involvement",
-        "state", "remoteness_area", "day_of_week_name", "day_type",
-        "christmas_period", "easter_period", "crash_type", "time_of_day", "road_user"
-    ]
-
-    df = df[selected_fields]
-
-    # 将布尔型字段转为字符串，避免 OneHot 编码时被忽略
-    bool_cols = ["bus_involvement", "heavy_rigid_truck_involvement", "articulated_truck_involvement",
-                 "christmas_period", "easter_period"]
-    for col in bool_cols:
-        df[col] = df[col].astype(str)
-
-    # 删除含缺失的记录
-    df = df.dropna()
-
-    return df
-
-
-# def prepare_transactions(df_person, df_date, df_location, df_road, df_vehicle, df_crash_type, df_time):
-#     # 合并所有相关表
-#     df = df_person.merge(df_date, on='date_id', how='left') \
-#                   .merge(df_location, on='location_id', how='left') \
-#                   .merge(df_road, on='road_id', how='left') \
-#                   .merge(df_vehicle, on='vehicle_id', how='left') \
-#                   .merge(df_crash_type, on='crash_type_id', how='left') \
-#                   .merge(df_time, on='time_of_day_id', how='left')
-
-#     # 选择有意义的字段（注意都是分类变量）
-#     selected_cols = [
-#         'age_group', 'gender', 'road_user',
-#         'state', 'remoteness_area',
-#         'road_type', 'speed_limit_group',
-#         'bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement',
-#         'crash_type', 'time_of_day',
-#         'day_of_week_name', 'day_type',
-#         'christmas_period', 'easter_period'
-#     ]
-
-#     df = df[selected_cols]
-
-#     # 把每列都变成“字段=值”这种格式，比如 gender=Male
-#     df = df.apply(lambda col: col.map(lambda x: f"{col.name}={x}" if pd.notnull(x) else pd.NA))
-
-#     # 每一行变成一个事务（每行是一个列表）
-#     transactions = df.apply(lambda row: row.dropna().tolist(), axis=1)
-
-#     # 用 TransactionEncoder 做 one-hot 编码
-#     from mlxtend.preprocessing import TransactionEncoder
-#     te = TransactionEncoder()
-#     df_encoded = te.fit(transactions).transform(transactions)
-#     df_encoded = pd.DataFrame(df_encoded, columns=te.columns_)
-
-#     print(f"✅ 成功构造 {len(df_encoded)} 条事务，包含 {len(df_encoded.columns)} 个唯一项。")
-#     return df_encoded
-
-tqdm.pandas(desc="🚀 处理中")
-
-def prepare_transactions(df_person, df_date, df_location, df_road, df_vehicle, df_crash_type, df_time):
-    # 合并所有相关表
-    df = df_person.merge(df_date, on='date_id', how='left') \
-                  .merge(df_location, on='location_id', how='left') \
-                  .merge(df_road, on='road_id', how='left') \
-                  .merge(df_vehicle, on='vehicle_id', how='left') \
-                  .merge(df_crash_type, on='crash_type_id', how='left') \
-                  .merge(df_time, on='time_of_day_id', how='left')
-
-    # 选择有意义的字段（注意都是分类变量）
+def get_selected_columns(speed= "limit", preference="easter", vehicle="bus"):  
     selected_cols = [
-        'age_group', 'gender', 'road_user',
-        'state', 'remoteness_area',
-        'road_type', 'speed_limit_group',
-        'bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement',
-        'crash_type', 'time_of_day',
-        'day_of_week_name', 'day_type',
-        'christmas_period', 'easter_period'
+        'gender', 'age_group',
+        'road_type',
+        'time_of_day',
+        'crash_type',
+        'day_type', 'road_user', 'state'
     ]
+
+    if speed == "limit":
+        selected_cols.append('speed_limit_x') 
+    if speed == "category":
+        selected_cols.append('speed_category')
+
+    # 加入节日字段
+    if preference == "easter":
+        selected_cols.append('easter_period')
+    if preference == "christmas":
+        selected_cols.append('christmas_period')
+
+    # 加入车辆字段
+    if vehicle == "bus":
+        selected_cols.append('bus_involvement')
+    if vehicle == "heavy":
+        selected_cols.append('heavy_rigid_truck_involvement')
+    if vehicle == "articulated":
+        selected_cols.append('articulated_truck_involvement')
+
+    return selected_cols
+
+def prepare_transactions_custom(data, selected_cols):
+
+    df = data["fact_person_fatality"].merge(data["dim_person"], on="person_id") \
+        .merge(data["dim_date"], on='date_id') \
+        .merge(data["dim_location"], on='location_id') \
+        .merge(data["dim_road"], on='road_id') \
+        .merge(data["dim_speed_zone"], on='speed_zone_id', how='left') \
+        .merge(data["dim_vehicle"], on='vehicle_id') \
+        .merge(data["dim_crash_type"], on='crash_type_id') \
+        .merge(data["dim_time"], on='time_of_day_id') 
+    
 
     df = df[selected_cols]
-
-    # 将每列值转换为“字段=值”形式，例如 "gender=Male"
     df = df.apply(lambda col: col.map(lambda x: f"{col.name}={x}" if pd.notnull(x) else pd.NA))
-
-    # 每一行变成一个事务（List of string），使用 tqdm 展示处理进度
-    transactions = df.progress_apply(lambda row: row.dropna().tolist(), axis=1)
-
-    # One-hot 编码转换为布尔特征矩阵
+    transactions = df.apply(lambda row: row.dropna().tolist(), axis=1)
     te = TransactionEncoder()
     df_encoded = te.fit(transactions).transform(transactions)
-    df_encoded = pd.DataFrame(df_encoded, columns=te.columns_)
-
-    print(f"\n✅ 成功构造 {len(df_encoded)} 条事务，包含 {len(df_encoded.columns)} 个唯一项。")
-    return df_encoded
+    return pd.DataFrame(df_encoded, columns=te.columns_)
 
 
 
-
-def mine_association_rules(df_trans, target_rhs="road_user=", min_support=0.05, min_confidence=0.60, min_lift=1.0, top_k=10):
+def mine_association_rules(df_trans, target_rhs="road_user=", min_support=0.02, min_confidence=0.60, min_lift=1.0, top_k=10):
     freq_items = apriori(df_trans, min_support=min_support, use_colnames=True)
     rules = association_rules(freq_items, metric="lift", min_threshold=min_lift)
 
@@ -141,58 +78,76 @@ def mine_association_rules(df_trans, target_rhs="road_user=", min_support=0.05, 
 
     # confidence 较高，按 lift 和 confidence 排序
     rules = rules[rules['confidence'] >= min_confidence]
-    # rules = rules.sort_values(by=["lift", "confidence"], ascending=False).head(top_k)
+
     rules = rules.sort_values(by=["lift", "confidence"], ascending=False).head(top_k)
 
 
     return rules
 
 
+def clean_frozenset_columns(df):
+    def format_items(fset):
+        # 如果是字符串（旧写法兼容），先转回 set
+        if isinstance(fset, str):
+            fset = eval(fset.replace("frozenset", "").strip("()"))
+        # 直接对 set/frozenset 排序处理
+        sorted_items = sorted(fset)
+        return "{" + ", ".join(sorted_items) + "}"
 
-# def mine_association_rules(df_trans, target_rhs="road_user=", min_support=0.06, min_confidence=0.60, min_lift=2.0, top_k=10):
-#     print("🔍 正在生成频繁项集 ...")
-#     freq_items = fpgrowth(df_trans, min_support=min_support, use_colnames=True)
-
-#     print("🧠 正在挖掘关联规则 ...")
-#     rules = association_rules(freq_items, metric="lift", min_threshold=min_lift)
-
-#     rules = rules[
-#         rules['consequents'].apply(lambda x: len(x) == 1 and list(x)[0].startswith(target_rhs))
-#     ]
-#     rules = rules[rules['confidence'] >= min_confidence]
-#     rules = rules.sort_values(by=[ "lift", "confidence"], ascending=False).head(top_k)
-
-#     return rules
-
+    df['antecedents'] = df['antecedents'].apply(format_items)
+    df['consequents'] = df['consequents'].apply(format_items)
+    return df
 
 
 
 def main():
     data = load_csv_files("DB_files_export")
+    all_rules = []
 
-    df_trans = prepare_transactions(
-        df_person=data["fact_person_fatality"].merge(data["dim_person"], on="person_id"),
-        df_date=data["dim_date"],
-        df_location=data["dim_location"],
-        df_road=data["dim_road"],
-        df_vehicle=data["dim_vehicle"],
-        df_crash_type=data["dim_crash_type"],
-        df_time=data["dim_time"]
-    )
+    combinations = [
+        ("limit","easter", "bus"),
+        ("limit","easter", "heavy"),
+        ("limit","easter", "articulated"),
+        ("limit","christmas", "bus"),
+        ("limit","christmas", "heavy"),
+        ("limit","christmas", "articulated"),
+        ("category","easter", "bus"),
+        ("category","easter", "heavy"),
+        ("category","easter", "articulated"),
+        ("category","christmas", "bus"),
+        ("category","christmas", "heavy"),
+        ("category","christmas", "articulated")
+    ]
 
-    rules = mine_association_rules(df_trans, target_rhs="road_user=")
+    for speed, holiday, vehicle in combinations:
+        print(f"🚀 挖掘组合：{speed} +{holiday} + {vehicle}")
+        selected_cols = get_selected_columns(speed= speed, preference=holiday, vehicle=vehicle)
+        df_trans = prepare_transactions_custom(data, selected_cols)
+        rules = mine_association_rules(df_trans, target_rhs="road_user=",top_k=50)
+        rules["combo"] = f"{speed}_{holiday}_{vehicle}"  # 标注来源组合
+        all_rules.append(rules)
 
-    print("📋 Top Rules with 'road_user' on the RHS:")
-    print(rules[["antecedents", "consequents", "support", "confidence", "lift"]])
+    # 合并所有规则
+    combined_rules = pd.concat(all_rules, ignore_index=True)
 
-    # ✅ 导出到 output_rules 文件夹
+    # 取最终 top_k
+    final_top_k = combined_rules.sort_values(by=["lift", "confidence"], ascending=False)
+
+    # 导出
     output_dir = "output_rules"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, "road_user_rules.csv")
-    rules.to_csv(output_path, index=False)
-    print(f"✅ 已保存关联规则到文件: {output_path}")
-
-
+    # 保留三位小数
+    final_top_k["support"] = final_top_k["support"].round(3)
+    final_top_k["confidence"] = final_top_k["confidence"].round(3)
+    final_top_k["lift"] = final_top_k["lift"].round(3)
+    final_top_k = clean_frozenset_columns(final_top_k)
+    export_cols = [ "antecedents", "consequents", "support", "confidence", "lift"]
+    final_top_k = final_top_k[export_cols]
+    final_top_k = final_top_k.drop_duplicates()
+    final_top_k = final_top_k.head(10)
+    output_path = os.path.join(output_dir, "combined_top10_rules.csv")
+    final_top_k.to_csv(output_path, index=False)
+    print("✅ 已导出合并后的前10条规则：{output_path}")
 
 if __name__ == "__main__":
     main()

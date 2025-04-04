@@ -65,7 +65,7 @@ person_id,age,age_group,gender,road_user
 64,21,18-25,Female,Driver
 65,51,41-65,Male,Driver
 66,23,18-25,Male,Passenger
-67,74,65+,,Motorcycle rider
+67,74,65+,Unknown,Motorcycle rider
 68,80,65+,Female,Passenger
 69,67,65+,Female,Pedestrian
 70,64,41-65,Female,Pedestrian
@@ -161,7 +161,7 @@ person_id,age,age_group,gender,road_user
 160,55,41-65,Female,Motorcycle rider
 161,44,41-65,Female,Driver
 162,28,26-40,Male,Motorcycle rider
-163,15,0-17,Male,
+163,15,0-17,Male,Unknown
 164,91,65+,Male,Pedestrian
 165,11,0-17,Female,Passenger
 166,53,41-65,Female,Driver
@@ -197,7 +197,7 @@ person_id,age,age_group,gender,road_user
 196,77,65+,Male,Driver
 197,65,65+,Male,Motorcycle rider
 198,33,26-40,Female,Motorcycle rider
-199,34,26-40,Female,
+199,34,26-40,Female,Unknown
 200,11,0-17,Male,Pedestrian
 201,39,26-40,Female,Pedestrian
 202,30,26-40,Male,Motorcycle rider
@@ -222,7 +222,7 @@ person_id,age,age_group,gender,road_user
 221,65,65+,Female,Driver
 222,72,65+,Male,Driver
 223,81,65+,Male,Driver
-224,15,0-17,Female,
+224,15,0-17,Female,Unknown
 225,79,65+,Female,Pedestrian
 226,23,18-25,Male,Driver
 227,58,41-65,Male,Driver
@@ -248,7 +248,7 @@ person_id,age,age_group,gender,road_user
 247,15,0-17,Female,Pedestrian
 248,54,41-65,Male,Passenger
 249,62,41-65,Male,Pedestrian
-250,45,41-65,Female,
+250,45,41-65,Female,Unknown
 251,39,26-40,Male,Pedestrian
 252,26,26-40,Female,Passenger
 253,50,41-65,Male,Driver
@@ -303,7 +303,7 @@ person_id,age,age_group,gender,road_user
 302,78,65+,Male,Driver
 303,49,41-65,Male,Motorcycle rider
 304,17,18-25,Male,Motorcycle rider
-305,32,26-40,Male,
+305,32,26-40,Male,Unknown
 306,8,0-17,Male,Passenger
 307,63,41-65,Male,Pedal cyclist
 308,56,41-65,Female,Pedal cyclist
@@ -313,11 +313,11 @@ person_id,age,age_group,gender,road_user
 312,16,0-17,Male,Motorcycle rider
 313,33,26-40,Male,Driver
 314,67,65+,Male,Driver
-315,77,65+,,Passenger
+315,77,65+,Unknown,Passenger
 316,69,65+,Male,Pedal cyclist
 317,28,26-40,Female,Driver
 318,3,0-17,Male,Passenger
-319,30,26-40,Female,
+319,30,26-40,Female,Unknown
 320,84,65+,Male,Driver
 321,85,65+,Female,Driver
 322,11,0-17,Male,Pedal cyclist
@@ -347,7 +347,7 @@ person_id,age,age_group,gender,road_user
 346,54,41-65,Male,Pedal cyclist
 347,47,41-65,Male,Pedal cyclist
 348,43,41-65,Male,Passenger
-349,56,41-65,,Motorcycle rider
+349,56,41-65,Unknown,Motorcycle rider
 350,43,41-65,Male,Pedestrian
 351,20,18-25,Female,Motorcycle rider
 352,82,65+,Female,Pedestrian
@@ -368,7 +368,7 @@ person_id,age,age_group,gender,road_user
 367,35,26-40,Female,Driver
 368,38,26-40,Female,Driver
 369,89,65+,Female,Driver
-370,90,65+,Male,
+370,90,65+,Male,Unknown
 371,62,41-65,Female,Driver
 372,24,18-25,Female,Motorcycle pillion passenger
 373,38,26-40,Male,Pedestrian
@@ -410,7 +410,7 @@ person_id,age,age_group,gender,road_user
 409,75,65+,Female,Passenger
 410,15,0-17,Male,Passenger
 411,91,65+,Male,Driver
-412,13,0-17,Male,
+412,13,0-17,Male,Unknown
 413,45,41-65,Female,Pedestrian
 414,42,41-65,Male,Motorcycle rider
 415,18,18-25,Female,Pedestrian
@@ -425,7 +425,7 @@ person_id,age,age_group,gender,road_user
 424,62,41-65,Male,Pedal cyclist
 425,42,41-65,Male,Pedestrian
 426,65,65+,Male,Pedestrian
-427,13,0-17,Female,
+427,13,0-17,Female,Unknown
 428,41,41-65,Female,Motorcycle rider
 429,17,18-25,Male,Pedestrian
 430,31,26-40,Male,Pedestrian
@@ -436,7 +436,7 @@ person_id,age,age_group,gender,road_user
 435,64,41-65,Male,Pedestrian
 436,23,18-25,Female,Passenger
 437,19,18-25,Female,Passenger
-438,70,65+,Male,
+438,70,65+,Male,Unknown
 439,82,65+,Male,Driver
 440,47,41-65,Female,Passenger
 441,70,65+,Female,Passenger
@@ -447,7 +447,7 @@ person_id,age,age_group,gender,road_user
 446,58,41-65,Male,Pedal cyclist
 447,53,41-65,Female,Motorcycle rider
 448,27,26-40,Female,Passenger
-449,31,26-40,Male,
+449,31,26-40,Male,Unknown
 450,7,0-17,Female,Passenger
 451,93,65+,Female,Pedestrian
 452,55,41-65,Female,Pedestrian
@@ -456,26 +456,26 @@ person_id,age,age_group,gender,road_user
 455,79,65+,Female,Passenger
 456,50,41-65,Female,Passenger
 457,16,0-17,Male,Pedestrian
-458,27,26-40,Male,
+458,27,26-40,Male,Unknown
 459,90,65+,Female,Passenger
 460,11,0-17,Male,Passenger
 461,23,18-25,Female,Motorcycle pillion passenger
-462,35,26-40,Male,
+462,35,26-40,Male,Unknown
 463,69,65+,Female,Pedestrian
 464,52,41-65,Male,Motorcycle rider
-465,41,41-65,Male,
+465,41,41-65,Male,Unknown
 466,88,65+,Male,Driver
 467,64,41-65,Male,Pedal cyclist
 468,12,0-17,Female,Passenger
 469,49,41-65,Female,Pedestrian
 470,61,41-65,Female,Driver
 471,48,41-65,Female,Passenger
-472,28,26-40,Male,
+472,28,26-40,Male,Unknown
 473,29,26-40,Male,Passenger
 474,25,26-40,Female,Driver
 475,38,26-40,Female,Passenger
 476,89,65+,Female,Passenger
-477,44,41-65,Male,
+477,44,41-65,Male,Unknown
 478,92,65+,Female,Pedestrian
 479,57,41-65,Male,Passenger
 480,2,0-17,Male,Pedestrian
@@ -515,17 +515,17 @@ person_id,age,age_group,gender,road_user
 514,67,65+,Male,Motorcycle rider
 515,58,41-65,Male,Pedestrian
 516,72,65+,Male,Pedal cyclist
-517,61,41-65,Male,
+517,61,41-65,Male,Unknown
 518,100,65+,Female,Passenger
 519,75,65+,Male,Passenger
 520,84,65+,Female,Passenger
 521,86,65+,Male,Passenger
 522,84,65+,Female,Pedestrian
 523,70,65+,Male,Passenger
-524,5,0-17,Female,
-525,4,0-17,Female,
-526,1,0-17,Female,
-527,9,0-17,Female,
+524,5,0-17,Female,Unknown
+525,4,0-17,Female,Unknown
+526,1,0-17,Female,Unknown
+527,9,0-17,Female,Unknown
 528,33,26-40,Male,Passenger
 529,37,26-40,Female,Passenger
 530,56,41-65,Male,Passenger
@@ -559,7 +559,7 @@ person_id,age,age_group,gender,road_user
 558,67,65+,Male,Pedal cyclist
 559,34,26-40,Female,Driver
 560,59,41-65,Male,Pedal cyclist
-561,60,41-65,Male,
+561,60,41-65,Male,Unknown
 562,46,41-65,Male,Pedestrian
 563,0,0-17,Male,Pedestrian
 564,30,26-40,Female,Passenger
@@ -637,15 +637,15 @@ person_id,age,age_group,gender,road_user
 636,8,0-17,Male,Pedestrian
 637,4,0-17,Female,Pedestrian
 638,89,65+,Male,Driver
-639,37,26-40,,Motorcycle rider
-640,28,26-40,Female,
-641,33,26-40,Female,
+639,37,26-40,Unknown,Motorcycle rider
+640,28,26-40,Female,Unknown
+641,33,26-40,Female,Unknown
 642,15,0-17,Male,Pedestrian
 643,86,65+,Male,Pedal cyclist
 644,75,65+,Male,Pedal cyclist
 645,61,41-65,Male,Passenger
 646,56,41-65,Male,Pedal cyclist
-647,19,18-25,Female,
+647,19,18-25,Female,Unknown
 648,94,65+,Female,Driver
 649,53,41-65,Male,Motorcycle pillion passenger
 650,72,65+,Male,Passenger
@@ -662,17 +662,17 @@ person_id,age,age_group,gender,road_user
 661,38,26-40,Female,Pedestrian
 662,3,0-17,Male,Pedestrian
 663,49,41-65,Female,Passenger
-664,36,26-40,Female,
-665,47,41-65,Male,
+664,36,26-40,Female,Unknown
+665,47,41-65,Male,Unknown
 666,52,41-65,Male,Passenger
 667,19,18-25,Male,Pedestrian
 668,47,41-65,Female,Pedal cyclist
-669,46,41-65,Male,
+669,46,41-65,Male,Unknown
 670,19,18-25,Female,Motorcycle pillion passenger
 671,59,41-65,Female,Pedestrian
 672,92,65+,Male,Pedestrian
 673,70,65+,Female,Pedal cyclist
-674,56,41-65,Male,
+674,56,41-65,Male,Unknown
 675,47,41-65,Female,Pedestrian
 676,54,41-65,Female,Pedestrian
 677,44,41-65,Male,Pedal cyclist
@@ -696,7 +696,7 @@ person_id,age,age_group,gender,road_user
 695,89,65+,Male,Pedestrian
 696,79,65+,Male,Pedal cyclist
 697,84,65+,Female,Motorcycle rider
-698,88,65+,Male,
+698,88,65+,Male,Unknown
 699,57,41-65,Female,Pedestrian
 700,54,41-65,Male,Pedestrian
 701,17,18-25,Female,Motorcycle pillion passenger
@@ -707,7 +707,7 @@ person_id,age,age_group,gender,road_user
 706,68,65+,Male,Pedestrian
 707,58,41-65,Female,Passenger
 708,85,65+,Male,Passenger
-709,19,18-25,Male,
+709,19,18-25,Male,Unknown
 710,28,26-40,Female,Pedestrian
 711,52,41-65,Male,Pedal cyclist
 712,63,41-65,Female,Pedal cyclist
@@ -721,8 +721,8 @@ person_id,age,age_group,gender,road_user
 720,84,65+,Male,Pedal cyclist
 721,88,65+,Male,Pedestrian
 722,64,41-65,Male,Passenger
-723,48,41-65,Female,
-724,54,41-65,Male,
+723,48,41-65,Female,Unknown
+724,54,41-65,Male,Unknown
 725,14,0-17,Female,Driver
 726,14,0-17,Female,Pedestrian
 727,10,0-17,Female,Passenger
@@ -743,10 +743,10 @@ person_id,age,age_group,gender,road_user
 742,4,0-17,Male,Pedal cyclist
 743,10,0-17,Female,Pedestrian
 744,17,18-25,Female,Motorcycle rider
-745,24,18-25,Male,
+745,24,18-25,Male,Unknown
 746,16,0-17,Female,Driver
 747,10,0-17,Male,Pedestrian
-748,34,26-40,Male,
+748,34,26-40,Male,Unknown
 749,53,41-65,Female,Passenger
 750,27,26-40,Female,Motorcycle rider
 751,20,18-25,Female,Pedal cyclist
@@ -754,7 +754,7 @@ person_id,age,age_group,gender,road_user
 753,55,41-65,Female,Pedal cyclist
 754,8,0-17,Female,Pedestrian
 755,21,18-25,Male,Motorcycle pillion passenger
-756,68,65+,Male,
+756,68,65+,Male,Unknown
 757,8,0-17,Male,Pedal cyclist
 758,33,26-40,Female,Pedestrian
 759,29,26-40,Female,Motorcycle pillion passenger
@@ -796,7 +796,7 @@ person_id,age,age_group,gender,road_user
 795,17,18-25,Male,Pedal cyclist
 796,9,0-17,Female,Passenger
 797,28,26-40,Male,Pedal cyclist
-798,50,41-65,Female,
+798,50,41-65,Female,Unknown
 799,35,26-40,Male,Pedal cyclist
 800,99,65+,Male,Pedestrian
 801,95,65+,Male,Pedestrian
@@ -810,36 +810,36 @@ person_id,age,age_group,gender,road_user
 809,60,41-65,Female,Pedestrian
 810,28,26-40,Female,Pedal cyclist
 811,13,0-17,Female,Passenger
-812,86,65+,Female,
+812,86,65+,Female,Unknown
 813,14,0-17,Female,Pedal cyclist
 814,14,0-17,Male,Driver
 815,27,26-40,Female,Pedal cyclist
-816,71,65+,Male,
-817,59,41-65,Female,
-818,65,65+,Female,
-819,0,0-17,,Passenger
+816,71,65+,Male,Unknown
+817,59,41-65,Female,Unknown
+818,65,65+,Female,Unknown
+819,0,0-17,Unknown,Passenger
 820,45,41-65,Female,Passenger
 821,41,41-65,Female,Pedestrian
 822,95,65+,Male,Passenger
 823,30,26-40,Female,Motorcycle rider
 824,76,65+,Male,Passenger
 825,77,65+,Male,Pedal cyclist
-826,0,0-17,Male,
-827,21,18-25,Female,
+826,0,0-17,Male,Unknown
+827,21,18-25,Female,Unknown
 828,17,18-25,Female,Pedestrian
 829,46,41-65,Female,Pedestrian
 830,39,26-40,Female,Motorcycle rider
 831,23,18-25,Male,Pedal cyclist
 832,48,41-65,Male,Motorcycle pillion passenger
-833,94,65+,Male,
+833,94,65+,Male,Unknown
 834,73,65+,Female,Motorcycle rider
 835,97,65+,Male,Pedestrian
 836,19,18-25,Female,Pedal cyclist
-837,22,18-25,Female,
-838,21,18-25,Male,
+837,22,18-25,Female,Unknown
+838,21,18-25,Male,Unknown
 839,76,65+,Female,Pedal cyclist
 840,42,41-65,Female,Pedal cyclist
-841,91,65+,Male,
+841,91,65+,Male,Unknown
 842,94,65+,Male,Pedestrian
 843,96,65+,Male,Passenger
 844,35,26-40,Female,Motorcycle rider
@@ -848,24 +848,24 @@ person_id,age,age_group,gender,road_user
 847,91,65+,Female,Pedestrian
 848,45,41-65,Female,Motorcycle pillion passenger
 849,101,65+,Female,Passenger
-850,0,0-17,Female,
+850,0,0-17,Female,Unknown
 851,48,41-65,Female,Motorcycle rider
 852,35,26-40,Female,Pedal cyclist
-853,98,65+,Female,
+853,98,65+,Female,Unknown
 854,50,41-65,Female,Motorcycle pillion passenger
 855,49,41-65,Female,Motorcycle pillion passenger
 856,14,0-17,Male,Motorcycle pillion passenger
-857,61,41-65,Female,
+857,61,41-65,Female,Unknown
 858,16,0-17,Male,Motorcycle pillion passenger
 859,33,26-40,Female,Pedal cyclist
 860,36,26-40,Female,Motorcycle rider
 861,10,0-17,Female,Motorcycle pillion passenger
 862,31,26-40,Female,Motorcycle rider
-863,23,18-25,Male,
+863,23,18-25,Male,Unknown
 864,66,65+,Female,Pedal cyclist
 865,51,41-65,Female,Motorcycle rider
 866,18,18-25,Male,Motorcycle pillion passenger
-867,5,0-17,Male,
+867,5,0-17,Male,Unknown
 868,12,0-17,Male,Pedal cyclist
 869,96,65+,Male,Pedestrian
 870,92,65+,Female,Passenger
@@ -886,8 +886,8 @@ person_id,age,age_group,gender,road_user
 885,7,0-17,Male,Driver
 886,100,65+,Male,Pedestrian
 887,7,0-17,Male,Pedal cyclist
-888,22,18-25,Male,
-889,26,26-40,Male,
+888,22,18-25,Male,Unknown
+889,26,26-40,Male,Unknown
 890,26,26-40,Male,Motorcycle pillion passenger
 891,64,41-65,Female,Motorcycle rider
 892,58,41-65,Female,Motorcycle pillion passenger
@@ -897,7 +897,7 @@ person_id,age,age_group,gender,road_user
 896,29,26-40,Female,Motorcycle rider
 897,86,65+,Male,Motorcycle rider
 898,49,41-65,Female,Pedal cyclist
-899,18,18-25,Male,
+899,18,18-25,Male,Unknown
 900,33,26-40,Male,Pedal cyclist
 901,48,41-65,Female,Pedal cyclist
 902,43,41-65,Male,Motorcycle pillion passenger
@@ -908,9 +908,9 @@ person_id,age,age_group,gender,road_user
 907,81,65+,Female,Motorcycle rider
 908,38,26-40,Female,Motorcycle rider
 909,33,26-40,Female,Motorcycle pillion passenger
-910,82,65+,Male,
+910,82,65+,Male,Unknown
 911,58,41-65,Female,Pedal cyclist
-912,60,41-65,Female,
+912,60,41-65,Female,Unknown
 913,50,41-65,Female,Motorcycle rider
 914,30,26-40,Male,Motorcycle pillion passenger
 915,7,0-17,Female,Pedestrian
@@ -918,10 +918,10 @@ person_id,age,age_group,gender,road_user
 917,34,26-40,Female,Motorcycle pillion passenger
 918,96,65+,Female,Driver
 919,87,65+,Male,Pedal cyclist
-920,26,26-40,Female,
-921,32,26-40,Female,
+920,26,26-40,Female,Unknown
+921,32,26-40,Female,Unknown
 922,7,0-17,Female,Motorcycle pillion passenger
-923,18,18-25,Female,
+923,18,18-25,Female,Unknown
 924,39,26-40,Female,Motorcycle pillion passenger
 925,13,0-17,Male,Pedal cyclist
 926,15,0-17,Male,Motorcycle pillion passenger
@@ -932,13 +932,13 @@ person_id,age,age_group,gender,road_user
 931,13,0-17,Female,Driver
 932,64,41-65,Female,Motorcycle pillion passenger
 933,27,26-40,Male,Motorcycle pillion passenger
-934,89,65+,Male,
+934,89,65+,Male,Unknown
 935,66,65+,Female,Motorcycle rider
 936,51,41-65,Female,Motorcycle pillion passenger
 937,28,26-40,Female,Motorcycle rider
 938,85,65+,Male,Pedal cyclist
 939,10,0-17,Male,Pedal cyclist
-940,16,0-17,Female,
+940,16,0-17,Female,Unknown
 941,19,18-25,Male,Motorcycle pillion passenger
 942,40,41-65,Male,Motorcycle pillion passenger
 943,53,41-65,Female,Motorcycle pillion passenger
@@ -950,7 +950,7 @@ person_id,age,age_group,gender,road_user
 949,26,26-40,Female,Motorcycle pillion passenger
 950,57,41-65,Female,Motorcycle pillion passenger
 951,46,41-65,Male,Motorcycle pillion passenger
-952,91,65+,Female,
+952,91,65+,Female,Unknown
 953,36,26-40,Male,Motorcycle pillion passenger
 954,12,0-17,Male,Motorcycle rider
 955,18,18-25,Female,Motorcycle pillion passenger
@@ -960,7 +960,7 @@ person_id,age,age_group,gender,road_user
 959,98,65+,Male,Driver
 960,6,0-17,Male,Pedal cyclist
 961,56,41-65,Female,Motorcycle pillion passenger
-962,20,18-25,Male,
+962,20,18-25,Male,Unknown
 963,91,65+,Male,Motorcycle rider
 964,69,65+,Female,Motorcycle pillion passenger
 965,19,18-25,Female,Motorcycle rider
@@ -974,7 +974,7 @@ person_id,age,age_group,gender,road_user
 973,62,41-65,Female,Motorcycle rider
 974,10,0-17,Male,Motorcycle rider
 975,0,0-17,Male,Driver
-976,0,0-17,,Driver
+976,0,0-17,Unknown,Driver
 977,6,0-17,Female,Pedestrian
 978,0,0-17,Male,Pedal cyclist
 979,24,18-25,Female,Motorcycle rider
@@ -986,18 +986,18 @@ person_id,age,age_group,gender,road_user
 985,83,65+,Female,Pedal cyclist
 986,11,0-17,Female,Pedal cyclist
 987,89,65+,Male,Motorcycle rider
-988,49,41-65,Male,
+988,49,41-65,Male,Unknown
 989,59,41-65,Female,Motorcycle pillion passenger
 990,21,18-25,Female,Motorcycle pillion passenger
 991,12,0-17,Female,Motorcycle pillion passenger
 992,40,41-65,Female,Motorcycle pillion passenger
-993,40,41-65,Male,
+993,40,41-65,Male,Unknown
 994,5,0-17,Male,Motorcycle rider
-995,51,41-65,Female,
+995,51,41-65,Female,Unknown
 996,73,65+,Female,Pedal cyclist
 997,15,0-17,Female,Pedal cyclist
 998,54,41-65,Female,Pedal cyclist
-999,56,41-65,Female,
+999,56,41-65,Female,Unknown
 1000,0,0-17,Female,Driver
 1001,8,0-17,Male,Motorcycle rider
 1002,8,0-17,Male,Motorcycle pillion passenger
@@ -1011,7 +1011,7 @@ person_id,age,age_group,gender,road_user
 1010,68,65+,Female,Motorcycle rider
 1011,53,41-65,Female,Pedal cyclist
 1012,12,0-17,Male,Motorcycle pillion passenger
-1013,10,0-17,Female,
+1013,10,0-17,Female,Unknown
 1014,75,65+,Female,Pedal cyclist
 1015,23,18-25,Female,Pedal cyclist
 1016,5,0-17,Female,Pedal cyclist
@@ -1030,10 +1030,10 @@ person_id,age,age_group,gender,road_user
 1029,37,26-40,Male,Motorcycle pillion passenger
 1030,16,0-17,Female,Pedal cyclist
 1031,11,0-17,Female,Driver
-1032,23,18-25,Female,
+1032,23,18-25,Female,Unknown
 1033,71,65+,Female,Motorcycle rider
-1034,80,65+,Male,
-1035,17,18-25,Male,
+1034,80,65+,Male,Unknown
+1035,17,18-25,Male,Unknown
 1036,90,65+,Male,Pedal cyclist
 1037,10,0-17,Female,Motorcycle rider
 1038,13,0-17,Male,Motorcycle pillion passenger
@@ -1042,11 +1042,11 @@ person_id,age,age_group,gender,road_user
 1041,88,65+,Male,Motorcycle rider
 1042,68,65+,Female,Motorcycle pillion passenger
 1043,8,0-17,Female,Pedal cyclist
-1044,14,0-17,Male,
+1044,14,0-17,Male,Unknown
 1045,12,0-17,Female,Pedal cyclist
 1046,46,41-65,Female,Pedal cyclist
 1047,34,26-40,Male,Motorcycle pillion passenger
-1048,27,26-40,Female,
+1048,27,26-40,Female,Unknown
 1049,34,26-40,Female,Pedal cyclist
 1050,9,0-17,Female,Pedal cyclist
 1051,39,26-40,Female,Pedal cyclist

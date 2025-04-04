@@ -1,5 +1,17 @@
-speed_zone_id,speed_limit_group
-1,81–100
-2,51–80
-3,≤50
-4,100+
+speed_zone_id,speed_limit,speed_category
+1,100,High
+2,80,High
+3,50,Low
+4,90,High
+5,60,Medium
+6,70,Medium
+7,110,Very High
+8,40,Low
+9,20,Very Low
+10,10,Very Low
+11,5,Very Low
+12,130,Very High
+13,30,Very Low
+14,25,Very Low
+15,15,Very Low
+16,75,High

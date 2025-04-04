@@ -1,0 +1,11 @@
+antecedents,consequents,support,confidence,lift
+"{age_group=65+, christmas_period=False, crash_type=Single, day_type=Weekday, road_type=Undetermined, speed_limit_x=60}",{road_user=Pedestrian},0.021,0.858,5.578
+"{age_group=65+, articulated_truck_involvement=False, christmas_period=False, crash_type=Single, day_type=Weekday, road_type=Undetermined, speed_limit_x=60}",{road_user=Pedestrian},0.02,0.858,5.574
+"{age_group=65+, crash_type=Single, day_type=Weekday, easter_period=False, road_type=Undetermined, speed_limit_x=60}",{road_user=Pedestrian},0.021,0.857,5.571
+"{age_group=65+, bus_involvement=False, crash_type=Single, day_type=Weekday, easter_period=False, road_type=Undetermined, speed_limit_x=60}",{road_user=Pedestrian},0.02,0.857,5.57
+"{age_group=65+, crash_type=Single, day_type=Weekday, road_type=Undetermined, speed_limit_x=60}",{road_user=Pedestrian},0.021,0.857,5.569
+"{age_group=65+, articulated_truck_involvement=False, crash_type=Single, day_type=Weekday, easter_period=False, road_type=Undetermined, speed_limit_x=60}",{road_user=Pedestrian},0.02,0.857,5.568
+"{age_group=65+, bus_involvement=False, crash_type=Single, day_type=Weekday, road_type=Undetermined, speed_limit_x=60}",{road_user=Pedestrian},0.02,0.857,5.567
+"{age_group=65+, articulated_truck_involvement=False, crash_type=Single, day_type=Weekday, road_type=Undetermined, speed_limit_x=60}",{road_user=Pedestrian},0.02,0.856,5.565
+"{age_group=65+, bus_involvement=False, christmas_period=False, crash_type=Single, day_type=Weekday, road_type=Undetermined, speed_category=Medium}",{road_user=Pedestrian},0.021,0.848,5.51
+"{age_group=65+, christmas_period=False, crash_type=Single, day_type=Weekday, road_type=Undetermined, speed_category=Medium}",{road_user=Pedestrian},0.022,0.848,5.51

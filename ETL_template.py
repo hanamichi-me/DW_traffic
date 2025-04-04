@@ -33,37 +33,39 @@ def load_population_table(sheet_name: str) -> pd.DataFrame:
         header=None
     )
 
-    # 设置列名
+    # Set column names based on the first row
     df.columns = df.iloc[0]
     df.columns = (
         df.columns
-        .str.replace(r"[^\w]+", "_", regex=True)  # 非字母数字下划线的字符全部转为 _
+        .str.replace(r"[^\w]+", "_", regex=True)  # Replace all non-alphanumeric/underscore characters with _
         .str.replace(" ", "_")
-        .str.strip("_")  # 去除开头结尾的 _
+        .str.strip("_")  # Remove leading/trailing underscores
         .str.lower()
     )
     df = df.drop(index=0).reset_index(drop=True)
 
-    # 确保列名都是字符串
+    # Ensure all column names are strings
     df.columns = df.columns.map(str)
 
-
-    # 取第2列和最后一列
+    # Select the 2nd and last columns
     df = df.iloc[:-2, [1, -1]].copy()
 
-    # 修改最后一列列名
+    # Rename the last column to 'population_2023'
     df.columns.values[1] = 'population_2023'
 
-    # 转换为整数
+    # Convert population values to integers
     df['population_2023'] = pd.to_numeric(df['population_2023'], errors='coerce').astype('Int64')
-    # 删除第一列（lga_name）中包含 "total"（不区分大小写）的行
+
+    # Remove rows where the first column (e.g., LGA name) contains "total" (case-insensitive)
     print(df[df.iloc[:, 0].str.contains("total", case=False, na=False)])
     df = df[~df.iloc[:, 0].str.contains("total", case=False, na=False)].reset_index(drop=True)
+
     return df
 
 
 
 # ========== CLEANERS ==========
+
 
 def common_clean_steps(df):
 
@@ -133,7 +135,7 @@ def common_clean_steps(df):
                 print(f"[Clean Step] Removed {removed} rows with missing `{col}`.")
 
     # 将 lga_name, sa4_name, remoteness_area 中的 NA 替换为 'Unknown'
-    for col in ['national_lga_name_2021', 'sa4_name_2021', 'national_remoteness_areas']:
+    for col in ['national_lga_name_2021', 'sa4_name_2021', 'national_remoteness_areas', 'gender', 'road_user']:
         if col in df.columns:
             missing = df[col].isna().sum()
             df[col] = df[col].fillna("Unknown")
@@ -147,27 +149,27 @@ def common_clean_steps(df):
 
 def generate_dim_time_of_day(fatal_crash_df):
     """
-    基于 fatal_crash_df 中的 'time_of_day' 列生成唯一的 Dim_TimeOfDay 表。
+    Generate the unique Dim_TimeOfDay table based on the time_of_day column in fatal_crash_df.
     """
-    # 提取唯一的 time_of_day 分类
+    # Extract unique time_of_day categories
     dim_time = fatal_crash_df[['time_of_day']].drop_duplicates().copy()
 
 
-    # 增加主键 ID
+    # add primary id
     dim_time['time_of_day_id'] = range(1, len(dim_time) + 1)
 
-    # 重新排序列
+    # reorder
     dim_time = dim_time[['time_of_day_id', 'time_of_day']]
 
     return dim_time
 
 
 def generate_dim_person(fatality_df):
-    # 1. 保留与人员特征相关的列
+    # 1.Retain columns related to person attributes
     dim_person = fatality_df[['age', 'gender', 'road_user']].drop_duplicates().copy()
 
 
-    # 2. 构建年龄分组
+    # 2.Create age group categories
     dim_person['age_group'] = pd.cut(
         dim_person['age'],
         bins=[0, 17, 25, 40, 65, 200],
@@ -175,11 +177,11 @@ def generate_dim_person(fatality_df):
         right=False
     )
 
-    # 3. 添加主键 ID
+    # 3. add primary key ID
     dim_person = dim_person.reset_index(drop=True)
     dim_person['person_id'] = dim_person.index + 1
 
-    # 4. 重新排序
+    # 4. reorder
     dim_person = dim_person[[
         'person_id',
         'age',
@@ -201,7 +203,7 @@ def generate_dim_date(fatal_crash_df):
     })
 
     dim_date['quarter'] = ((dim_date['month'] - 1) // 3 + 1)
-    # 4. 构造 surrogate key（代理主键）
+    # 4. Construct surrogate key (artificial primary key)
     dim_date = dim_date.sort_values(by=['year', 'month', 'day_of_week_name']).reset_index(drop=True)
     dim_date['date_id'] = dim_date.index + 1
 
@@ -230,65 +232,50 @@ def categorize_speed_limit(val):
         return pd.NA
 
 
-# def generate_dim_road(fatal_crash_df: pd.DataFrame) -> pd.DataFrame:
-#     # 1. 提取相关字段
-#     dim_road = fatal_crash_df[['national_road_type', 'speed_limit']].drop_duplicates().copy()
-
-    
-#     # 2. 清洗列名
-#     dim_road.columns = ['road_type', 'speed_limit']
-    
-#     # 3. 创建 speed limit 分组字段
-#     def categorize_speed_limit(val):
-#         try:
-#             val = int(val)
-#             if val <= 50:
-#                 return '≤50'
-#             elif 50 < val <= 80:
-#                 return '51–80'
-#             elif 80 < val <= 100:
-#                 return '81–100'
-#             else:
-#                 return '100+'
-#         except:
-#             return pd.NA
-
-#     dim_road['speed_limit_group'] = dim_road['speed_limit'].apply(categorize_speed_limit)
-
-#     # 4. 添加主键
-#     dim_road['road_id'] = range(1, len(dim_road) + 1)
-
-#     # 5. 排序列
-#     dim_road = dim_road[['road_id', 'road_type', 'speed_limit', 'speed_limit_group']]
-    
-#     return dim_road
-
 def generate_dim_road(fatal_crash_df: pd.DataFrame, dim_speed_zone: pd.DataFrame) -> pd.DataFrame:
     dim_road = fatal_crash_df[['national_road_type', 'speed_limit']].drop_duplicates().copy()
     dim_road.columns = ['road_type', 'speed_limit']
-    dim_road['speed_limit_group'] = dim_road['speed_limit'].apply(categorize_speed_limit)
 
-    # 关联 speed_zone_id
-    dim_road = dim_road.merge(dim_speed_zone, on='speed_limit_group', how='left')
+
+    # Join with speed_zone_id
+    dim_road = dim_road.merge(dim_speed_zone, on='speed_limit', how='left')
 
     dim_road['road_id'] = range(1, len(dim_road) + 1)
-    dim_road = dim_road[['road_id', 'road_type', 'speed_limit', 'speed_limit_group', 'speed_zone_id']]
+    dim_road = dim_road[['road_id', 'road_type', 'speed_limit', 'speed_zone_id']]
 
     return dim_road
 
 
+def classify_speed_category(speed):
+    try:
+        speed = int(speed)
+        if speed <= 30:
+            return 'Very Low'       # 学区、步行街等
+        elif speed <= 50:
+            return 'Low'            # 居民区
+        elif speed <= 70:
+            return 'Medium'         # 城市主干道
+        elif speed <= 100:
+            return 'High'           # 国道/快速路
+        else:
+            return 'Very High'      # 高速公路
+    except:
+        return pd.NA
+
 def generate_dim_speed_zone(fatal_crash_df: pd.DataFrame) -> pd.DataFrame:
-    df = fatal_crash_df[['speed_limit']].copy()
-    df['speed_limit_group'] = df['speed_limit'].apply(categorize_speed_limit)
-    df = df[['speed_limit_group']].dropna().drop_duplicates().reset_index(drop=True)
+    df = fatal_crash_df[['speed_limit']].dropna().copy()
+    df = df.drop_duplicates().reset_index(drop=True)
+    df['speed_category'] = df['speed_limit'].apply(classify_speed_category)
     df['speed_zone_id'] = range(1, len(df) + 1)
-    df = df[['speed_zone_id', 'speed_limit_group']]
+
+    df = df[['speed_zone_id', 'speed_limit', 'speed_category']]
     return df
 
 
 def generate_dim_vehicle(fatal_crash_df):
     """
-    生成 Dim_Vehicle 表，提取是否涉及公交车、重型卡车、铰接式卡车。
+    Generate the Dim_Vehicle table by extracting whether
+    the crash involved a bus, heavy rigid truck, or articulated truck.
     """
     vehicle_df = fatal_crash_df[[
         'bus_involvement',
@@ -299,7 +286,7 @@ def generate_dim_vehicle(fatal_crash_df):
 
     vehicle_df['vehicle_id'] = range(1, len(vehicle_df) + 1)
 
-    # 重排列顺序
+    # reorder
     vehicle_df = vehicle_df[[
         'vehicle_id',
         'bus_involvement',
@@ -312,19 +299,19 @@ def generate_dim_vehicle(fatal_crash_df):
 
 def generate_dim_crash_type(fatal_crash_df):
     """
-    生成 Dim_CrashType 表，基于 crash_type（如 Single / Multiple）。
+    Generate the Dim_CrashType table based on crash_type (e.g., Single / Multiple).
     """
     dim_crash_type = fatal_crash_df[['crash_type']].drop_duplicates().reset_index(drop=True).copy()
     dim_crash_type['crash_type_id'] = range(1, len(dim_crash_type) + 1)
 
-    # 重排列顺序
+    # reorder
     dim_crash_type = dim_crash_type[['crash_type_id', 'crash_type']]
 
     return dim_crash_type
 
 
 def generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df, dwelling_df):
-    # 1. 提取原始地理字段
+    # 1. Extract raw geographic fields
     dim_location = fatal_crash_df[[
         'state',
         'national_lga_name_2021',
@@ -332,40 +319,38 @@ def generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df,
         'national_remoteness_areas'
     ]].drop_duplicates().copy()
 
-
-    # 2. 标准化列名
+    # 2. Standardize column names
     dim_location.columns = ['state', 'lga_name', 'sa4_name', 'remoteness_area']
 
-    # 3. 加入 SUA 名称（映射关系建议提前准备或通过 SA4 → SUA 映射建立）
-    # 如果你有 SUA 列：dim_location['sua_name'] = ...
-    # 此处暂略，可手动加入或从 external mapping 文件导入
+    # 3. Join SUA name (can be mapped via SA4 if needed)
+    # If you have an SUA column: dim_location['sua_name'] = ...
+    # Skipped for now; can be added manually or imported from an external mapping
 
-    # 4. 合并人口数据
+    # 4. Merge population data
     lga_pop_df = lga_pop_df.rename(columns={'local_government_area': 'lga_name'})
     sua_pop_df = sua_pop_df.rename(columns={'significant_urban_area': 'sua_name'})
     remote_pop_df = remote_pop_df.rename(columns={'remoteness_area': 'remoteness_area'})
 
-    # 提取最新人口（2023）
+    # Extract most recent population (2023)
     lga_pop_df = lga_pop_df[['lga_name', 'population_2023']]
     sua_pop_df = sua_pop_df[['sua_name', 'population_2023']]
     remote_pop_df = remote_pop_df[['remoteness_area', 'population_2023']]
 
-    # 合并
+    # Merge population data
     dim_location = dim_location.merge(lga_pop_df, on='lga_name', how='left').rename(columns={'population_2023': 'population_2023_lga'})
     dim_location = dim_location.merge(remote_pop_df, on='remoteness_area', how='left').rename(columns={'population_2023': 'population_2023_remoteness'})
 
-    # 5. 合并 dwelling 数据（2021）
+    # 5. Merge dwelling data (2021)
     dwelling_df = dwelling_df.rename(columns={'LGA_EN': 'lga_name'})
     dim_location = dim_location.merge(dwelling_df, on='lga_name', how='left')
 
-    # 6. 增加主键 ID
+    # 6. Add surrogate key
     dim_location['location_id'] = range(1, len(dim_location) + 1)
 
-    # 删除关键字段缺失的记录
+    # Drop rows missing critical fields
     dim_location = dim_location.dropna(subset=['lga_name', 'sa4_name', 'remoteness_area'])
 
-
-    # 7. 重新排序
+    # 7. Reorder columns
     dim_location = dim_location[[
         'location_id', 'state','lga_name', 'sa4_name', 'remoteness_area',
         'population_2023_lga', 'population_2023_remoteness', 'dwelling_records'
@@ -380,9 +365,9 @@ def generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df,
 
 def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_location, dim_road, dim_vehicle, dim_crash_type, dim_time):
     """
-    构建事实表：Fact_Person_Fatality
+    Construct the fact table:Fact_Person_Fatality
     """
-    # 🌱 重命名以匹配维度字段
+    # rename for consistent joining
     df = fatality_df.rename(columns={
         'national_lga_name_2021': 'lga_name',
         'sa4_name_2021': 'sa4_name',
@@ -390,17 +375,17 @@ def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_locatio
         'national_road_type': 'road_type'
     })
 
-    # 📍 Merge: Dim_Location
+    # Merge: Dim_Location
     df = df.merge(
         dim_location[['location_id', 'state','lga_name', 'sa4_name', 'remoteness_area']],
         on=['state','lga_name', 'sa4_name', 'remoteness_area'],
         how='left'
     )
 
-    # 🧠 Merge: Dim_Person
+    # Merge: Dim_Person
     df = df.merge(dim_person, on=['age', 'gender', 'road_user'], how='left')
 
-    # 📅 Merge: Dim_Date
+    # Merge: Dim_Date
     df = df.merge(
         dim_date[['date_id', 'year', 'month', 'day_of_week_name', 'day_type', 'christmas_period', 'easter_period']],
         left_on=['year', 'month', 'dayweek', 'day_of_week', 'christmas_period', 'easter_period'],
@@ -409,38 +394,38 @@ def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_locatio
     )
 
 
-    # 🛣️ Merge: Dim_Road
+    # Merge: Dim_Road
     df = df.merge(
         dim_road[['road_id', 'road_type', 'speed_limit']],
         on=['road_type', 'speed_limit'],
         how='left'
     )
 
-    # 🚚 Merge: Dim_Vehicle
+    # Merge: Dim_Vehicle
     df = df.merge(
         dim_vehicle[['vehicle_id', 'bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement']],
         on=['bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement'],
         how='left'
     )
 
-    # 🚨 Merge: Dim_CrashType
+    # Merge: Dim_CrashType
     df = df.merge(
         dim_crash_type[['crash_type_id', 'crash_type']],
         on='crash_type',
         how='left'
     )
 
-    # 🕒 Merge: Dim_TimeOfDay
+    # Merge: Dim_TimeOfDay
     df = df.merge(
         dim_time[['time_of_day_id', 'time_of_day']],
         on='time_of_day',
         how='left'
     )
 
-    # 🆔 主键（可选）
+    # primary key
     df['fact_person_fatality_id'] = range(1, len(df) + 1)
 
-    # ✅ 构造最终事实表
+    # Construct the final fact table
     fact_person_fatality = df[[
         'fact_person_fatality_id',
         'crash_id',
@@ -457,7 +442,7 @@ def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_locatio
 
 
 def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_type, dim_location, dim_date):
-    # 🧽 Rename 列名统一以便 join
+    # Rename columns for consistent joining
     df = fatal_crash_df.rename(columns={
         'national_lga_name_2021': 'lga_name',
         'sa4_name_2021': 'sa4_name',
@@ -465,28 +450,28 @@ def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_t
         'national_road_type': 'road_type'
     })
 
-    # 🔗 Merge: Dim_Location
+    # Merge: Dim_Location
     df = df.merge(
         dim_location[['location_id', 'state', 'lga_name', 'sa4_name', 'remoteness_area']],
         on=['state', 'lga_name', 'sa4_name', 'remoteness_area'],
         how='left'
     )
 
-    # 🔗 Merge: Dim_Road
+    # Merge: Dim_Road
     df = df.merge(
         dim_road[['road_id', 'road_type', 'speed_limit']],
         on=['road_type', 'speed_limit'],
         how='left'
     )
 
-    # 🔗 Merge: Dim_Vehicle
+    # Merge: Dim_Vehicle
     df = df.merge(
         dim_vehicle[['vehicle_id', 'bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement']],
         on=['bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement'],
         how='left'
     )
 
-    # 🔗 Merge: Dim_CrashType
+    # Merge: Dim_CrashType
     df = df.merge(
         dim_crash_type[['crash_type_id', 'crash_type']],
         on='crash_type',
@@ -501,10 +486,10 @@ def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_t
     )
 
 
-    # ✅ 主键（直接使用 crash_id）
+    # Primary key (directly using crash_id)
     df['fact_crash_id'] = df['crash_id']
 
-    # 🧱 构造最终 fact 表
+    # Construct the final fact table
     fact_fatal_crash = df[[
         'fact_crash_id',
         'crash_id',
@@ -524,15 +509,16 @@ def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_t
 
 def save_table(df, name):
 
-    # 统一处理布尔类型中的 pd.NA
+    # Handle pd.NA in boolean columns by converting to object and replacing missing values with None
     bool_cols = df.select_dtypes(include="boolean").columns.tolist()
     for col in bool_cols:
         df[col] = df[col].astype(object).where(df[col].notna(), None)
 
-    # 转为 object 类型并将所有缺失值统一处理为 None（PostgreSQL 兼容）
+    # Convert all columns to object type and replace NaN / pd.NA with None (PostgreSQL-compatible)
     df = df.astype(object)
-    df = df.where(pd.notnull(df), None)  # 将 NaN / pd.NA 替换为 None
+    df = df.where(pd.notnull(df), None)
 
+    # Save the DataFrame to CSV
     df.to_csv(os.path.join(OUTPUT_DIR, f"{name}.csv"), index=False)
 
 # ========== MAIN FUNCTION ==========
