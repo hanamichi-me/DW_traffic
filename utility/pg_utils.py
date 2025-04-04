@@ -6,7 +6,7 @@ import pandas as pd
 
 
 
-# ---------- 配置参数 ----------
+# ---------- Configuration Parameters ----------
 DB_CONFIG = {
     "host": "localhost",
     "port": "5432",
@@ -15,9 +15,12 @@ DB_CONFIG = {
     "password": "oddSt@mp92"
 }
 
-# ---------- 数据库连接 ----------
+# ---------- Database Connection Context Manager ----------
 @contextmanager
 def with_db_cursor():
+    """
+    Provides a managed database cursor with automatic connection handling.
+    """
     conn = psycopg2.connect(**DB_CONFIG)
     try:
         cur = conn.cursor()
@@ -25,15 +28,18 @@ def with_db_cursor():
         conn.commit()
     except Exception as e:
         conn.rollback()
-        print("❌ 数据库操作失败:", e)
+        print("❌ Database operation failed:", e)
         raise
     finally:
         cur.close()
         conn.close()
 
-# ---------- 创建表 ----------
+# ---------- Table Creation ----------
 
 def create_table(table_name: str, schema_sql: str):
+    """
+    Create a table if it does not already exist.
+    """
     check_sql = """
         SELECT EXISTS (
             SELECT FROM information_schema.tables 
@@ -45,42 +51,55 @@ def create_table(table_name: str, schema_sql: str):
         exists = cur.fetchone()[0]
 
         if exists:
-            print(f"⚠️ 表 `{table_name}` 已存在，跳过创建")
+            print(f"⚠️ Table  `{table_name}` already exists. Skipping creation.")
         else:
             create_sql = f"CREATE TABLE {table_name} ({schema_sql});"
             cur.execute(create_sql)
-            print(f"✅ 表 `{table_name}` 创建成功")
+            print(f"✅ Table  `{table_name}` created successfully.")
 
 
-# ---------- 插入数据 ----------
+# ---------- Insert Single Row ----------
 def insert_data(insert_sql: str, data: tuple):
+    """
+    Insert a single row into a table.
+    """
     with with_db_cursor() as cur:
         cur.execute(insert_sql, data)
-        print("✅ 数据插入成功")
+        print("✅ Row inserted successfully.")
 
-# ---------- 批量插入 ----------
+# ---------- Insert Multiple Rows ----------
 def insert_many(insert_sql: str, data_list: list):
+    """
+    Bulk insert multiple rows into a table.
+    """
     with with_db_cursor() as cur:
         cur.executemany(insert_sql, data_list)
-        print(f"✅ 批量插入 {len(data_list)} 条记录成功")
+        print(f"✅ Successfully inserted {len(data_list)} rows.")
 
-# ---------- 查询数据 ----------
+
+# ---------- Query Data ----------
 
 def query_data(select_sql: str, params=None):
+    """
+    Execute a SELECT query and return the results and column names.
+    """
     with with_db_cursor() as cur:
         cur.execute(select_sql, params)
         results = cur.fetchall()
         columns = [desc[0] for desc in cur.description]  # 提取列名
-        print(f"✅ 查询完成，共 {len(results)} 行")
+        print(f"✅ Query returned {len(results)} rows.")
         return results, columns
 
 
-        
-# ---------- 删除表 ----------
+# ---------- Drop Table ----------
 def drop_table(table_name: str):
+    """
+    Drop a table if it exists (including dependent objects).
+    """
     with with_db_cursor() as cur:
         cur.execute(f"DROP TABLE IF EXISTS {table_name} CASCADE;")
-        print(f"🗑️ 表 `{table_name}` 删除成功")
+        print(f"🗑️ Table `{table_name}` dropped successfully.")
 
 
-# ---------- 业务查询 ----------
+# ---------- Business-Specific Queries ----------
+# (To be implemented or extended as needed)

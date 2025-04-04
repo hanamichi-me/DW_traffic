@@ -1,96 +1,96 @@
-road_id,road_type,speed_limit,speed_zone_id
-1,Arterial Road,100,1
-2,Local Road,80,2
-3,Local Road,50,3
-4,National or State Highway,100,1
-5,Sub-arterial Road,100,1
-6,Undetermined,90,4
-7,Local Road,60,5
-8,National or State Highway,70,6
-9,National or State Highway,110,7
-10,Local Road,100,1
-11,Collector Road,80,2
-12,National or State Highway,60,5
-13,Collector Road,60,5
-14,Undetermined,110,7
-15,Collector Road,40,8
-16,Undetermined,60,5
-17,Undetermined,80,2
-18,National or State Highway,50,3
-19,Sub-arterial Road,70,6
-20,National or State Highway,80,2
-21,Undetermined,70,6
-22,Collector Road,50,3
-23,Undetermined,20,9
-24,Sub-arterial Road,90,4
-25,Arterial Road,60,5
-26,Sub-arterial Road,60,5
-27,Collector Road,100,1
-28,Arterial Road,80,2
-29,National or State Highway,90,4
-30,Undetermined,100,1
-31,Sub-arterial Road,80,2
-32,Arterial Road,70,6
-33,Pedestrian Thoroughfare,10,10
-34,Undetermined,50,3
-35,Sub-arterial Road,40,8
-36,Local Road,70,6
-37,Arterial Road,50,3
-38,Sub-arterial Road,50,3
-39,Collector Road,110,7
-40,Access road,60,5
-41,Local Road,90,4
-42,Arterial Road,110,7
-43,Collector Road,70,6
-44,Collector Road,5,11
-45,Local Road,40,8
-46,Access road,50,3
-47,Access road,100,1
-48,Pedestrian Thoroughfare,80,2
-49,Arterial Road,40,8
-50,Sub-arterial Road,110,7
-51,Undetermined,130,12
-52,National or State Highway,130,12
-53,Access road,80,2
-54,Local Road,30,13
-55,Access road,40,8
-56,Local Road,10,10
-57,Undetermined,30,13
-58,Busway,80,2
-59,Access road,70,6
-60,National or State Highway,40,8
-61,Arterial Road,90,4
-62,Collector Road,25,14
-63,Local Road,110,7
-64,Pedestrian Thoroughfare,20,9
-65,Arterial Road,130,12
-66,Pedestrian Thoroughfare,70,6
-67,National or State Highway,20,9
-68,Arterial Road,20,9
-69,Arterial Road,30,13
-70,Access road,20,9
-71,Collector Road,10,10
-72,Pedestrian Thoroughfare,50,3
-73,Undetermined,40,8
-74,Access road,130,12
-75,Busway,50,3
-76,Access road,110,7
-77,Local Road,20,9
-78,Pedestrian Thoroughfare,30,13
-79,Busway,100,1
-80,Collector Road,90,4
-81,National or State Highway,30,13
-82,Pedestrian Thoroughfare,60,5
-83,National or State Highway,10,10
-84,Pedestrian Thoroughfare,40,8
-85,Arterial Road,25,14
-86,Undetermined,10,10
-87,Local Road,15,15
-88,Sub-arterial Road,25,14
-89,Sub-arterial Road,30,13
-90,Arterial Road,10,10
-91,Local Road,5,11
-92,Collector Road,75,16
-93,Pedestrian Thoroughfare,100,1
-94,Undetermined,5,11
-95,Undetermined,75,16
+road_id,road_type,speed_limit,speed_category
+1,Arterial Road,100,High
+2,Local Road,80,High
+3,Local Road,50,Low
+4,National or State Highway,100,High
+5,Sub-arterial Road,100,High
+6,Undetermined,90,High
+7,Local Road,60,Medium
+8,National or State Highway,70,Medium
+9,National or State Highway,110,Very High
+10,Local Road,100,High
+11,Collector Road,80,High
+12,National or State Highway,60,Medium
+13,Collector Road,60,Medium
+14,Undetermined,110,Very High
+15,Collector Road,40,Low
+16,Undetermined,60,Medium
+17,Undetermined,80,High
+18,National or State Highway,50,Low
+19,Sub-arterial Road,70,Medium
+20,National or State Highway,80,High
+21,Undetermined,70,Medium
+22,Collector Road,50,Low
+23,Undetermined,20,Very Low
+24,Sub-arterial Road,90,High
+25,Arterial Road,60,Medium
+26,Sub-arterial Road,60,Medium
+27,Collector Road,100,High
+28,Arterial Road,80,High
+29,National or State Highway,90,High
+30,Undetermined,100,High
+31,Sub-arterial Road,80,High
+32,Arterial Road,70,Medium
+33,Pedestrian Thoroughfare,10,Very Low
+34,Undetermined,50,Low
+35,Sub-arterial Road,40,Low
+36,Local Road,70,Medium
+37,Arterial Road,50,Low
+38,Sub-arterial Road,50,Low
+39,Collector Road,110,Very High
+40,Access road,60,Medium
+41,Local Road,90,High
+42,Arterial Road,110,Very High
+43,Collector Road,70,Medium
+44,Collector Road,5,Very Low
+45,Local Road,40,Low
+46,Access road,50,Low
+47,Access road,100,High
+48,Pedestrian Thoroughfare,80,High
+49,Arterial Road,40,Low
+50,Sub-arterial Road,110,Very High
+51,Undetermined,130,Very High
+52,National or State Highway,130,Very High
+53,Access road,80,High
+54,Local Road,30,Very Low
+55,Access road,40,Low
+56,Local Road,10,Very Low
+57,Undetermined,30,Very Low
+58,Busway,80,High
+59,Access road,70,Medium
+60,National or State Highway,40,Low
+61,Arterial Road,90,High
+62,Collector Road,25,Very Low
+63,Local Road,110,Very High
+64,Pedestrian Thoroughfare,20,Very Low
+65,Arterial Road,130,Very High
+66,Pedestrian Thoroughfare,70,Medium
+67,National or State Highway,20,Very Low
+68,Arterial Road,20,Very Low
+69,Arterial Road,30,Very Low
+70,Access road,20,Very Low
+71,Collector Road,10,Very Low
+72,Pedestrian Thoroughfare,50,Low
+73,Undetermined,40,Low
+74,Access road,130,Very High
+75,Busway,50,Low
+76,Access road,110,Very High
+77,Local Road,20,Very Low
+78,Pedestrian Thoroughfare,30,Very Low
+79,Busway,100,High
+80,Collector Road,90,High
+81,National or State Highway,30,Very Low
+82,Pedestrian Thoroughfare,60,Medium
+83,National or State Highway,10,Very Low
+84,Pedestrian Thoroughfare,40,Low
+85,Arterial Road,25,Very Low
+86,Undetermined,10,Very Low
+87,Local Road,15,Very Low
+88,Sub-arterial Road,25,Very Low
+89,Sub-arterial Road,30,Very Low
+90,Arterial Road,10,Very Low
+91,Local Road,5,Very Low
+92,Collector Road,75,High
+93,Pedestrian Thoroughfare,100,High
+94,Undetermined,5,Very Low
+95,Undetermined,75,High

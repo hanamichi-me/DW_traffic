@@ -5,23 +5,38 @@ import pandas as pd
 from typing import List, Optional
 import os
 
+
+# Directory paths for input/output
 OUTPUT_DIR = "output"
 DB_files_export = "DB_files_export"
 
 
+# ==========================
+# Table Creation & Deletion
+# ==========================
+
+# Create all tables based on TABLE_IMPORT_ORDER and predefined schemas
 def create_all_tables():
     for table in TABLE_IMPORT_ORDER:
         create_table(table, TABLE_SCHEMAS[table])
 
+# Drop all tables in reverse order (to avoid foreign key constraint errors)
 def drop_all_tables():
     for table in reversed(TABLE_IMPORT_ORDER):
         drop_table(table)
 
+
+# ==========================
+# Data Preparation & Insertion
+# ==========================
+
+# Replace NA values with None for PostgreSQL compatibility
 def prepare_df_for_postgres(df: pd.DataFrame) -> pd.DataFrame:
     # 替换 pd.NA / np.nan → None（PostgreSQL 可识别）
     df = df.astype(object).where(pd.notnull(df), None)
     return df
 
+# Insert a full DataFrame into a table
 def insert_dataframe(table_name: str, df: pd.DataFrame):
     df = prepare_df_for_postgres(df)
     cols = ','.join(df.columns)
@@ -31,6 +46,11 @@ def insert_dataframe(table_name: str, df: pd.DataFrame):
     insert_many(insert_sql, data)
 
 
+# ==========================
+# Querying & Previewing
+# ==========================
+
+# Execute SELECT statement and convert results to DataFrame
 def query_to_dataframe(select_sql: str, params: Optional[tuple] = None, columns: Optional[List[str]] = None) -> pd.DataFrame:
     results, inferred_columns = query_data(select_sql, params)
 
@@ -41,13 +61,13 @@ def query_to_dataframe(select_sql: str, params: Optional[tuple] = None, columns:
 
     
     print(df)
-    print(f"📋 已将查询结果转换为 DataFrame，共 {len(df)} 行，列：{df.columns.tolist()}")
+    print(f"📋 Converted query results to DataFrame with {len(df)} rows and columns: {df.columns.tolist()}")
     return df
 
-
+# Preview contents of all tables and optionally export them to CSV
 def preview_all_tables(limit: int = None):
     for table_name in TABLE_SCHEMAS:
-        print(f"\n📄 表 `{table_name}` 的前 {limit} 行预览：")
+        print(f"\n📄 Previewing first {limit} rows of `{table_name}`:")
         try:
             select_sql = f"SELECT * FROM {table_name}"
             if limit:
@@ -61,33 +81,42 @@ def preview_all_tables(limit: int = None):
                 df.to_csv(os.path.join(DB_files_export, f"{table_name}.csv"), index=False)
                 print(df.head(15))
             else:
-                print("⚠️ 该表暂无数据")
+                print("⚠️ No data found in this table")
         except Exception as e:
-            print(f"❌ 查询表 `{table_name}` 出错：{e}")
+            print(f"❌ Error while querying `{table_name}`: {e}")
 
+
+# ==========================
+# CSV Import
+# ==========================
 
 
 csv_headers = {}
 
-
+# Import all CSVs in OUTPUT_DIR into corresponding database tables
 def import_all_csv_to_db():
     for table_name in TABLE_IMPORT_ORDER:
         filename = f"{table_name}.csv"
         file_path = os.path.join(OUTPUT_DIR, filename)
 
         if not os.path.exists(file_path):
-            print(f"⚠️ 找不到文件 `{filename}`，跳过。")
+            print(f"⚠️ File `{filename}` not found, skipping.")
             continue
 
-        print(f"\n📥 正在导入 `{filename}` 到表 `{table_name}`...")
+        print(f"\n📥 Importing `{filename}` into `{table_name}`...")
         try:
             df = pd.read_csv(file_path)
             csv_headers[table_name] = df.columns.tolist()
             insert_dataframe(table_name, df)
         except Exception as e:
-            print(f"❌ 导入 `{table_name}` 失败: {e}")
+            print(f"❌ Failed to import `{table_name}`: {e}")
 
 
+# ==========================
+# Run SQL Script File
+# ==========================
+
+# Execute a .sql script file with one or more queries
 def run_sql_file(filename):
     df_results = {}
 
@@ -96,58 +125,62 @@ def run_sql_file(filename):
 
     statements = [stmt.strip() for stmt in sql_content.split(";") if stmt.strip()]
     for i, stmt in enumerate(statements, start=1):
-        print(f"\n💡 正在执行第 {i} 条 SQL：\n{stmt}")
+        print(f"\n💡 Executing SQL #{i}:\n{stmt}")
         try:
             result, columns = query_data(stmt)
             df = pd.DataFrame(result, columns=columns)
             print(df)
             df_results[f"query_{i}"] = df
         except Exception as e:
-            print(f"❌ 执行失败：{e}")
+            print(f"❌ Execution failed: {e}")
             df_results[f"query_{i}"] = None
 
     return df_results
 
 
+# ==========================
+# Main Execution Block
+# ==========================
+
+
 def main():
 
-    # # 删除表
+    # Drop all existing tables
     drop_all_tables()
 
-    # # # 删除某个表，比如 fact_person_fatality
-    # # drop_table("fact_person_fatality")
+    # Delete one certain table，e.g. fact_person_fatality
+    # drop_table("fact_person_fatality")
 
-
+    # Create all tables
     create_all_tables()
 
-    # # 👇 导入所有 CSV 到数据库
+    # Import CSV data to database
     import_all_csv_to_db()
 
     
-    # # 添加数据
-    # # # 如果你只是添加新数据：
-    # # df = pd.read_csv("your_file.csv")
-    # # insert_dataframe("your_table_name", df)
+    # Insert a DataFrame into a specific table
+    # df = pd.read_csv("your_file.csv")
+    # insert_dataframe("your_table_name", df)
 
 
-    # # 查询表
+    # Preview contents of all tables
     preview_all_tables(None)
 
 
 
-
+    # Optional: Run manual queries
     # df = query_to_dataframe(
     #     "SELECT * FROM dim_road"
     #     # columns=["person_id", "age", "gender", "road_user", "age_group"]
     # )
     # print(df.head(20))
 
-    #======================
+
+    # Running Business queries sql files
     # dfs = run_sql_file("sql/1.1.sql")
     # print(dfs["query_1"].head())
 
 
-# 然后在 main 中执行
 if __name__ == "__main__":
     main()
 

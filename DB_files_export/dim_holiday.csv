@@ -1,0 +1,4 @@
+holiday_id,christmas_period,easter_period
+1,True,False
+2,False,False
+3,False,True
