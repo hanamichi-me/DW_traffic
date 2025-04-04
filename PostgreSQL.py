@@ -112,16 +112,16 @@ def run_sql_file(filename):
 def main():
 
     # # 删除表
-    # drop_all_tables()
+    drop_all_tables()
 
     # # # 删除某个表，比如 fact_person_fatality
     # # drop_table("fact_person_fatality")
 
 
-    # create_all_tables()
+    create_all_tables()
 
     # # 👇 导入所有 CSV 到数据库
-    # import_all_csv_to_db()
+    import_all_csv_to_db()
 
     
     # # 添加数据
@@ -131,7 +131,7 @@ def main():
 
 
     # # 查询表
-    # preview_all_tables(None)
+    preview_all_tables(None)
 
 
 
@@ -143,7 +143,7 @@ def main():
     # print(df.head(20))
 
     #======================
-    dfs = run_sql_file("sql/1.1.sql")
+    # dfs = run_sql_file("sql/1.1.sql")
     # print(dfs["query_1"].head())
 
 

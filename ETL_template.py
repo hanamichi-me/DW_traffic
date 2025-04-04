@@ -76,13 +76,15 @@ def common_clean_steps(df):
     )
     df = df.dropna(axis=1, how='all')
 
-    bool_columns = [
-        'bus_involvement', 'heavy_rigid_truck_involvement',
-        'articulated_truck_involvement', 'christmas_period', 'easter_period'
-    ]
-    for col in bool_columns:
-        if col in df.columns:
-            df[col] = df[col].map({'Yes': True, 'No': False, '-9': pd.NA, -9: pd.NA})
+    # bool_columns = [
+    #     'bus_involvement', 'heavy_rigid_truck_involvement',
+    #     'articulated_truck_involvement', 'christmas_period', 'easter_period'
+    # ]
+    # for col in bool_columns:
+    #     if col in df.columns:
+    #         df[col] = df[col].map({'Yes': True, 'No': False, '-9': pd.NA, -9: pd.NA})
+
+
 
     
     if 'road_user' in df.columns:
@@ -98,6 +100,14 @@ def common_clean_steps(df):
         if replace_count > 0 :
             df[col] = df[col].replace(["Unknown", "nan","-9", -9], pd.NA)
             print(f"[Missing Data Handling] Replaced {replace_count} values ('Unknown', 'nan','-9', -9) with missing values in column `{col}`.")
+
+    bool_columns = [
+        'bus_involvement', 'heavy_rigid_truck_involvement',
+        'articulated_truck_involvement', 'christmas_period', 'easter_period'
+    ]
+    for col in bool_columns:
+        if col in df.columns:
+            df[col] = df[col].map({'Yes': True, 'No': False, pd.NA: "Unknown"})
 
     if 'speed_limit' in df.columns:
         special_case = df['speed_limit'] == '<40'
