@@ -54,6 +54,7 @@ def create_table(table_name: str, schema_sql: str):
             print(f"⚠️ Table  `{table_name}` already exists. Skipping creation.")
         else:
             create_sql = f"CREATE TABLE {table_name} ({schema_sql});"
+            print(create_sql)
             cur.execute(create_sql)
             print(f"✅ Table  `{table_name}` created successfully.")
 

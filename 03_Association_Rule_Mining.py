@@ -115,10 +115,11 @@ def clean_frozenset_columns(df):
 # Main execution flow
 # ===================
 def main():
+    # Load all CSV files from the exported data directory
     data = load_csv_files("DB_files_export")
     all_rules = []
 
-    # Define all parameter combinations to explore
+    # Define all parameter combinations to explore (speed type, holiday period, vehicle type)
     combinations = [
         ("limit","easter", "bus"),
         ("limit","easter", "heavy"),
@@ -134,11 +135,17 @@ def main():
         ("category","christmas", "articulated")
     ]
 
-    # Perform rule mining for each combination
+    # Perform rule mining for each combination of parameters
     for speed, holiday, vehicle in combinations:
         print(f"🚀 combination：{speed} +{holiday} + {vehicle}")
+
+        # Select relevant columns based on the current combination
         selected_cols = get_selected_columns(speed= speed, preference=holiday, vehicle=vehicle)
+
+        # Prepare transaction dataset
         df_trans = prepare_transactions_custom(data, selected_cols)
+
+        # Mine association rules with target item on the RHS (road_user)
         rules = mine_association_rules(df_trans, target_rhs="road_user=",top_k=50)
         rules["combo"] = f"{speed}_{holiday}_{vehicle}"  # Label rule origin
         all_rules.append(rules)
@@ -149,17 +156,27 @@ def main():
     # Export top rules
     final_top_k = combined_rules.sort_values(by=["lift", "confidence"], ascending=False)
 
-
+    # Export rules to CSV
     output_dir = "output_rules"
     os.makedirs(output_dir, exist_ok=True)
+
+    # Round numerical metrics for readability
     final_top_k["support"] = final_top_k["support"].round(3)
     final_top_k["confidence"] = final_top_k["confidence"].round(3)
     final_top_k["lift"] = final_top_k["lift"].round(3)
+
+    # Format frozenset columns for export
     final_top_k = clean_frozenset_columns(final_top_k)
+
+    # Keep only selected columns and remove duplicates
     export_cols = [ "antecedents", "consequents", "support", "confidence", "lift"]
     final_top_k = final_top_k[export_cols]
     final_top_k = final_top_k.drop_duplicates()
+
+    # Select top 50 rules
     final_top_k = final_top_k.head(50)
+
+    # Save to CSV
     output_path = os.path.join(output_dir, "combined_top10_rules.csv")
     final_top_k.to_csv(output_path, index=False)
     print("✅ Export the merged top K rules：{output_path}")
