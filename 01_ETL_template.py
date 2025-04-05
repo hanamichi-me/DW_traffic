@@ -155,6 +155,23 @@ def common_clean_steps(df):
             if missing > 0:
                 print(f"[Location Normalization] Replaced {missing} missing values in `{col}` with 'Unknown'.")
 
+    # Recalculate day_of_week based on dayweek
+    if 'dayweek' in df.columns:
+        weekday_names = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+        weekend_names = ['Saturday', 'Sunday']
+
+        before = df['day_of_week'].copy() if 'day_of_week' in df.columns else None
+        df['day_of_week'] = df['dayweek'].map(
+            lambda x: 'Weekday' if x in weekday_names else ('Weekend' if x in weekend_names else pd.NA)
+        )
+
+        print(f"[Reassignment] `day_of_week` reassigned based on `dayweek`.")
+
+        # 可选：检查重算后是否和原来的不同
+        if before is not None:
+            mismatch = (before != df['day_of_week']).sum()
+            print(f"[Validation] {mismatch} records had different `day_of_week` after reassignment.")
+
     return df
 
 
