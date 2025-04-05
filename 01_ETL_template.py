@@ -440,6 +440,9 @@ def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_holiday
         how='left'
     )
 
+    # Add fatality_count as a measure (each record represents one death)
+    df['fatality_count'] = 1
+
     # primary key
     df['fact_person_fatality_id'] = range(1, len(df) + 1)
 
@@ -454,7 +457,8 @@ def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_holiday
         'road_id',
         'vehicle_id',
         'crash_type_id',
-        'time_of_day_id'
+        'time_of_day_id',
+        'fatality_count'  # 👈 added measure
     ]].copy()
 
     return fact_person_fatality
@@ -520,6 +524,9 @@ def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_t
     # Primary key (directly using crash_id)
     df['fact_crash_id'] = df['crash_id']
 
+    # Add crash_count = 1 as a measure
+    df['crash_count'] = 1
+
     # Construct the final fact table
     fact_fatal_crash = df[[
         'fact_crash_id',
@@ -530,7 +537,8 @@ def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_t
         'road_id',
         'vehicle_id',
         'crash_type_id',
-        'number_fatalities'
+        'number_fatalities',
+        'crash_count'  # 👈 added measure
     ]].copy()
 
     return fact_fatal_crash
