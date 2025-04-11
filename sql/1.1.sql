@@ -1,41 +1,18 @@
- -- 1. 在 2024 年，不同路段类型在不同时间段的致死人数分别是多少？是否存在高发的“时段 × 路段”组合？
+-- Query 1: Select time of day and road type (with labels for aggregated rows), and compute total fatalities
 SELECT
-    dt.time_of_day AS "Time of Day",
-    dr.road_type AS "Road Type",
-    COUNT(*) AS "Number of Fatalities"
-FROM fact_person_fatality fpf
-JOIN dim_time dt ON fpf.time_of_day_id = dt.time_of_day_id
-JOIN dim_road dr ON fpf.road_id = dr.road_id
-JOIN dim_date dd ON fpf.date_id = dd.date_id
-WHERE dd.year = 2024
-  AND dr.road_type <> 'Undetermined'
-GROUP BY ROLLUP(dt.time_of_day, dr.road_type)
-ORDER BY dt.time_of_day, COUNT(*) DESC;
-
-
--- 2. 年龄段 × 使用者角色 的致死分布
-SELECT
-    dp.age_group,
-    dp.road_user,
-    COUNT(*) AS death_count
-FROM fact_person_fatality fpf
-JOIN dim_person dp ON fpf.person_id = dp.person_id
-JOIN dim_date dd ON fpf.date_id = dd.date_id
-WHERE dd.year = 2024
-GROUP BY ROLLUP(dp.age_group, dp.road_user)
-ORDER BY dp.age_group, death_count DESC;
-
-
--- 3. 州 × 偏远程度 的致死人数分布
-SELECT
-    dl.state,
-    dl.remoteness_area,
-    COUNT(*) AS death_count
-FROM fact_person_fatality fpf
-JOIN dim_location dl ON fpf.location_id = dl.location_id
-JOIN dim_date dd ON fpf.date_id = dd.date_id
-WHERE dd.year = 2024
-    AND dl.remoteness_area IS DISTINCT FROM 'Unknown'
-GROUP BY CUBE(dl.state, dl.remoteness_area)
-ORDER BY death_count DESC;
-
+  COALESCE(t.time_of_day, 'All Times') AS time_of_day,    -- Replace NULL (from CUBE) with 'All Times' for readability
+  COALESCE(r.road_type, 'All Road Types') AS road_type,    -- Replace NULL (from CUBE) with 'All Road Types'
+  SUM(f.fatality_count) AS total_fatalities               -- Aggregate total fatalities
+FROM fact_person_fatality f
+-- Join with dimension tables to bring in descriptive attributes
+JOIN dim_time t ON f.time_of_day_id = t.time_of_day_id
+JOIN dim_road r ON f.road_id = r.road_id
+JOIN dim_date d ON f.date_id = d.date_id
+-- Filter for the year 2024 only
+WHERE d.year = 2024
+-- Use CUBE to generate all combinations and subtotal groupings
+GROUP BY CUBE (t.time_of_day, r.road_type)
+-- Exclude the grand total row (i.e., All Times × All Road Types)
+HAVING GROUPING(t.time_of_day) + GROUPING(r.road_type) < 2
+-- Sort the results in descending order of fatalities
+ORDER BY total_fatalities DESC;

@@ -8,21 +8,26 @@ DATA_DIR = "sources"
 OUTPUT_DIR = "output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+
 # ========== LOADERS ==========
 def load_fatal_crash_data():
     """
     Load the fatal crash dataset from Excel.
     Skips metadata rows and loads the main data sheet.
     """
-    df = pd.read_excel(os.path.join(DATA_DIR, "Fatal_Crashes_December_2024.xlsx"), sheet_name="BITRE_Fatal_Crash", skiprows=4)
+    df = pd.read_excel(os.path.join(DATA_DIR, "Fatal_Crashes_December_2024.xlsx"), sheet_name="BITRE_Fatal_Crash",
+                       skiprows=4)
 
     return df
+
 
 def load_fatality_data():
     """
     Load the fatality (person-level) dataset from Excel.
     """
-    return pd.read_excel(os.path.join(DATA_DIR, "bitre_fatalities_dec2024.xlsx"), sheet_name="BITRE_Fatality", skiprows=4)
+    return pd.read_excel(os.path.join(DATA_DIR, "bitre_fatalities_dec2024.xlsx"), sheet_name="BITRE_Fatality",
+                         skiprows=4)
+
 
 def load_dwelling_data():
     """
@@ -35,6 +40,7 @@ def load_dwelling_data():
     df['LGA_EN'] = df['LGA_EN'].str.strip().str.replace('"', '')
     df['dwelling_records'] = df['dwelling_records'].astype(int)
     return df
+
 
 def load_population_table(sheet_name: str) -> pd.DataFrame:
     """
@@ -78,7 +84,6 @@ def load_population_table(sheet_name: str) -> pd.DataFrame:
     return df
 
 
-
 # ========== CLEANERS ==========
 
 
@@ -91,9 +96,9 @@ def common_clean_steps(df):
     # Rename columns to standardize naming conventions
     df.columns = (
         df.columns
-        .str.replace(r"[^\w]+", "_", regex=True)  # 非字母数字下划线的字符全部转为 _
+        .str.replace(r"[^\w]+", "_", regex=True)
         .str.replace(" ", "_")
-        .str.strip("_")  # 去除开头结尾的 _
+        .str.strip("_")
         .str.lower()
     )
     # Drop columns with all missing values
@@ -104,15 +109,17 @@ def common_clean_steps(df):
         special_missing_count = (df['road_user'] == 'Other/-9').sum()
         if special_missing_count > 0:
             df['road_user'] = df['road_user'].replace('Other/-9', pd.NA)
-            print(f"[Missing Data Handling] Replaced {special_missing_count} 'Other/-9' values with missing values in column `road_user`.")
+            print(
+                f"[Missing Data Handling] Replaced {special_missing_count} 'Other/-9' values with missing values in column `road_user`.")
 
     # Replace generic invalid values with pd.NA (e.g., 'Unknown', '-9', 'nan')
     for col in df.columns:
-        replace_mask = df[col].isin(["Unknown", "nan","-9", -9])
+        replace_mask = df[col].isin(["Unknown", "nan", "-9", -9])
         replace_count = replace_mask.sum()
-        if replace_count > 0 :
-            df[col] = df[col].replace(["Unknown", "nan","-9", -9], pd.NA)
-            print(f"[Missing Data Handling] Replaced {replace_count} values ('Unknown', 'nan','-9', -9) with missing values in column `{col}`.")
+        if replace_count > 0:
+            df[col] = df[col].replace(["Unknown", "nan", "-9", -9], pd.NA)
+            print(
+                f"[Missing Data Handling] Replaced {replace_count} values ('Unknown', 'nan','-9', -9) with missing values in column `{col}`.")
 
     # Normalize boolean columns to True/False
     bool_columns = [
@@ -167,7 +174,6 @@ def common_clean_steps(df):
 
         print(f"[Reassignment] `day_of_week` reassigned based on `dayweek`.")
 
-        # 可选：检查重算后是否和原来的不同
         if before is not None:
             mismatch = (before != df['day_of_week']).sum()
             print(f"[Validation] {mismatch} records had different `day_of_week` after reassignment.")
@@ -261,6 +267,7 @@ def generate_dim_holiday(fatal_crash_df):
     dim_holiday = dim_holiday[['holiday_id', 'christmas_period', 'easter_period']]
     return dim_holiday
 
+
 def classify_speed_category(speed):
     """
     Classify numeric speed limit values into descriptive speed categories.
@@ -268,18 +275,19 @@ def classify_speed_category(speed):
     try:
         speed = int(speed)
         if speed <= 30:
-            return 'Very Low'       # School zones, shared spaces
+            return 'Very Low'  # School zones, shared spaces
         elif speed <= 50:
-            return 'Low'            # Residential areas
+            return 'Low'  # Residential areas
         elif speed <= 70:
-            return 'Medium'         # Urban arterial roads
+            return 'Medium'  # Urban arterial roads
         elif speed <= 100:
-            return 'High'           # High-speed main roads
+            return 'High'  # High-speed main roads
         else:
-            return 'Very High'      # Freeways and highways
+            return 'Very High'  # Freeways and highways
     except:
         return pd.NA
-    
+
+
 def generate_dim_road(fatal_crash_df: pd.DataFrame) -> pd.DataFrame:
     """
     Generate Dim_Road table with road_type and speed_limit.
@@ -305,7 +313,6 @@ def generate_dim_vehicle(fatal_crash_df):
         'heavy_rigid_truck_involvement',
         'articulated_truck_involvement'
     ]].drop_duplicates().reset_index(drop=True).copy()
-
 
     vehicle_df['vehicle_id'] = range(1, len(vehicle_df) + 1)
 
@@ -364,8 +371,10 @@ def generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df,
     remote_pop_df = remote_pop_df[['remoteness_area', 'population_2023']]
 
     # Merge with LGA and remoteness population data
-    dim_location = dim_location.merge(lga_pop_df, on='lga_name', how='left').rename(columns={'population_2023': 'population_2023_lga'})
-    dim_location = dim_location.merge(remote_pop_df, on='remoteness_area', how='left').rename(columns={'population_2023': 'population_2023_remoteness'})
+    dim_location = dim_location.merge(lga_pop_df, on='lga_name', how='left').rename(
+        columns={'population_2023': 'population_2023_lga'})
+    dim_location = dim_location.merge(remote_pop_df, on='remoteness_area', how='left').rename(
+        columns={'population_2023': 'population_2023_remoteness'})
 
     # 5. Merge dwelling data (2021)
     dwelling_df = dwelling_df.rename(columns={'LGA_EN': 'lga_name'})
@@ -379,18 +388,17 @@ def generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df,
 
     # 7. Reorder columns
     dim_location = dim_location[[
-        'location_id', 'state','lga_name', 'sa4_name', 'remoteness_area',
+        'location_id', 'state', 'lga_name', 'sa4_name', 'remoteness_area',
         'population_2023_lga', 'population_2023_remoteness', 'dwelling_records'
     ]]
 
     return dim_location
 
 
-
-
 # ========== FACT TABLES ==========
 
-def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_holiday, dim_location, dim_road, dim_vehicle, dim_crash_type, dim_time):
+def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_holiday, dim_location, dim_road, dim_vehicle,
+                                  dim_crash_type, dim_time):
     """
     Generate Fact_Person_Fatality table, linking person-level fatalities
     with all related dimension tables including date, location, road, vehicle, and holiday.
@@ -405,8 +413,8 @@ def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_holiday
 
     # Merge: Dim_Location
     df = df.merge(
-        dim_location[['location_id', 'state','lga_name', 'sa4_name', 'remoteness_area']],
-        on=['state','lga_name', 'sa4_name', 'remoteness_area'],
+        dim_location[['location_id', 'state', 'lga_name', 'sa4_name', 'remoteness_area']],
+        on=['state', 'lga_name', 'sa4_name', 'remoteness_area'],
         how='left'
     )
 
@@ -424,7 +432,7 @@ def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_holiday
     # Merge: dim_holiday
     df = df.merge(
         dim_holiday[['holiday_id', 'christmas_period', 'easter_period']],
-        left_on=[ 'christmas_period', 'easter_period'],
+        left_on=['christmas_period', 'easter_period'],
         right_on=['christmas_period', 'easter_period'],
         how='left'
     )
@@ -438,7 +446,8 @@ def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_holiday
 
     # Merge: Dim_Vehicle
     df = df.merge(
-        dim_vehicle[['vehicle_id', 'bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement']],
+        dim_vehicle[
+            ['vehicle_id', 'bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement']],
         on=['bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement'],
         how='left'
     )
@@ -481,7 +490,8 @@ def generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_holiday
     return fact_person_fatality
 
 
-def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_type, dim_location, dim_date, dim_holiday):
+def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_type, dim_location, dim_date,
+                              dim_holiday):
     """
     Generate Fact_Fatal_Crash table linking crash-level records
     with date, location, road, vehicle, and crash type dimensions.
@@ -510,7 +520,8 @@ def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_t
 
     # Merge: Dim_Vehicle
     df = df.merge(
-        dim_vehicle[['vehicle_id', 'bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement']],
+        dim_vehicle[
+            ['vehicle_id', 'bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement']],
         on=['bus_involvement', 'heavy_rigid_truck_involvement', 'articulated_truck_involvement'],
         how='left'
     )
@@ -561,11 +572,9 @@ def generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_t
     return fact_fatal_crash
 
 
-
 # ========== SAVE FUNCTION ==========
 
 def save_table(df, name):
-
     # Handle pd.NA in boolean columns by converting to object and replacing missing values with None
     bool_cols = df.select_dtypes(include="boolean").columns.tolist()
     for col in bool_cols:
@@ -578,53 +587,7 @@ def save_table(df, name):
     # Save the DataFrame to CSV
     df.to_csv(os.path.join(OUTPUT_DIR, f"{name}.csv"), index=False)
 
-# # ========== MAIN FUNCTION ==========
-# def main():
-#     # ========== Step 1: Load Raw Data ==========
-#     raw_fatal_crash_df = load_fatal_crash_data()
-#     fatal_crash_df = common_clean_steps(raw_fatal_crash_df)
 
-#     raw_fatality_df = load_fatality_data()
-#     fatality_df = common_clean_steps(raw_fatality_df)
-
-
-#     dwelling_df = load_dwelling_data()
-
-#     lga_pop_df    = load_population_table("Table 1")
-#     sua_pop_df    = load_population_table("Table 2")
-#     remote_pop_df = load_population_table("Table 3")
-#     ced_pop_df    = load_population_table("Table 4")
-
-#     # ========== Step 2: Clean Data ==========
-#     dim_location = generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df, dwelling_df)
-#     save_table(dim_location, "dim_location")
-
-#     dim_road = generate_dim_road(fatal_crash_df)
-#     save_table(dim_road, "dim_road")
-
-#     dim_vehicle = generate_dim_vehicle(fatal_crash_df)
-#     save_table(dim_vehicle, "dim_vehicle")
-
-#     dim_crash_type = generate_dim_crash_type(fatal_crash_df)
-#     save_table(dim_crash_type, "dim_crash_type")
-
-#     dim_date = generate_dim_date(fatal_crash_df)
-#     save_table(dim_date, "dim_date")
-
-#     dim_holiday = generate_dim_holiday(fatal_crash_df)
-#     save_table(dim_holiday, "dim_holiday")
-
-#     fact_fatal_crash = generate_fact_fatal_crash(fatal_crash_df, dim_road, dim_vehicle, dim_crash_type, dim_location, dim_date, dim_holiday)
-#     save_table(fact_fatal_crash, "fact_fatal_crash")
-
-#     dim_person = generate_dim_person(fatality_df)
-#     save_table(dim_person, "dim_person")
-
-#     dim_time = generate_dim_time_of_day(fatal_crash_df)
-#     save_table(dim_time, "dim_time")
-
-#     fact_person_fatality = generate_fact_person_fatality(fatality_df, dim_person, dim_date, dim_holiday, dim_location, dim_road, dim_vehicle, dim_crash_type, dim_time)
-#     save_table(fact_person_fatality, "fact_person_fatality")
 
 
 # ========== MAIN FUNCTION ==========
@@ -634,21 +597,20 @@ def main():
     raw_fatality_df = load_fatality_data()
     dwelling_df = load_dwelling_data()
 
-    lga_pop_df    = load_population_table("Table 1")
-    sua_pop_df    = load_population_table("Table 2")
+    lga_pop_df = load_population_table("Table 1")
+    sua_pop_df = load_population_table("Table 2")
     remote_pop_df = load_population_table("Table 3")
-    ced_pop_df    = load_population_table("Table 4")
-
+    ced_pop_df = load_population_table("Table 4")
 
     # ========== Step 2: Clean Data ==========
     fatal_crash_df = common_clean_steps(raw_fatal_crash_df)
     fatality_df = common_clean_steps(raw_fatality_df)
 
-
     # ========== Step 3: Generate Dimension Tables ==========
 
     dim_generators = {
-        "dim_location": lambda: generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df, dwelling_df),
+        "dim_location": lambda: generate_dim_location(fatal_crash_df, lga_pop_df, sua_pop_df, remote_pop_df,
+                                                      dwelling_df),
         "dim_road": lambda: generate_dim_road(fatal_crash_df),
         "dim_vehicle": lambda: generate_dim_vehicle(fatal_crash_df),
         "dim_crash_type": lambda: generate_dim_crash_type(fatal_crash_df),
@@ -663,7 +625,6 @@ def main():
         dim = func()
         save_table(dim, name)
         dimensions[name] = dim
-
 
     # ========== Step 4: Generate Fact Tables ==========
     fact_fatal_crash = generate_fact_fatal_crash(

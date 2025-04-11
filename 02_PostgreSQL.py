@@ -177,8 +177,24 @@ def main():
 
 
     # Running Business queries sql files
-    # dfs = run_sql_file("sql/1.1.sql")
-    # print(dfs["query_1"].head())
+
+    dfs = run_sql_file("sql/1.1.sql")
+    print(dfs["query_1"].head())
+
+    dfs2 = run_sql_file("sql/1.2.sql")
+    print(dfs2["query_1"].head())
+
+    dfs3 = run_sql_file("sql/1.3.sql")
+    print(dfs3["query_1"].head())
+
+    dfs4 = run_sql_file("sql/1.4.sql")
+    print(dfs4["query_1"].head())
+
+    dfs5 = run_sql_file("sql/1.5.sql")
+    print(dfs5["query_1"].head())
+
+    dfs6 = run_sql_file("sql/1.6.sql")
+    print(dfs6["query_1"].head())
 
 
 if __name__ == "__main__":

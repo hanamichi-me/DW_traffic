@@ -179,7 +179,7 @@ def main():
     # Save to CSV
     output_path = os.path.join(output_dir, "combined_top10_rules.csv")
     final_top_k.to_csv(output_path, index=False)
-    print("✅ Export the merged top K rules：{output_path}")
+    print(f"✅ Export the merged top K rules：{output_path}")
 
 if __name__ == "__main__":
     main()

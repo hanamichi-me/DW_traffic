@@ -1,0 +1,22 @@
+contourpy==1.3.1
+cycler==0.12.1
+et-xmlfile==1.1.0
+fonttools==4.57.0
+joblib==1.4.2
+kiwisolver==1.4.8
+matplotlib==3.10.1
+mlxtend==0.23.4
+numpy==2.2.4
+openpyxl @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_96hhik4ygv/croot/openpyxl_1721752931204/work
+packaging==24.2
+pandas==2.2.3
+pillow==11.1.0
+psycopg2 @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_2d7wow2d82/croot/psycopg2_1731699769170/work
+pyparsing==3.2.3
+python-dateutil==2.9.0.post0
+pytz==2025.2
+scikit-learn==1.6.1
+scipy==1.15.2
+six==1.17.0
+threadpoolctl==3.6.0
+tzdata==2025.2
